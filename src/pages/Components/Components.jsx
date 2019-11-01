@@ -13,6 +13,8 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
+import Switch from "@material-ui/core/Switch";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import SectionBasics from "./Sections/SectionBasics.jsx";
@@ -36,13 +38,13 @@ class Components extends React.Component {
     return (
       <div>
         <Header
-          brand="Material Kit React"
+          brand="Assistika"
           rightLinks={<HeaderLinks />}
           fixed
           color="transparent"
           changeColorOnScroll={{
             height: 400,
-            color: "white"
+            color: "black"
           }}
           {...rest}
         />
@@ -51,9 +53,28 @@ class Components extends React.Component {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Material Kit React.</h1>
+                  <h1 className={classes.title}>Your project. Ready for the world.<FormControlLabel
+                    control={
+                      <Switch
+                        // checked={this.state.checkedB}
+                        // onChange={this.handleChange("checkedB")}
+                        // value="checkedB"
+                        classes={{
+                          switchBase: classes.switchBase,
+                          checked: classes.switchChecked,
+                          icon: classes.switchIcon,
+                          iconChecked: classes.switchIconChecked,
+                          bar: classes.switchBar
+                        }}
+                      />
+                    }
+                    classes={{
+                      label: classes.label
+                    }}
+                  // label="Toggle is off"
+                  /></h1>
                   <h3 className={classes.subtitle}>
-                    A Badass Material-UI Kit based on Material Design.
+                    {/* A Badass Material-UI Kit based on Material Design. */}
                   </h3>
                 </div>
               </GridItem>

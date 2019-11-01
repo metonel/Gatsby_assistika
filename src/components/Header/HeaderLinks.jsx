@@ -28,7 +28,7 @@ function HeaderLinks({ ...props }) {
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Services"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -49,16 +49,34 @@ function HeaderLinks({ ...props }) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Link to="/#navigation-pills" className={classes.navLink}>
+          All components
+            </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react"
+          // href="https://www.creative-tim.com/product/material-kit-react"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          {/* <CloudDownload className={classes.icons} /> Download */}
+          Careers
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Button
+          // href="https://www.creative-tim.com/product/material-kit-react"
+          color="transparent"
+          target="_blank"
+          // className={classes.navLink}
+          color="info"
+        >
+          {/* <CloudDownload className={classes.icons} /> Download */}
+          Get Started
+        </Button>
+      </ListItem>
+      {/* <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
@@ -71,7 +89,7 @@ function HeaderLinks({ ...props }) {
             color="transparent"
             className={classes.navLink}
           >
-            <FaTwitter/>
+            <FaTwitter />
           </Button>
         </Tooltip>
       </ListItem>
@@ -88,7 +106,7 @@ function HeaderLinks({ ...props }) {
             target="_blank"
             className={classes.navLink}
           >
-            <FaFacebook/>
+            <FaFacebook />
           </Button>
         </Tooltip>
       </ListItem>
@@ -105,10 +123,10 @@ function HeaderLinks({ ...props }) {
             target="_blank"
             className={classes.navLink}
           >
-            <FaInstagram/>
+            <FaInstagram />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }

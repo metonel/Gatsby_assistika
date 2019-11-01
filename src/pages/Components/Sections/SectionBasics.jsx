@@ -75,12 +75,12 @@ class SectionBasics extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.sections}>
+      <div >
         <div className={classes.container}>
-          <div className={classes.title}>
+          {/* <div className={classes.title}>
             <h2>Basic Elements</h2>
-          </div>
-          <div id="buttons">
+          </div> */}
+          {/* <div id="buttons">
             <div className={classes.title}>
               <h3>
                 Buttons
@@ -137,9 +137,9 @@ class SectionBasics extends React.Component {
                 <Button color="rose">Rose</Button>
               </GridItem>
             </GridContainer>
-          </div>
-          <div className={classes.space50} />
-          <div id="inputs">
+          </div> */}
+          {/* <div className={classes.space50} /> */}
+          {/* <div id="inputs">
             <div className={classes.title}>
               <h3>Inputs</h3>
             </div>
@@ -210,17 +210,34 @@ class SectionBasics extends React.Component {
                   inputProps={{
                     endAdornment: (
                       <InputAdornment position="end">
-                        <FaUsers/>
+                        <FaUsers />
                       </InputAdornment>
                     )
                   }}
                 />
               </GridItem>
             </GridContainer>
-          </div>
+          </div> */}
           <div className={classes.space70} />
           <div id="checkRadios">
             <GridContainer>
+              <GridItem xs={12} sm={12} md={4} lg={4}>
+                <div className={classes.title}>
+                  <h3 style={{ textAlign: "center" }}>Tested</h3>
+                </div>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4} lg={4}>
+                <div className={classes.title}>
+                  <h3 style={{ textAlign: "center" }}>Documented</h3>
+                </div>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4} lg={4}>
+                <div className={classes.title}>
+                  <h3 style={{ textAlign: "center" }}>Localized</h3>
+                </div>
+              </GridItem>
+            </GridContainer>
+            {/* <GridContainer>
               <GridItem xs={12} sm={6} md={4} lg={3}>
                 <div className={classes.title}>
                   <h3>Checkboxes</h3>
@@ -512,7 +529,7 @@ class SectionBasics extends React.Component {
                   />
                 </div>
               </GridItem>
-            </GridContainer>
+            </GridContainer> */}
           </div>
           <div className={classes.space70} />
           <div id="progress">

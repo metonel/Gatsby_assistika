@@ -35,7 +35,7 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
+          brand="Your Projects"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -63,7 +63,7 @@ class LandingPage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaPlay/>
+                  <FaPlay />
                   Watch video
                 </Button>
               </GridItem>
