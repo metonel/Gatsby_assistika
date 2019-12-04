@@ -1,28 +1,28 @@
 /*eslint-disable*/
-import React from "react";
+import React from "react"
 // react components for routing our app without refresh
-import { Link } from "gatsby";
+import { Link } from "gatsby"
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Tooltip from "@material-ui/core/Tooltip";
+import withStyles from "@material-ui/core/styles/withStyles"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import Tooltip from "@material-ui/core/Tooltip"
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Apps, CloudDownload } from "@material-ui/icons"
 
 // React icons
-import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"
 
 // core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx"
+import Button from "components/CustomButtons/Button.jsx"
 
-import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
+import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx"
 
 function HeaderLinks({ ...props }) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -31,27 +31,45 @@ function HeaderLinks({ ...props }) {
           buttonText="Services"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent"
+            color: "transparent",
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
+            <Link to="/technical-writing" className={classes.dropdownLink}>
+              Technical Writing
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
+            <Link to="/editing-review" className={classes.dropdownLink}>
+              Editing and Review
+            </Link>,
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/#navigation-pills" className={classes.navLink}>
-          All components
-            </Link>
+        <CustomDropdown
+          noLiPadding
+          buttonText="Expertise"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent",
+          }}
+          buttonIcon={Apps}
+          dropdownList={[
+            <Link
+              to="/documentation-deliverables"
+              className={classes.dropdownLink}
+            >
+              Documentation deliverables
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Industries we serve
+            </Link>,
+          ]}
+        />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/the-agency" className={classes.navLink}>
+          The Agency
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
@@ -61,7 +79,7 @@ function HeaderLinks({ ...props }) {
           className={classes.navLink}
         >
           {/* <CloudDownload className={classes.icons} /> Download */}
-          Careers
+          <Link to="/the-agency">Careers</Link>
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -73,7 +91,7 @@ function HeaderLinks({ ...props }) {
           color="info"
         >
           {/* <CloudDownload className={classes.icons} /> Download */}
-          Get Started
+          Hire us
         </Button>
       </ListItem>
       {/* <ListItem className={classes.listItem}>
@@ -128,7 +146,7 @@ function HeaderLinks({ ...props }) {
         </Tooltip>
       </ListItem> */}
     </List>
-  );
+  )
 }
 
-export default withStyles(headerLinksStyle)(HeaderLinks);
+export default withStyles(headerLinksStyle)(HeaderLinks)

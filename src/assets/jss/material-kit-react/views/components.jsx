@@ -7,7 +7,7 @@ const componentsStyle = {
     textAlign: "left"
   },
   title: {
-    color: "black",
+    color: "white",
     fontSize: "3.8rem",
     fontWeight: "600",
     display: "inline-block",
@@ -15,7 +15,7 @@ const componentsStyle = {
   },
   subtitle: {
     fontSize: "1.313rem",
-    maxWidth: "500px",
+    // maxWidth: "500px",
     margin: "10px 0 0"
   },
   main: {
@@ -34,6 +34,14 @@ const componentsStyle = {
   },
   textCenter: {
     textAlign: "center"
+  },
+  scrollDown: {
+    color: "white",
+    position: "absolute",
+    width: "100%",
+    bottom: "65px",
+    left: "0",
+    padding: "0 1px 0 5vw",
   }
 };
 
