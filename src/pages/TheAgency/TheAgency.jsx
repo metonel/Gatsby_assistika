@@ -32,7 +32,7 @@ import work3 from "assets/img/examples/cynthia-del-rio.jpg"
 import work4 from "assets/img/examples/mariya-georgieva.jpg"
 import work5 from "assets/img/examples/clem-onojegaw.jpg"
 
-import theAgencyStyle from "assets/jss/material-kit-react/views/TheAgency.jsx"
+import theAgencyStyle from "assets/jss/material-kit-react/views/theAgency.jsx"
 
 class TheAgency extends React.Component {
   render() {
