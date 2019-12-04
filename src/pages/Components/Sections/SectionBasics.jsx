@@ -26,7 +26,7 @@ import Paginations from "components/Pagination/Pagination.jsx"
 import Badge from "components/Badge/Badge.jsx"
 
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx"
-import $ from "jquery"
+// import $ from "jquery"
 
 class SectionBasics extends React.Component {
   constructor(props) {
@@ -40,21 +40,20 @@ class SectionBasics extends React.Component {
     this.handleChangeEnabled = this.handleChangeEnabled.bind(this)
   }
   componentDidMount() {
-    console.log("did mount")
-    var card = $(".SectionBasics-card1-275")
-
-    $(card).on("mousemove", function(e) {
-      console.log("card")
-      var ax = -($(window).innerWidth() / 2 - e.pageX) / 20
-      var ay = ($(window).innerHeight() / 2 - e.pageY) / 10
-      card.attr("style", "transform: rotateY(15deg); background-color: red")
-    })
-    $(card).on("mouseleave", function(e) {
-      console.log("card")
-      var ax = -($(window).innerWidth() / 2 - e.pageX) / 20
-      var ay = ($(window).innerHeight() / 2 - e.pageY) / 10
-      card.attr("style", "background-color: white")
-    })
+    // console.log("did mount")
+    // var card = $(".SectionBasics-card1-275")
+    // $(card).on("mousemove", function(e) {
+    //   console.log("card")
+    //   var ax = -($(window).innerWidth() / 2 - e.pageX) / 20
+    //   var ay = ($(window).innerHeight() / 2 - e.pageY) / 10
+    //   card.attr("style", "transform: rotateY(15deg); background-color: red")
+    // })
+    // $(card).on("mouseleave", function(e) {
+    //   console.log("card")
+    //   var ax = -($(window).innerWidth() / 2 - e.pageX) / 20
+    //   var ay = ($(window).innerHeight() / 2 - e.pageY) / 10
+    //   card.attr("style", "background-color: white")
+    // })
     // nouislider.create(this.refs.slider1, {
     //   start: [40],
     //   connect: [true, false],
