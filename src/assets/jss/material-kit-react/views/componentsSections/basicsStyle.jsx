@@ -33,8 +33,8 @@ const basicsStyle = {
   },
   card2: {},
   linkWrapper: {
-    float: "left",
-    width: "50%",
+    // float: "left",
+    // width: "50%",
     padding: "1.1em 15px",
   },
   iconPlain: {

@@ -110,97 +110,109 @@ class SectionBasics extends React.Component {
             </h4>
           </div>
           <div className="cards">
-            <a className={classes.linkWrapper}>
-              <div className={classes.card1}>
-                <img
-                  className={classes.iconPlain}
-                  src={require("assets/img/Edit.svg")}
-                  alt=""
-                />
-                <h2>Technical writing</h2>
-                <h4>We document stuff like this</h4>
-                <h4>
-                  IT, Marketing, Medical, Financial, Legal, Government,
-                  Scientific, Engineering.
-                </h4>
-                <h4>...and deliver it like this</h4>
-                <h4>
-                  Online Help, User Guides and PDFs for printing, Tutorials,
-                  Walkthroughs, API Help.
-                </h4>
-              </div>
-            </a>
-            <a className={classes.linkWrapper}>
-              <div className={classes.card1}>
-                <img
-                  className={classes.iconPlain}
-                  src={require("assets/img/Adopt.svg")}
-                  alt=""
-                />
-                <h2>Adopt a technical writer from us</h2>
-                <h4 className={classes.cardText}>
-                  Full-time or part-time technical writers, on your premises or
-                  online.
-                </h4>
-                <h4 className={classes.cardText}>
-                  All projects are supervised by senior Assistika staff.
-                </h4>
-                <h4></h4>
-                <h4 className={classes.cardText}>
-                  Assistika assigns one writer or an entire team to work with
-                  you on your project.
-                </h4>
-                <h4 className={classes.cardText}>
-                  You keep them for as long as you need their help with
-                  documenting your product or processes.
-                </h4>
-              </div>
-            </a>
-            <a className={classes.linkWrapper}>
-              <div className={classes.card1}>
-                <img
-                  className={classes.iconPlain}
-                  src={require("assets/img/EditRev.svg")}
-                  alt=""
-                />
-                <h2>Editing and reviewing</h2>
-                <h4 className={classes.cardText}>
-                  Basically, we write and reorganize your content to make sure
-                  your audience can:
-                </h4>
-                <ul className={classes.cardText}>
-                  <li>
-                    <h4>Find the information they need</h4>
-                  </li>
-                  <li>
-                    <h4>Understand the information they find</h4>
-                  </li>
-                  <li>
+            <GridContainer>
+              <GridItem xs={12} sm={12} md={6} lg={6}>
+                <a className={classes.linkWrapper}>
+                  <div className={classes.card1}>
+                    <img
+                      className={classes.iconPlain}
+                      src={require("assets/img/Edit.svg")}
+                      alt=""
+                    />
+                    <h2>Technical writing</h2>
+                    <h4>We document stuff like this</h4>
                     <h4>
-                      Use the information they find to act on what they need
+                      IT, Marketing, Medical, Financial, Legal, Government,
+                      Scientific, Engineering.
                     </h4>
-                  </li>
-                </ul>
-              </div>
-            </a>
-            <a className={classes.linkWrapper}>
-              <div className={classes.card1} style={{ minHeight: "463px" }}>
-                <img
-                  className={classes.iconPlain}
-                  src={require("assets/img/Training.svg")}
-                  alt=""
-                />
-                <h2>Training and consulting</h2>
-                <h4 className={classes.cardText}>
-                  Training to give you the know-how to write and edit your own
-                  documentation.
-                </h4>
-                <h4 className={classes.cardText}>
-                  We look at your existing documentation and architecure
-                  together better User Assistance solutions.
-                </h4>
-              </div>
-            </a>
+                    <h4>...and deliver it like this</h4>
+                    <h4>
+                      Online Help, User Guides and PDFs for printing, Tutorials,
+                      Walkthroughs, API Help.
+                    </h4>
+                  </div>
+                </a>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={6} lg={6}>
+                <a className={classes.linkWrapper}>
+                  <div className={classes.card1}>
+                    <img
+                      className={classes.iconPlain}
+                      src={require("assets/img/Adopt.svg")}
+                      alt=""
+                    />
+                    <h2>Adopt a technical writer from us</h2>
+                    <h4 className={classes.cardText}>
+                      Full-time or part-time technical writers, on your premises
+                      or online.
+                    </h4>
+                    <h4 className={classes.cardText}>
+                      All projects are supervised by senior Assistika staff.
+                    </h4>
+                    <h4></h4>
+                    <h4 className={classes.cardText}>
+                      Assistika assigns one writer or an entire team to work
+                      with you on your project.
+                    </h4>
+                    <h4 className={classes.cardText}>
+                      You keep them for as long as you need their help with
+                      documenting your product or processes.
+                    </h4>
+                  </div>
+                </a>
+              </GridItem>
+            </GridContainer>
+            <GridContainer>
+              <GridItem xs={12} sm={12} md={6} lg={6}>
+                <a className={classes.linkWrapper}>
+                  <div className={classes.card1}>
+                    <img
+                      className={classes.iconPlain}
+                      src={require("assets/img/EditRev.svg")}
+                      alt=""
+                    />
+                    <h2>Editing and reviewing</h2>
+                    <h4 className={classes.cardText}>
+                      Basically, we write and reorganize your content to make
+                      sure your audience can:
+                    </h4>
+                    <ul className={classes.cardText}>
+                      <li>
+                        <h4>Find the information they need</h4>
+                      </li>
+                      <li>
+                        <h4>Understand the information they find</h4>
+                      </li>
+                      <li>
+                        <h4>
+                          Use the information they find to act on what they need
+                        </h4>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={6} lg={6}>
+                <a className={classes.linkWrapper}>
+                  <div className={classes.card1} style={{ minHeight: "463px" }}>
+                    <img
+                      className={classes.iconPlain}
+                      src={require("assets/img/Training.svg")}
+                      alt=""
+                    />
+                    <h2>Training and consulting</h2>
+                    <h4 className={classes.cardText}>
+                      Training to give you the know-how to write and edit your
+                      own documentation.
+                    </h4>
+                    <h4 className={classes.cardText}>
+                      We look at your existing documentation and architecure
+                      together better User Assistance solutions.
+                    </h4>
+                  </div>
+                </a>
+              </GridItem>
+            </GridContainer>
           </div>
         </div>
         <div className={classes.space70} />

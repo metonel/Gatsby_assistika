@@ -57,7 +57,7 @@ const headerStyle = {
     fontSize: "18px",
     borderRadius: "3px",
     textTransform: "none",
-    color: "white",
+    color: "black",
     padding: "8px 16px",
     "&:hover,&:focus": {
       color: "dark",
@@ -73,7 +73,7 @@ const headerStyle = {
     color: "white",
     padding: "0px 0px 0px 16px",
     "&:hover,&:focus": {
-      color: "dark",
+      color: "black",
       background: "transparent",
     },
   },
@@ -123,7 +123,7 @@ const headerStyle = {
     color: "#FFFFFF",
   },
   dark: {
-    color: "#FFFFFF",
+    color: "black",
     backgroundColor: "#212121 !important",
     boxShadow:
       "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46)",

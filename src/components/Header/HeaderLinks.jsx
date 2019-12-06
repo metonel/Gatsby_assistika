@@ -79,7 +79,12 @@ function HeaderLinks({ ...props }) {
           className={classes.navLink}
         >
           {/* <CloudDownload className={classes.icons} /> Download */}
-          <Link to="/the-agency">Careers</Link>
+          <Link
+            // style={{ color: "white" }}
+            to="/the-agency"
+          >
+            Careers
+          </Link>
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
