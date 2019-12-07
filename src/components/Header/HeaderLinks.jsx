@@ -67,25 +67,22 @@ function HeaderLinks({ ...props }) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
+        {/* <Button color="transparent" target="_blank" className={classes.navLink}> */}
         <Link to="/the-agency" className={classes.navLink}>
           The Agency
         </Link>
+        {/* </Button> */}
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          // href="https://www.creative-tim.com/product/material-kit-react"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          {/* <CloudDownload className={classes.icons} /> Download */}
-          <Link
-            // style={{ color: "white" }}
-            to="/the-agency"
+        <Link to="/the-agency">
+          <Button
+            color="transparent"
+            target="_blank"
+            className={classes.navLink}
           >
             Careers
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
@@ -103,16 +100,25 @@ function HeaderLinks({ ...props }) {
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          placement={
+            typeof window !== "undefined" && window.innerWidth > 959
+              ? "top"
+              : "left"
+          }
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim"
+            href="/the-agency"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
-            <FaTwitter />
+            <Link
+              // style={{ color: "white" }}
+              to="/the-agency"
+            >
+              Careers
+            </Link>
           </Button>
         </Tooltip>
       </ListItem>
@@ -120,7 +126,11 @@ function HeaderLinks({ ...props }) {
         <Tooltip
           id="instagram-facebook"
           title="Follow us on facebook"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          placement={
+            typeof window !== "undefined" && window.innerWidth > 959
+              ? "top"
+              : "left"
+          }
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
@@ -137,7 +147,11 @@ function HeaderLinks({ ...props }) {
         <Tooltip
           id="instagram-tooltip"
           title="Follow us on instagram"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          placement={
+            typeof window !== "undefined" && window.innerWidth > 959
+              ? "top"
+              : "left"
+          }
           classes={{ tooltip: classes.tooltip }}
         >
           <Button

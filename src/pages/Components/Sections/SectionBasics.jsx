@@ -194,7 +194,7 @@ class SectionBasics extends React.Component {
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <a className={classes.linkWrapper}>
-                  <div className={classes.card1} style={{ minHeight: "463px" }}>
+                  <div className={classes.card1}>
                     <img
                       className={classes.iconPlain}
                       src={require("assets/img/Training.svg")}

@@ -26,6 +26,7 @@ const basicsStyle = {
     color: "#FFFFFF",
   },
   card1: {
+    minHeight: "480px",
     padding: "2.9em 55px 4.5em",
     color: "black",
     border: "solid 1px #ededed",

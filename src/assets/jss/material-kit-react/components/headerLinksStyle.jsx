@@ -42,7 +42,7 @@ const headerLinksStyle = theme => ({
     padding: "0.9375rem",
     fontWeight: "400",
     fontSize: "12px",
-    // textTransform: "none",
+    textTransform: "none",
     borderRadius: "3px",
     lineHeight: "20px",
     textDecoration: "none",
