@@ -33,6 +33,17 @@ import SectionDownload from "./Sections/SectionDownload.jsx"
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx"
 
 class Components extends React.Component {
+  componentDidMount() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault()
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        })
+      })
+    })
+  }
   render() {
     const { classes, ...rest } = this.props
     return (
@@ -43,8 +54,8 @@ class Components extends React.Component {
           fixed
           color="transparent"
           changeColorOnScroll={{
-            height: 400,
-            color: "black",
+            height: 300,
+            color: "white",
           }}
           {...rest}
         />
@@ -88,13 +99,13 @@ class Components extends React.Component {
             </div>
             {/* </GridItem> */}
             {/* </GridContainer> */}
-            <div className={classes.scrollDown}>
-              <i className="fas fa-arrow-down"></i>scroll for more
+            <div style={{ color: "white" }} className={classes.scrollDown}>
+              <a href="#goTo">scroll for more</a>
             </div>
           </div>
         </Parallax>
 
-        <div className={classNames(classes.main)}>
+        <div id="goTo" className={classNames(classes.main)}>
           <SectionBasics />
           {/* <SectionNavbars />
           <SectionTabs />
