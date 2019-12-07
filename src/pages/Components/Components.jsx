@@ -61,8 +61,6 @@ class Components extends React.Component {
         />
         <Parallax image={require("assets/img/bg4.jpg")}>
           <div className={classes.container}>
-            {/* <GridContainer> */}
-            {/* <GridItem> */}
             <div className={classes.brand}>
               <h1 className={classes.title}>
                 Expert technical writers? Ready!
@@ -96,11 +94,23 @@ class Components extends React.Component {
                 for your business. Technical writers who grasp your technology
                 quickly and explain it more clearly than your engineers can..
               </h3>
+              <div id="examples">
+                <div class="example">
+                  <Link to="/">
+                    <span class="hover hover-1">Outstaffing</span>
+                  </Link>
+                </div>
+                <div class="example">
+                  <Link to="/">
+                    <span class="hover hover-1">Outsourcing</span>
+                  </Link>
+                </div>
+              </div>
             </div>
-            {/* </GridItem> */}
-            {/* </GridContainer> */}
-            <div style={{ color: "white" }} className={classes.scrollDown}>
-              <a href="#goTo">scroll for more</a>
+            <div className={classes.scrollDown}>
+              <a class="linkScroll" href="#goTo">
+                scroll for more
+              </a>
             </div>
           </div>
         </Parallax>
