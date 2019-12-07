@@ -86,6 +86,7 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
+          style={{ borderRadius: "24px" }}
           // href="https://www.creative-tim.com/product/material-kit-react"
           color="transparent"
           target="_blank"
@@ -94,6 +95,11 @@ function HeaderLinks({ ...props }) {
         >
           {/* <CloudDownload className={classes.icons} /> Download */}
           Hire us
+          <span class="loading-dots">
+            <span class="dot one">.</span>
+            <span class="dot two">.</span>
+            <span class="dot three">.</span>
+          </span>
         </Button>
       </ListItem>
       {/* <ListItem className={classes.listItem}>
