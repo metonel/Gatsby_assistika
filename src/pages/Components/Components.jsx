@@ -109,6 +109,11 @@ class Components extends React.Component {
             </div>
             <div className={classes.scrollDown}>
               <a class="linkScroll" href="#goTo">
+                <img
+                  class="iConDown"
+                  src={require("assets/img/down.svg")}
+                  alt=""
+                />
                 scroll for more
               </a>
             </div>
