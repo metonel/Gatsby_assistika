@@ -47,6 +47,9 @@ const container = {
   "@media (min-width: 1200px)": {
     maxWidth: "1140px",
   },
+  "@media (min-width: 1600px)": {
+    maxWidth: "1900px",
+  },
 }
 
 const boxShadow = {

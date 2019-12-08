@@ -16,6 +16,10 @@ const basicsStyle = {
     height: "50px",
     display: "block",
   },
+  space30: {
+    height: "20px",
+    display: "block",
+  },
   space70: {
     height: "70px",
     display: "block",
@@ -33,11 +37,11 @@ const basicsStyle = {
     borderRadius: "5px",
   },
   card2: {},
-  linkWrapper: {
-    // float: "left",
-    // width: "50%",
-    padding: "1.1em 15px",
-  },
+  // linkWrapper: {
+  //   // float: "left",
+  //   // width: "50%",
+  //   padding: "1.1em 15px",
+  // },
   iconPlain: {
     width: "58.5px",
     height: "58.5px",

@@ -19,14 +19,11 @@ import { FaUsers } from "react-icons/fa"
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
-import Button from "components/CustomButtons/Button.jsx"
-import CustomInput from "components/CustomInput/CustomInput.jsx"
-import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx"
-import Paginations from "components/Pagination/Pagination.jsx"
-import Badge from "components/Badge/Badge.jsx"
+import { Link } from "gatsby"
 
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx"
-// import $ from "jquery"
+import $ from "jquery"
+import WOW from "wowjs"
 
 class SectionBasics extends React.Component {
   constructor(props) {
@@ -40,20 +37,31 @@ class SectionBasics extends React.Component {
     this.handleChangeEnabled = this.handleChangeEnabled.bind(this)
   }
   componentDidMount() {
-    // console.log("did mount")
-    // var card = $(".SectionBasics-card1-275")
-    // $(card).on("mousemove", function(e) {
-    //   console.log("card")
-    //   var ax = -($(window).innerWidth() / 2 - e.pageX) / 20
-    //   var ay = ($(window).innerHeight() / 2 - e.pageY) / 10
-    //   card.attr("style", "transform: rotateY(15deg); background-color: red")
+    console.log("did mount")
+    new WOW.WOW({ live: false }).init()
+    // new WOW.WOW().sync()
+    // $(wrapper).on("mousemove", function(e) {
+    //   var ax = -($(wrapper).innerWidth() / 2 - e.pageX) / 20
+    //   var ay = ($(wrapper).innerHeight() / 2 - e.pageY) / 10
+    //   card.attr(
+    //     "style",
+    //     "transform: rotateY(" +
+    //       ax +
+    //       "deg) rotateX(" +
+    //       ay +
+    //       "deg);-webkit-transform: rotateY(" +
+    //       ax +
+    //       "deg) rotateX(" +
+    //       ay +
+    //       "deg);-moz-transform: rotateY(" +
+    //       ax +
+    //       "deg) rotateX(" +
+    //       ay +
+    //       "deg)",
+    //     "background-color: black"
+    //   )
     // })
-    // $(card).on("mouseleave", function(e) {
-    //   console.log("card")
-    //   var ax = -($(window).innerWidth() / 2 - e.pageX) / 20
-    //   var ay = ($(window).innerHeight() / 2 - e.pageY) / 10
-    //   card.attr("style", "background-color: white")
-    // })
+
     // nouislider.create(this.refs.slider1, {
     //   start: [40],
     //   connect: [true, false],
@@ -97,7 +105,9 @@ class SectionBasics extends React.Component {
           style={{ minHeight: "103vh", padding: "1.1em 15px" }}
         >
           <div className={classes.title}>
-            <h2>Services</h2>
+            <h2 className="wow fadeInUp" data-wow-duration="1.5s">
+              Services
+            </h2>
           </div>
           <div className={classes.title}>
             <h4>
@@ -112,29 +122,31 @@ class SectionBasics extends React.Component {
           <div className="cards">
             <GridContainer>
               <GridItem xs={12} sm={12} md={6} lg={6}>
-                <a className={classes.linkWrapper}>
-                  <div className={classes.card1}>
-                    <img
-                      className={classes.iconPlain}
-                      src={require("assets/img/Edit.svg")}
-                      alt=""
-                    />
-                    <h2>Technical writing</h2>
-                    <h4>We document stuff like this</h4>
-                    <h4>
-                      IT, Marketing, Medical, Financial, Legal, Government,
-                      Scientific, Engineering.
-                    </h4>
-                    <h4>...and deliver it like this</h4>
-                    <h4>
-                      Online Help, User Guides and PDFs for printing, Tutorials,
-                      Walkthroughs, API Help.
-                    </h4>
-                  </div>
-                </a>
+                <div class="cardx">
+                  <Link to="/technical-writing" className={classes.linkWrapper}>
+                    <div className={classes.card1}>
+                      <img
+                        className={classes.iconPlain}
+                        src={require("assets/img/Edit.svg")}
+                        alt=""
+                      />
+                      <h2>Technical writing</h2>
+                      <h4>We document stuff like this</h4>
+                      <h4>
+                        IT, Marketing, Medical, Financial, Legal, Government,
+                        Scientific, Engineering.
+                      </h4>
+                      <h4>...and deliver it like this</h4>
+                      <h4>
+                        Online Help, User Guides and PDFs for printing,
+                        Tutorials, Walkthroughs, API Help.
+                      </h4>
+                    </div>
+                  </Link>
+                </div>
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
-                <a className={classes.linkWrapper}>
+                <Link to="/adopt" className={classes.linkWrapper}>
                   <div className={classes.card1}>
                     <img
                       className={classes.iconPlain}
@@ -159,12 +171,15 @@ class SectionBasics extends React.Component {
                       documenting your product or processes.
                     </h4>
                   </div>
-                </a>
+                </Link>
               </GridItem>
             </GridContainer>
+
+            <div className={classes.space30} />
+
             <GridContainer>
               <GridItem xs={12} sm={12} md={6} lg={6}>
-                <a className={classes.linkWrapper}>
+                <Link to="/editing-review" className={classes.linkWrapper}>
                   <div className={classes.card1}>
                     <img
                       className={classes.iconPlain}
@@ -190,10 +205,10 @@ class SectionBasics extends React.Component {
                       </li>
                     </ul>
                   </div>
-                </a>
+                </Link>
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
-                <a className={classes.linkWrapper}>
+                <Link to="/training" className={classes.linkWrapper}>
                   <div className={classes.card1}>
                     <img
                       className={classes.iconPlain}
@@ -210,7 +225,7 @@ class SectionBasics extends React.Component {
                       together better User Assistance solutions.
                     </h4>
                   </div>
-                </a>
+                </Link>
               </GridItem>
             </GridContainer>
           </div>

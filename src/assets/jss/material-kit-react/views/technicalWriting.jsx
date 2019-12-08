@@ -18,7 +18,7 @@ const technicalWriting = {
   },
   ...imagesStyle,
   main: {
-    padding: "5px 20px",
+    padding: "35px 5px 20px 20px 20px",
     background: "#FFFFFF",
     position: "relative",
     zIndex: "3",
@@ -38,13 +38,15 @@ const technicalWriting = {
     display: "block",
   },
   title: {
+    paddingLeft: "20px",
     textAlign: "center",
     color: "white",
     fontSize: "3.8rem",
-    fontWeight: "500",
+    fontWeight: "400",
     position: "relative",
   },
   subtitle: {
+    paddingLeft: "20px",
     color: "white",
     fontSize: "1.8rem",
     margin: "10px 0 0",
@@ -55,6 +57,7 @@ const technicalWriting = {
     margin: "10px 0 0",
   },
   description: {
+    paddingLeft: "20px",
     color: "white",
     fontSize: "1.1rem",
     margin: "10px 0 0",
@@ -78,6 +81,19 @@ const technicalWriting = {
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center",
+  },
+  iconPlain: {
+    width: "58.5px",
+    height: "58.5px",
+    marginBottom: "2.5em",
+  },
+  scrollDown: {
+    color: "white",
+    position: "absolute",
+    width: "100%",
+    bottom: "65px",
+    left: "0",
+    padding: "0 1px 0 5vw",
   },
 }
 

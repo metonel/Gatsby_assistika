@@ -24,7 +24,7 @@ import headerLinksStyle from "assets/jss/material-kit-react/components/headerLin
 function HeaderLinks({ ...props }) {
   const { classes } = props
   return (
-    <List className={classes.list}>
+    <List className={classes.list} id="examples">
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
@@ -33,7 +33,6 @@ function HeaderLinks({ ...props }) {
             className: classes.navLink,
             color: "transparent",
           }}
-          buttonIcon={Apps}
           dropdownList={[
             <Link to="/technical-writing" className={classes.dropdownLink}>
               Technical Writing
@@ -41,10 +40,17 @@ function HeaderLinks({ ...props }) {
             <Link to="/editing-review" className={classes.dropdownLink}>
               Editing and Review
             </Link>,
+            <Link to="/adopt" className={classes.dropdownLink}>
+              Adopt a technical writer from us
+            </Link>,
+            <Link to="/training" className={classes.dropdownLink}>
+              Training and consulting
+            </Link>,
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
+        {/* <span class="hover hover-1"> */}
         <CustomDropdown
           noLiPadding
           buttonText="Expertise"
@@ -52,7 +58,7 @@ function HeaderLinks({ ...props }) {
             className: classes.navLink,
             color: "transparent",
           }}
-          buttonIcon={Apps}
+          // buttonIcon={Apps}
           dropdownList={[
             <Link
               to="/documentation-deliverables"
@@ -60,38 +66,46 @@ function HeaderLinks({ ...props }) {
             >
               Documentation deliverables
             </Link>,
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/industries" className={classes.dropdownLink}>
               Industries we serve
             </Link>,
           ]}
         />
+        {/* </span> */}
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/* <Button color="transparent" target="_blank" className={classes.navLink}> */}
-        <Link to="/the-agency" className={classes.navLink}>
-          The Agency
-        </Link>
-        {/* </Button> */}
-      </ListItem>
-      <ListItem className={classes.listItem}>
+        {/* <div id="examples"> */}
+        {/* <div className={classes.navLink}> */}
+        {/* <div class="example"> */}
         <Link to="/the-agency">
-          <Button
+          <span class="hover hover-1">The Agency</span>
+        </Link>
+        {/* </div> */}
+        {/* </div> */}
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        {/* <div class="example"> */}
+        <Link to="/careers">
+          <span class="hover hover-1">Careers</span>
+        </Link>
+        {/* </div> */}
+        {/* </div> */}
+        {/* <Button
             color="transparent"
             target="_blank"
             className={classes.navLink}
           >
             Careers
-          </Button>
-        </Link>
+          </Button> */}
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           style={{ borderRadius: "24px" }}
           // href="https://www.creative-tim.com/product/material-kit-react"
-          color="transparent"
+          color="hireUs"
           target="_blank"
           // className={classes.navLink}
-          color="info"
+          // color="info"
         >
           {/* <CloudDownload className={classes.icons} /> Download */}
           Hire us

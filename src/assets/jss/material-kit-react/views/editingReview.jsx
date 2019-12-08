@@ -18,6 +18,7 @@ const editingReview = {
   },
   ...imagesStyle,
   main: {
+    padding: "40px 35px 25px 35px",
     background: "#FFFFFF",
     position: "relative",
     zIndex: "3",
@@ -37,36 +38,45 @@ const editingReview = {
     display: "block",
   },
   title: {
-    textAlign: "center",
+    // textAlign: "center",
+    paddingLeft: "20px",
     color: "white",
     fontSize: "3.8rem",
-    fontWeight: "500",
+    fontWeight: "450",
     position: "relative",
   },
   titleDark: {
-    textAlign: "center",
-    color: "black",
+    // textAlign: "center",
+    color: "#565656",
     fontSize: "3.8rem",
     fontWeight: "500",
     position: "relative",
   },
   subtitle: {
+    paddingLeft: "20px",
+    fontWeight: "400",
     color: "white",
     fontSize: "1.8rem",
     margin: "10px 0 0",
   },
   subtitleDark: {
-    color: "dark",
+    // paddingLeft: "20px",
+    fontWeight: "400",
+    color: "#4a4a4a",
     fontSize: "1.8rem",
+    fontWeight: "400",
     margin: "10px 0 0",
   },
   description: {
+    paddingLeft: "20px",
+    maxWidth: "80vh",
     color: "white",
     fontSize: "1.1rem",
     margin: "10px 0 0",
   },
   descriptionDark: {
-    color: "black",
+    color: "#4a4a4a",
+    fontWeight: "400",
     fontSize: "1.1rem",
     margin: "10px 0 0",
   },
@@ -84,6 +94,30 @@ const editingReview = {
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center",
+  },
+  iconPlain: {
+    width: "58.5px",
+    height: "58.5px",
+    marginBottom: "2.5em",
+  },
+
+  card1: {
+    minHeight: "480px",
+    padding: "2.9em 55px 4.5em",
+    color: "black",
+    border: "solid 1px #ededed",
+    borderRadius: "5px",
+  },
+  cardText: {
+    opacity: ".75",
+  },
+  scrollDown: {
+    color: "white",
+    position: "absolute",
+    width: "100%",
+    bottom: "65px",
+    left: "0",
+    padding: "0 1px 0 5vw",
   },
 }
 
