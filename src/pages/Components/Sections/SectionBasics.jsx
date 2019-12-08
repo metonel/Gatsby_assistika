@@ -23,7 +23,6 @@ import { Link } from "gatsby"
 
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx"
 import $ from "jquery"
-import WOW from "wowjs"
 
 class SectionBasics extends React.Component {
   constructor(props) {
@@ -38,7 +37,6 @@ class SectionBasics extends React.Component {
   }
   componentDidMount() {
     console.log("did mount")
-    new WOW.WOW({ live: false }).init()
     // new WOW.WOW().sync()
     // $(wrapper).on("mousemove", function(e) {
     //   var ax = -($(wrapper).innerWidth() / 2 - e.pageX) / 20

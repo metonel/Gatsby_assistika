@@ -8,13 +8,11 @@ import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
 import Parallax from "components/Parallax/Parallax.jsx"
-import WOW from "wowjs"
 
 import editingReviewStyle from "assets/jss/material-kit-react/views/editingReview"
 
 class TechnicalWriting extends React.Component {
   componentDidMount() {
-    new WOW.WOW().init()
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function(e) {
         e.preventDefault()
