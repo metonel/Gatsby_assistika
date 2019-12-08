@@ -49,8 +49,8 @@ const headerLinksStyle = theme => ({
     margin: "0px",
     display: "inline-flex",
     "&:hover,&:focus": {
-      color: "black",
-      background: "rgba(200, 200, 200, 0.2)",
+      // color: "black",
+      // background: "rgba(200, 200, 200, 0.2)",
     },
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 30px)",
