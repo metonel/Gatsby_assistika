@@ -51,6 +51,13 @@ class Training extends React.Component {
                 documentation solutions.
               </h3>
             </div>
+            <div className={classes.imag}>
+                <img
+                  style={{width:"700px", float: "right"}}
+                  src={require("assets/img/training.png")}
+                  alt=""
+                />
+              </div>
 
             <div className={classes.scrollDown}>
               <a class="linkScroll" href="#goTo">

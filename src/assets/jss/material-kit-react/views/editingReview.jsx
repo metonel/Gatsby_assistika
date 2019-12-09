@@ -44,6 +44,7 @@ const editingReview = {
     fontSize: "3.8rem",
     fontWeight: "450",
     position: "relative",
+    zIndex: "1",
   },
   titleDark: {
     // textAlign: "center",
@@ -58,6 +59,9 @@ const editingReview = {
     color: "white",
     fontSize: "1.8rem",
     margin: "10px 0 0",
+    position: "relative",
+    zIndex: "1",
+    maxWidth: "65vw"
   },
   subtitleDark: {
     // paddingLeft: "20px",
@@ -117,6 +121,14 @@ const editingReview = {
     width: "100%",
     bottom: "65px",
     left: "0",
+    padding: "0 1px 0 5vw",
+  },
+  imag: {
+    width: "200px",
+    position: "absolute",
+    width: "100%",
+    bottom: "65px",
+    right: "0",
     padding: "0 1px 0 5vw",
   },
 }

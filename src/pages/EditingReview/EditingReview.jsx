@@ -51,6 +51,13 @@ class EditingReview extends React.Component {
                 messages.
               </h3>
             </div>
+              <div className={classes.imag}>
+                <img
+                  style={{width:"700px", float: "right"}}
+                  src={require("assets/img/editing.png")}
+                  alt=""
+                />
+              </div>
             <div className={classes.scrollDown}>
               <a class="linkScroll" href="#goTo">
                 <img

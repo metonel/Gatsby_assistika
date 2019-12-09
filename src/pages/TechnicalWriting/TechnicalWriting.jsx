@@ -41,7 +41,7 @@ class TechnicalWriting extends React.Component {
 
         <Parallax bColor="#2b7fbe">
           <div className={classes.container}>
-            <div className={classes.brand}>
+            {/* <div className={classes.brand}> */}
               <h1 className={classes.title}>Technical Writing</h1>
               <div className={classes.space20}></div>
               <h3 className={classes.subtitle}>
@@ -51,7 +51,15 @@ class TechnicalWriting extends React.Component {
               <h3 className={classes.subtitle}>
                 We deliver great documentation on time, and within budget.
               </h3>
-            </div>
+            {/* </div> */}
+          {/* <img src="assets/img/tWriting.png" alt="Avatar" style={{width:"200px"}}></img> */}
+              <div className={classes.imag}>
+                <img
+                  style={{width:"700px", float: "right"}}
+                  src={require("assets/img/tWriting.png")}
+                  alt=""
+                />
+              </div>
             <div className={classes.scrollDown}>
               <a class="linkScroll" href="#goTo">
                 <img
@@ -62,6 +70,7 @@ class TechnicalWriting extends React.Component {
                 Scroll to find out more
               </a>
             </div>
+
           </div>
         </Parallax>
 

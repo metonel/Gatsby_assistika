@@ -54,7 +54,14 @@ class Adopt extends React.Component {
                 You keep them for as long as you need their help with
                 documenting your product or processes.
               </h3>
-            </div>
+            </div>            
+            <div className={classes.imag}>
+                <img
+                  style={{width:"700px", float: "right"}}
+                  src={require("assets/img/adopt.png")}
+                  alt=""
+                />
+              </div>
             <div className={classes.scrollDown}>
               <a class="linkScroll" href="#goTo">
                 <img

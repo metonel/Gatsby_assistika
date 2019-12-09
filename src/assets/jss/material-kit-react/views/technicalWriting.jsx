@@ -95,6 +95,14 @@ const technicalWriting = {
     left: "0",
     padding: "0 1px 0 5vw",
   },
+  imag: {
+    color: "white",
+    position: "absolute",
+    width: "100%",
+    bottom: "65px",
+    right: "0",
+    padding: "0 1px 0 5vw",
+  },
 }
 
 export default technicalWriting
