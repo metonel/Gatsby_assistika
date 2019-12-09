@@ -39,7 +39,7 @@ class Industries extends React.Component {
           {...rest}
         />
 
-        <Parallax bColor="#27afda">
+        <Parallax image={require("assets/img/Industries.jpg")}>
           <div className={classes.container}>
             <div className={classes.brand}>
               <h1 className={classes.title}>INDUSTRIES WE SERVE</h1>
@@ -51,10 +51,6 @@ class Industries extends React.Component {
               <h3 className={classes.subtitle}>
                 We work with government agencies, private industries, and
                 non-profit and charitable organizations.
-              </h3>
-              <h3 className={classes.subtitle}>
-                Our niche is Information Technology (IT) with a focus on
-                technical writing and business analysis.
               </h3>
             </div>
             <div className={classes.scrollDown}>

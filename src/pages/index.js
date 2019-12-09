@@ -20,6 +20,7 @@ import Outstaffing from "./Outstaffing/Outstaffing"
 import Training from "./Training/Training"
 import Careers from "./Careers/Careers"
 import Industries from "./Industries/Industries"
+import HireUs from "./HireUs/HireUs"
 
 let hist = createMemoryHistory()
 
@@ -38,6 +39,7 @@ export default () => (
       <Route path="/training" component={Training} />
       <Route path="/careers" component={Careers} />
       <Route path="/industries" component={Industries} />
+      <Route path="/hire-us" component={HireUs} />
       <Route
         path="/documentation-deliverables"
         component={DocumentationDeliverables}

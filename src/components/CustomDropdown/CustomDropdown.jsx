@@ -87,6 +87,7 @@ class CustomDropdown extends React.Component {
       <div>
         <div class="hover hover-1">
           <Button
+            style={{ textTransform: "none" }}
             aria-label="Notifications"
             aria-owns={open ? "menu-list" : null}
             aria-haspopup="true"

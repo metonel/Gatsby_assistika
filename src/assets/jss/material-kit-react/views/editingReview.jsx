@@ -61,7 +61,7 @@ const editingReview = {
     margin: "10px 0 0",
     position: "relative",
     zIndex: "1",
-    maxWidth: "65vw"
+    maxWidth: "65vw",
   },
   subtitleDark: {
     // paddingLeft: "20px",
@@ -73,7 +73,7 @@ const editingReview = {
   },
   description: {
     paddingLeft: "20px",
-    maxWidth: "80vh",
+    // maxWidth: "80vh",
     color: "white",
     fontSize: "1.1rem",
     margin: "10px 0 0",

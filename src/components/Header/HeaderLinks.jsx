@@ -24,7 +24,7 @@ import headerLinksStyle from "assets/jss/material-kit-react/components/headerLin
 function HeaderLinks({ ...props }) {
   const { classes } = props
   return (
-    <List className={classes.list} id="examples">
+    <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
@@ -33,6 +33,7 @@ function HeaderLinks({ ...props }) {
             className: classes.navLink,
             color: "transparent",
           }}
+          // buttonIcon={Apps}
           dropdownList={[
             <Link to="/technical-writing" className={classes.dropdownLink}>
               Technical Writing
@@ -50,7 +51,6 @@ function HeaderLinks({ ...props }) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/* <span class="hover hover-1"> */}
         <CustomDropdown
           noLiPadding
           buttonText="Expertise"
@@ -71,36 +71,20 @@ function HeaderLinks({ ...props }) {
             </Link>,
           ]}
         />
-        {/* </span> */}
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/* <div id="examples"> */}
-        {/* <div className={classes.navLink}> */}
-        {/* <div class="example"> */}
-        <Link to="/the-agency">
-          <span class="hover hover-1">The Agency</span>
+        <Link to="/the-agency" className={classes.navLink}>
+          The Agency
         </Link>
-        {/* </div> */}
-        {/* </div> */}
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/* <div class="example"> */}
-        <Link to="/careers">
-          <span class="hover hover-1">Careers</span>
+        <Link to="/careers" className={classes.navLink}>
+          Careers
         </Link>
-        {/* </div> */}
-        {/* </div> */}
-        {/* <Button
-            color="transparent"
-            target="_blank"
-            className={classes.navLink}
-          >
-            Careers
-          </Button> */}
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          style={{ borderRadius: "24px" }}
+          style={{ borderRadius: "24px", textTransform: "none" }}
           // href="https://www.creative-tim.com/product/material-kit-react"
           color="hireUs"
           target="_blank"
@@ -108,7 +92,7 @@ function HeaderLinks({ ...props }) {
           // color="info"
         >
           {/* <CloudDownload className={classes.icons} /> Download */}
-          Hire us
+          <Link to="/hire-us">Hire us</Link>
           <span class="loading-dots">
             <span class="dot one">.</span>
             <span class="dot two">.</span>
@@ -128,17 +112,12 @@ function HeaderLinks({ ...props }) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="/the-agency"
+            href="https://twitter.com/CreativeTim"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
-            <Link
-              // style={{ color: "white" }}
-              to="/the-agency"
-            >
-              Careers
-            </Link>
+            <FaTwitter />
           </Button>
         </Tooltip>
       </ListItem>

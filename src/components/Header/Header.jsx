@@ -34,6 +34,7 @@ class Header extends React.Component {
     if (this.props.changeColorOnScroll) {
       window.addEventListener("scroll", this.headerColorChange)
     }
+    document.body.getElementsByTagName("header")[0].classList.add("black")
   }
   headerColorChange() {
     const { classes, color, changeColorOnScroll } = this.props
@@ -42,16 +43,20 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[color])
+      document.body.getElementsByTagName("header")[0].classList.remove("black")
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color])
+      document.body.getElementsByTagName("header")[0].classList.add("white")
     } else {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[color])
+      document.body.getElementsByTagName("header")[0].classList.add("black")
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color])
+      document.body.getElementsByTagName("header")[0].classList.remove("white")
     }
   }
   componentWillUnmount() {
@@ -77,10 +82,12 @@ class Header extends React.Component {
     })
     const brandComponent = (
       <div>
-        <Button className={classes.title}>
-          <Link to="/">Assistika</Link>
-        </Button>
-        <div className={classes.brandText}>the Technical Assistance agency</div>
+        <div className="logo">
+          {/* <img src={require("assets/img/aLogo.svg")} alt="" /> */}
+        </div>
+        <div className="subtext">
+          <Link to="/">The Technical Assistance agency</Link>
+        </div>
       </div>
     )
     return (

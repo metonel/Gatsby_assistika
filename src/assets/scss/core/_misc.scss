@@ -125,15 +125,19 @@ img {
 form {
   margin-bottom: 1.125rem;
 }
-[class*="Header-transparent"] {
+.white {
   a {
-    color: white;
+    color: inherit;
+    // text-transform: to-lower-case;
   }
 }
-[class*="Header-white"] {
+.black {
   a {
-    color: black;
+    color: inherit;
   }
+}
+.subtext {
+  font-size: 12px;
 }
 .linkScroll {
   color: white;
