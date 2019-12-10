@@ -7,7 +7,7 @@ import Footer from "components/Footer/Footer.jsx"
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
 import Parallax from "components/Parallax/Parallax.jsx"
 
-import theAgencyStyle from "assets/jss/material-kit-react/views/theAgency.jsx"
+import editingReviewStyle from "assets/jss/material-kit-react/views/editingReview"
 
 class TheAgency extends React.Component {
   render() {
@@ -20,7 +20,7 @@ class TheAgency extends React.Component {
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
-            height: 200,
+            height: 1,
             color: "white",
           }}
           {...rest}
@@ -28,10 +28,10 @@ class TheAgency extends React.Component {
 
         <Parallax image={require("assets/img/TheAgency.jpg")}>
           <div className={classes.container}>
-            {/* <GridContainer> */}
-            {/* <GridItem> */}
             <div className={classes.brand}>
-              <h1 className={classes.title}>The Agency</h1>
+              <h1 style={{ textAlign: "center" }}className={classes.title}>The Agency</h1>              
+          <div className={classes.space20}></div>
+          <div className={classes.space20}></div>
               <h2 className={classes.subtitle}>The Agency</h2>
               <h3 className={classes.description}>
                 Assistika provides a range of documentation services for a fixed
@@ -39,12 +39,14 @@ class TheAgency extends React.Component {
                 skills for your business. We take responsibility for delivering
                 the project on deadline and within budget.
               </h3>
+          <div className={classes.space20}></div>
               <h2 className={classes.subtitle}>Services</h2>
               <h3 className={classes.description}>
                 Assistika helps companies with all their technical writing needs
                 so they can focus on their development instead. We guarantee
                 world class documentation fit for your world-class products.
               </h3>
+          <div className={classes.space20}></div>
               <h2 className={classes.subtitle}>
                 Who is your geek writers squad?
               </h2>
@@ -58,11 +60,6 @@ class TheAgency extends React.Component {
                 information.
               </h3>
             </div>
-            {/* </GridItem> */}
-            {/* </GridContainer> */}
-            <div className={classes.scrollDown}>
-              <i className="fas fa-arrow-down"></i>scroll for more
-            </div>
           </div>
         </Parallax>
 
@@ -72,4 +69,4 @@ class TheAgency extends React.Component {
   }
 }
 
-export default withStyles(theAgencyStyle)(TheAgency)
+export default withStyles(editingReviewStyle)(TheAgency)

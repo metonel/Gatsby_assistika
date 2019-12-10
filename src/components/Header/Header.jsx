@@ -31,10 +31,10 @@ class Header extends React.Component {
     this.setState({ mobileOpen: !this.state.mobileOpen })
   }
   componentDidMount() {
+    document.body.getElementsByTagName("header")[0].classList.add("black")
     if (this.props.changeColorOnScroll) {
       window.addEventListener("scroll", this.headerColorChange)
     }
-    document.body.getElementsByTagName("header")[0].classList.add("black")
   }
   headerColorChange() {
     const { classes, color, changeColorOnScroll } = this.props
@@ -83,7 +83,9 @@ class Header extends React.Component {
     const brandComponent = (
       <div>
         <div className="logo">
-          {/* <img src={require("assets/img/aLogo.svg")} alt="" /> */}
+        <Link to="/">
+          <img style={{height: "45px"}} src={require("assets/img/aLogo.svg")} alt="" />
+          </Link>
         </div>
         <div className="subtext">
           <Link to="/">The Technical Assistance agency</Link>
@@ -126,7 +128,7 @@ class Header extends React.Component {
             }}
             onClose={this.handleDrawerToggle}
           >
-            <div className={classes.appResponsive}>
+            <div className={classes.appResponsive, "white"}>
               {leftLinks}
               {rightLinks}
             </div>
