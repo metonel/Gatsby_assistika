@@ -40,7 +40,7 @@ class Industries extends React.Component {
         />
 
         <Parallax
-          style={{ paddingTop: "70px" }}
+          style={{ paddingTop: "70px", paddingBottom: "60px" }}
           image={require("assets/img/Industries.jpg")}
         >
           <div className={classes.container}>

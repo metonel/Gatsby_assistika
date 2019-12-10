@@ -39,13 +39,15 @@ class Adopt extends React.Component {
           {...rest}
         />
 
-        <Parallax style={{ paddingTop: "40px" }} bColor="#27afda">
+        <Parallax
+          style={{ paddingTop: "70px", paddingBottom: "30px" }}
+          bColor="#27afda"
+        >
           <div className={classes.container}>
             <div className={classes.brand}>
               <h1 className="titleResponsive">
                 ADOPT A TECHNICAL WRITER FROM US
               </h1>
-              <div className={classes.space20}></div>
               <h3 className={classes.subtitle}>
                 Assistika assigns one writer or an entire team to work with you
                 on your project.
@@ -57,7 +59,7 @@ class Adopt extends React.Component {
             </div>
             <div className={classes.imag}>
               <img
-                style={{ width: "700px", float: "right" }}
+                className="serviceImage"
                 src={require("assets/img/adopt.png")}
                 alt=""
               />

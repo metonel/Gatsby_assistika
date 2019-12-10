@@ -62,7 +62,7 @@ class DocumentationDeliverables extends React.Component {
         />
 
         <Parallax
-          style={{ paddingTop: "20px" }}
+          style={{ paddingTop: "70px", paddingBottom: "30px" }}
           image={require("assets/img/deliverables.jpg")}
         >
           <div className={classes.container}>

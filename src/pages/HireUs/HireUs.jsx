@@ -84,7 +84,7 @@ class HireUs extends React.Component {
                   throughout world.
                 </h3>
                 <h3 className={classes.subtitleDark}>By Phone</h3>
-                <h3 className={classes.descriptionDark}>+40 747937044</h3>
+                <h3 className={classes.descriptionDark}>+40 747 937 044</h3>
                 <h3 className={classes.subtitleDark}>By Email</h3>
                 <h3 className={classes.descriptionDark}>info@assistika.com</h3>
                 <h3 className={classes.subtitleDark}>Come visit</h3>

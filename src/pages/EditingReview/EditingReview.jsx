@@ -40,7 +40,7 @@ class EditingReview extends React.Component {
         <Parallax bColor="#46aa54">
           <div style={{ paddingTop: "20px" }} className={classes.container}>
             <div className={classes.brand}>
-              <h1 className={classes.title}>Editing and reviewing</h1>
+              <h1 className="titleResponsive">Editing and reviewing</h1>
               <div className={classes.space20}></div>
               <h3 className={classes.subtitle}>
                 We rewrite content and improve the layout of documents and
@@ -53,7 +53,7 @@ class EditingReview extends React.Component {
             </div>
             <div className={classes.imag}>
               <img
-                style={{ width: "700px", float: "right" }}
+                className="serviceImage"
                 src={require("assets/img/editing.png")}
                 alt=""
               />

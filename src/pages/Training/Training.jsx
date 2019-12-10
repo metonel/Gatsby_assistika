@@ -37,7 +37,10 @@ class Training extends React.Component {
           {...rest}
         />
 
-        <Parallax bColor="#ffb852">
+        <Parallax
+          style={{ paddingTop: "70px", paddingBottom: "30px" }}
+          bColor="#ffb852"
+        >
           <div className={classes.container}>
             <div className={classes.brand}>
               <h1 className="titleResponsive">TRAINING AND CONSULTING</h1>
@@ -53,7 +56,7 @@ class Training extends React.Component {
             </div>
             <div className={classes.imag}>
               <img
-                style={{ width: "700px", float: "right" }}
+                className="serviceImage"
                 src={require("assets/img/training.png")}
                 alt=""
               />

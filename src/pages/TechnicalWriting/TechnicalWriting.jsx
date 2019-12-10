@@ -55,7 +55,7 @@ class TechnicalWriting extends React.Component {
             {/* <img src="assets/img/tWriting.png" alt="Avatar" style={{width:"200px"}}></img> */}
             <div className={classes.imag}>
               <img
-                style={{ width: "700px", float: "right" }}
+                className="serviceImage"
                 src={require("assets/img/tWriting.png")}
                 alt=""
               />
