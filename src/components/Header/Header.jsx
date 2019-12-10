@@ -83,12 +83,16 @@ class Header extends React.Component {
     const brandComponent = (
       <div>
         <div className="logo">
-        <Link to="/">
-          <img style={{height: "45px"}} src={require("assets/img/aLogo.svg")} alt="" />
+          <Link to="/">
+            <img
+              style={{ height: "45px" }}
+              src={require("assets/img/aLogo.svg")}
+              alt=""
+            />
           </Link>
         </div>
         <div className="subtext">
-          <Link to="/">The Technical Assistance agency</Link>
+          <Link to="/">Outsourced technical writing</Link>
         </div>
       </div>
     )
@@ -128,7 +132,7 @@ class Header extends React.Component {
             }}
             onClose={this.handleDrawerToggle}
           >
-            <div className={classes.appResponsive, "white"}>
+            <div className={(classes.appResponsive, "white")}>
               {leftLinks}
               {rightLinks}
             </div>
