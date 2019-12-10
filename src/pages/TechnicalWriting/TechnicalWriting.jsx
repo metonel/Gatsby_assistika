@@ -8,6 +8,7 @@ import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
 import Parallax from "components/Parallax/Parallax.jsx"
+import { Spring, config } from "react-spring/renderprops"
 
 import editingReviewStyle from "assets/jss/material-kit-react/views/editingReview"
 
@@ -54,15 +55,23 @@ class TechnicalWriting extends React.Component {
             <h3 className={classes.subtitle}>
               We deliver great documentation on time, and within budget.
             </h3>
-            {/* </div> */}
-            {/* <img src="assets/img/tWriting.png" alt="Avatar" style={{width:"200px"}}></img> */}
-            <div className={classes.imag}>
-              <img
-                className="serviceImage"
-                src={require("assets/img/tWriting.png")}
-                alt=""
-              />
-            </div>
+
+            <Spring
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+              delay={200}
+              config={{ duration: 1000 }}
+            >
+              {props => (
+                <div style={props} className={classes.imag}>
+                  <img
+                    className="serviceImage"
+                    src={require("assets/img/tWriting.png")}
+                    alt=""
+                  />
+                </div>
+              )}
+            </Spring>
             <div className={classes.scrollDown}>
               <a class="linkScroll" href="#goTo">
                 <img
