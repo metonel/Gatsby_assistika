@@ -75,7 +75,10 @@ class Components extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/bg4.jpg")}>
+        <Parallax
+          style={{ paddingTop: "70px" }}
+          image={require("assets/img/bg4.jpg")}
+        >
           <div className={classes.container}>
             <div className={classes.brand}>
               <h1 className={classes.title}>
