@@ -36,10 +36,10 @@ function HeaderLinks({ ...props }) {
           // buttonIcon={Apps}
           dropdownList={[
             <Link to="/technical-writing" className={classes.dropdownLink}>
-              Technical Writing
+              Technical writing
             </Link>,
             <Link to="/editing-review" className={classes.dropdownLink}>
-              Editing and Review
+              Editing and review
             </Link>,
             <Link to="/adopt" className={classes.dropdownLink}>
               Adopt a technical writer from us

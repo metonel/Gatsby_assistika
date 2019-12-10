@@ -93,7 +93,7 @@ class Adopt extends React.Component {
                   </h2>
                 )}
               </Spring>
-              <Spring
+              {/* <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
                 delay={1000}
@@ -105,7 +105,7 @@ class Adopt extends React.Component {
                     skills for your business.
                   </h3>
                 )}
-              </Spring>
+              </Spring> */}
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
@@ -213,7 +213,7 @@ class Adopt extends React.Component {
               <div className={classes.space20}></div>
             </GridItem>
           </GridContainer>
-          <h2 className={classes.subtitleDark}>OUR OUTSTAFFING PROCESS</h2>
+          {/* <h2 className={classes.subtitleDark}>OUR OUTSTAFFING PROCESS</h2> */}
         </div>
 
         <Footer />

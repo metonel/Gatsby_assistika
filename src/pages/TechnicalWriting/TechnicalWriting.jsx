@@ -9,6 +9,7 @@ import GridItem from "components/Grid/GridItem.jsx"
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
 import Parallax from "components/Parallax/Parallax.jsx"
 import { Spring, config } from "react-spring/renderprops"
+import VisibilitySensor from "react-visibility-sensor"
 
 import editingReviewStyle from "assets/jss/material-kit-react/views/editingReview"
 
@@ -48,7 +49,7 @@ class TechnicalWriting extends React.Component {
             {/* <div className={classes.brand}> */}
             <h1 className="titleResponsive">Technical Writing</h1>
             <div className={classes.space20}></div>
-            <h3 className={classes.subtitle}>
+            <h3 style={{ maxWidth: "55vw" }} className={classes.subtitle}>
               Outsource the development and maintenance of your technical
               documentation to us.
             </h3>
@@ -89,63 +90,204 @@ class TechnicalWriting extends React.Component {
           <div className={classes.space20}></div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
-              <h2 className={classes.subtitleDark}>
-                Our expert technical authors develop information that is easy to
-                find, read and understand.
-              </h2>
-              <h3 className={classes.descriptionDark}>
-                Our expert technical authors develop information that is easy to
-                find, read and understand.
-              </h3>
-              <h3 className={classes.descriptionDark}>
-                We create documentation that:
-              </h3>
-              <ul className={classes.descriptionDark}>
-                <li>Explains your product functionality</li>
-                <li>Markets your product</li>
-                <li>
-                  Reduces helpdesk calls by answering all your customers'
-                  questions
-                </li>
-              </ul>
+              <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={500}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                      transform: isVisible
+                        ? "translateX(0)"
+                        : "translateX(50px)",
+                    }}
+                  >
+                    {props => (
+                      <h2 style={props} className={classes.subtitleDark}>
+                        {" "}
+                        Our expert technical authors develop information that is
+                        easy to find, read and understand.
+                      </h2>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={500}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                    }}
+                  >
+                    {props => (
+                      <h3 style={props} className={classes.descriptionDark}>
+                        Our expert technical authors develop information that is
+                        easy to find, read and understand.
+                      </h3>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={500}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                    }}
+                  >
+                    {props => (
+                      <h3 style={props} className={classes.descriptionDark}>
+                        We create documentation that:
+                      </h3>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={500}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                    }}
+                  >
+                    {props => (
+                      <ul style={props} className={classes.descriptionDark}>
+                        <li>Explains your product functionality</li>
+                        <li>Markets your product</li>
+                        <li>
+                          Reduces helpdesk calls by answering all your
+                          customers' questions
+                        </li>
+                      </ul>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
             </GridItem>
             <GridItem xs={12} sm={12} md={6} lg={6}>
-              <h2 className={classes.subtitleDark}>
-                Documentation deliverables
-              </h2>
-              <h2 className={classes.descriptionDark}>We're the best at:</h2>
-              <ul className={classes.descriptionDark}>
-                <li>Web-based online help systems</li>
-                <li>Print-based user guides</li>
-                <li>API documentation</li>
-                <li>Editing & reviewing</li>
-                <li>UX UI review</li>
-                <li>Tutorials & walkthroughs</li>
-                <li>Policy, compliance & audit documents</li>
-                <li>Resume writing</li>
-                <li>Marketing materials</li>
-              </ul>
+              <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={500}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                      transform: isVisible
+                        ? "translateX(0)"
+                        : "translateX(50px)",
+                    }}
+                  >
+                    {props => (
+                      <h2 style={props} className={classes.subtitleDark}>
+                        {" "}
+                        Documentation deliverables
+                      </h2>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={500}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                    }}
+                  >
+                    {props => (
+                      <h3 style={props} className={classes.descriptionDark}>
+                        We're the best at:
+                      </h3>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={500}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                    }}
+                  >
+                    {props => (
+                      <ul style={props} className={classes.descriptionDark}>
+                        <li>Web-based online help systems</li>
+                        <li>Print-based user guides</li>
+                        <li>API documentation</li>
+                        <li>Editing & reviewing</li>
+                        <li>UX UI review</li>
+                        <li>Tutorials & walkthroughs</li>
+                        <li>Policy, compliance & audit documents</li>
+                        <li>Resume writing</li>
+                        <li>Marketing materials</li>
+                      </ul>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
             </GridItem>
           </GridContainer>
 
           <div className={classes.space20}></div>
 
-          <h2
-            className="wow fadeInUp"
-            data-wow-duration="1.5s"
-            className={classes.subtitleDark}
-          >
-            REDUCE YOUR TRANSLATION COSTS
-          </h2>
+          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible ? "translateX(0)" : "translateX(50px)",
+                }}
+              >
+                {props => (
+                  <h2 style={props} className={classes.subtitleDark}>
+                    {" "}
+                    REDUCE YOUR TRANSLATION COSTS
+                  </h2>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
 
-          <h2 className={classes.descriptionDark}>
-            Will your content be translated into multiple languages? Here's how
-            we can reduce your translation costs:
-          </h2>
-          <ul className={classes.descriptionDark}>
-            <li>Use simplified language that is easy to translate</li>
-            <li>Edit content translated from other languages</li>
-          </ul>
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.descriptionDark}>
+                    Will your content be translated into multiple languages?
+                    Here's how we can reduce your translation costs:
+                  </h3>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
+
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                }}
+              >
+                {props => (
+                  <ul style={props} className={classes.descriptionDark}>
+                    <li>Use simplified language that is easy to translate</li>
+                    <li>Edit content translated from other languages</li>
+                  </ul>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
           <div className={classes.space20}></div>
 
           {/* <h2 className={classes.subtitleDark}>

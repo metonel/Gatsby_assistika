@@ -219,7 +219,7 @@ class EditingReview extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    SHOW YOUR COMMIITMENT TO CLEAR COMMUNICATION
+                    SHOW YOUR COMMITMENT TO CLEAR COMMUNICATION
                   </h2>
                 )}
               </Spring>
@@ -235,7 +235,7 @@ class EditingReview extends React.Component {
               >
                 {props => (
                   <h3 style={props} className={classes.descriptionDark}>
-                    If your organisation is making an effort to communicate your
+                    If your organization is making an effort to communicate your
                     message clearly, why not tell people?
                   </h3>
                 )}
@@ -332,7 +332,7 @@ class EditingReview extends React.Component {
                     If your document or website is up to our standards, we will
                     send you our CLEAR LANGUAGE approval. You can use the Clear
                     LANGUAGE logo on your website or documents to show the world
-                    that you are commited to get your message across to your
+                    that you are committed to get your message across to your
                     audience.
                   </h3>
                 )}

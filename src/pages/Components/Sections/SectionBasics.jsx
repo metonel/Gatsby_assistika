@@ -1,28 +1,14 @@
 import React from "react"
-import ReactDOM from "react-dom"
-// plugin that creates slider
-import nouislider from "nouislider"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
-import InputAdornment from "@material-ui/core/InputAdornment"
-import FormControlLabel from "@material-ui/core/FormControlLabel"
-import Checkbox from "@material-ui/core/Checkbox"
-import Radio from "@material-ui/core/Radio"
-import Switch from "@material-ui/core/Switch"
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite"
-import People from "@material-ui/icons/People"
-import Check from "@material-ui/icons/Check"
-import FiberManualRecord from "@material-ui/icons/FiberManualRecord"
-// React icons
-import { FaUsers } from "react-icons/fa"
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import { Link } from "gatsby"
+import { Spring, config } from "react-spring/renderprops"
+import VisibilitySensor from "react-visibility-sensor"
 
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx"
-import $ from "jquery"
 
 class SectionBasics extends React.Component {
   constructor(props) {
@@ -284,8 +270,9 @@ class SectionBasics extends React.Component {
         <div className={classes.space70} />
         <div
           style={{
-            padding: "1.1em 15px",
-            backgroundColor: "#e5e5e5",
+            // padding: "1.1em 15px",
+            position: "relative",
+            backgroundColor: "#F2F2F2",
             height: "100vh",
           }}
         >
@@ -298,6 +285,33 @@ class SectionBasics extends React.Component {
             But we're not into Shakespeare. We love the poetry of turning
             complex concepts into ingeniously simple information.
           </h4>
+
+          <div className={classes.space20} />
+          <div className={classes.space20} />
+          <div className={classes.space20} />
+          <div className={classes.space20} />
+
+          <VisibilitySensor partialVisibility offset={{ left: -100 }}>
+            {({ isVisible }) => (
+              <Spring
+                delay={1000}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible ? "translateX(0)" : "translateX(100px)",
+                }}
+              >
+                {props => (
+                  <div style={props}>
+                    <img
+                      className="geekImage"
+                      src={require("assets/img/team.png")}
+                      alt=""
+                    />
+                  </div>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
         </div>
         <div className={classes.space70} />
         <div style={{ padding: "1.1em 15px", height: "100vh" }}>

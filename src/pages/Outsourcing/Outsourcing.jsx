@@ -199,7 +199,7 @@ class Adopt extends React.Component {
               <div className={classes.space20}></div>
             </GridItem>
           </GridContainer>
-          <h2 className={classes.subtitleDark}>OUR OUTSOURCING PROCESS</h2>
+          {/* <h2 className={classes.subtitleDark}>OUR OUTSOURCING PROCESS</h2> */}
 
           <div className={classes.space30}></div>
         </div>

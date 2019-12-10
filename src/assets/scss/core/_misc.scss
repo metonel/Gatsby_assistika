@@ -141,6 +141,7 @@ form {
   }
 }
 .subtext {
+  padding-left: 8px;
   font-size: 12px;
 }
 .linkScroll {
@@ -288,6 +289,18 @@ $animate: all 0.2s ease-in-out;
 .serviceImage {
   width: 700px;
   float: right;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.geekImage {
+  // padding: 9vh, 0, 0, 40vw;
+  // padding-left: 10vw;
+  // position: absolute;
+  width: 60vw;
+  // float: right;
+  // bottom: 0;
+  // right: 0;
   @media (max-width: 767px) {
     display: none;
   }
