@@ -15,6 +15,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel"
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
 import SectionBasics from "./Sections/SectionBasics.jsx"
+import { Spring, config } from "react-spring/renderprops"
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx"
 
@@ -81,67 +82,113 @@ class Components extends React.Component {
         >
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className={classes.title}>
-                Expert technical writers? Ready
-                {/* <span> */}
-                <FormControlLabel
-                  style={{
-                    padding: "0 0 0 12px",
-                    position: "relative",
-                    top: "1.1em",
-                  }}
-                  control={
-                    <Switch
-                      color="primary"
-                      checked={this.state.checkedB}
-                      onChange={this.handleChange("checkedB")}
-                      value="checkedB"
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                // delay={200}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <h1 style={props} className={classes.title}>
+                    Expert technical writers? Ready
+                    {/* <span> */}
+                    <FormControlLabel
+                      style={{
+                        padding: "0 0 0 12px",
+                        position: "relative",
+                        top: "1.1em",
+                      }}
+                      control={
+                        <Switch
+                          color="primary"
+                          checked={this.state.checkedB}
+                          onChange={this.handleChange("checkedB")}
+                          value="checkedB"
+                          classes={{
+                            switchBase: classes.switchBase,
+                            checked: classes.switchChecked,
+                            icon: classes.switchIcon,
+                            iconChecked: classes.switchIconChecked,
+                            bar: classes.switchBar,
+                          }}
+                        />
+                      }
                       classes={{
-                        switchBase: classes.switchBase,
-                        checked: classes.switchChecked,
-                        icon: classes.switchIcon,
-                        iconChecked: classes.switchIconChecked,
-                        bar: classes.switchBar,
+                        label: classes.label,
                       }}
                     />
-                  }
-                  classes={{
-                    label: classes.label,
-                  }}
-                />
-              </h1>
-              <h2 className={classes.subtitle}>
-                Outsource the development and maintenance of your technical
-                content to us.
-              </h2>
-              <h3 className={classes.subtitle}>
-                We give you the right technical writers, with the right skills
-                for your business. Technical writers who grasp your technology
-                quickly and explain it more clearly than your engineers can.
-              </h3>
-              <div id="examples2">
-                <div class="example2">
-                  <Link to="/outstaffing">
-                    <span class="hover2 hover-12">Outstaffing</span>
-                  </Link>
-                </div>
-                <div class="example2">
-                  <Link to="/outsourcing">
-                    <span class="hover2 hover-12">Outsourcing</span>
-                  </Link>
-                </div>
-              </div>
+                  </h1>
+                )}
+              </Spring>
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                delay={700}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <h2 style={props} className={classes.subtitle}>
+                    Outsource the development and maintenance of your technical
+                    content to us.
+                  </h2>
+                )}
+              </Spring>
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                delay={1300}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.subtitle}>
+                    We give you the right technical writers, with the right
+                    skills for your business. Technical writers who grasp your
+                    technology quickly and explain it more clearly than your
+                    engineers can.
+                  </h3>
+                )}
+              </Spring>
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                delay={1800}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <div style={props} id="examples2">
+                    <div class="example2">
+                      <Link to="/outstaffing">
+                        <span class="hover2 hover-12">Outstaffing</span>
+                      </Link>
+                    </div>
+                    <div class="example2">
+                      <Link to="/outsourcing">
+                        <span class="hover2 hover-12">Outsourcing</span>
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </Spring>
             </div>
-            <div className={classes.scrollDown}>
-              <a class="linkScroll" href="#goTo">
-                <img
-                  class="iConDown"
-                  src={require("assets/img/down.svg")}
-                  alt=""
-                />
-                Scroll to find out more
-              </a>
-            </div>
+            <Spring
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+              delay={2300}
+              config={{ duration: 500 }}
+            >
+              {props => (
+                <div style={props} className={classes.scrollDown}>
+                  <a class="linkScroll" href="#goTo">
+                    <img
+                      class="iConDown"
+                      src={require("assets/img/down.svg")}
+                      alt=""
+                    />
+                    Scroll to find out more
+                  </a>
+                </div>
+              )}
+            </Spring>
           </div>
         </Parallax>
 

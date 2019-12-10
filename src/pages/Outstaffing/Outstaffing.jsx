@@ -9,6 +9,7 @@ import Parallax from "components/Parallax/Parallax.jsx"
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import { Link } from "gatsby"
+import { Spring, config } from "react-spring/renderprops"
 
 import editingReviewStyle from "assets/jss/material-kit-react/views/editingReview"
 
@@ -65,32 +66,81 @@ class Adopt extends React.Component {
         >
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className="titleResponsive">OUTSTAFFING</h1>
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                // delay={200}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <h1 style={props} className="titleResponsive">
+                    OUTSTAFFING
+                  </h1>
+                )}
+              </Spring>
               <div className={classes.space20}></div>
-              <h2 className={classes.subtitle}>
-                Assistika is the perfect solution when hiring an in-house
-                technical writer is not right option for your company.
-              </h2>
-              <h3 className={classes.description}>
-                We give you the right technical writers, with the right skills
-                for your business.
-              </h3>
-              <h3 className={classes.description}>
-                Technical writers who grasp your technology quickly and explain
-                it more clearly than your engineers can.
-              </h3>
+
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                delay={500}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <h2 style={props} className={classes.subtitle}>
+                    Assistika is the perfect solution when hiring an in-house
+                    technical writer is not right option for your company.
+                  </h2>
+                )}
+              </Spring>
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                delay={1000}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.description}>
+                    We give you the right technical writers, with the right
+                    skills for your business.
+                  </h3>
+                )}
+              </Spring>
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                delay={1500}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.description}>
+                    Technical writers who grasp your technology quickly and
+                    explain it more clearly than your engineers can.
+                  </h3>
+                )}
+              </Spring>
               <div style={{ padding: "0 40px 0 40px" }}></div>
             </div>
-            <div className={classes.scrollDown}>
-              <a class="linkScroll" href="#goTo">
-                <img
-                  class="iConDown"
-                  src={require("assets/img/down.svg")}
-                  alt=""
-                />
-                Scroll to find out more
-              </a>
-            </div>
+
+            <Spring
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+              delay={2000}
+              config={{ duration: 500 }}
+            >
+              {props => (
+                <div style={props} className={classes.scrollDown}>
+                  <a class="linkScroll" href="#goTo">
+                    <img
+                      class="iConDown"
+                      src={require("assets/img/down.svg")}
+                      alt=""
+                    />
+                    Scroll to find out more
+                  </a>
+                </div>
+              )}
+            </Spring>
           </div>
         </Parallax>
 
