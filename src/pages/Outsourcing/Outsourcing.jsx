@@ -43,7 +43,7 @@ class Adopt extends React.Component {
         <Parallax bColor="#46aa54">
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className={classes.title}>OUTSOURCING</h1>
+              <h1 className="titleResponsive">OUTSOURCING</h1>
               <div className={classes.space20}></div>
               <h2 className={classes.subtitle}>
                 Assistika helps your company with all your technical writing
@@ -71,7 +71,7 @@ class Adopt extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <Link to="/technical-writing" className={classes.linkWrapper}>
-                <div className={classes.card1}>
+                <div className="cardItem">
                   <img
                     className={classes.iconPlain}
                     src={require("assets/img/Edit.svg")}
@@ -90,10 +90,11 @@ class Adopt extends React.Component {
                   </h4>
                 </div>
               </Link>
+              <div className={classes.space20}></div>
             </GridItem>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <Link to="/editing-review" className={classes.linkWrapper}>
-                <div className={classes.card1}>
+                <div className="cardItem">
                   <img
                     className={classes.iconPlain}
                     src={require("assets/img/EditRev.svg")}
@@ -119,6 +120,7 @@ class Adopt extends React.Component {
                   </ul>
                 </div>
               </Link>
+              <div className={classes.space20}></div>
             </GridItem>
           </GridContainer>
           <h2 className={classes.subtitleDark}>OUR OUTSOURCING PROCESS</h2>

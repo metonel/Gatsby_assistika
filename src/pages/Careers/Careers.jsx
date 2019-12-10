@@ -42,7 +42,7 @@ class Careers extends React.Component {
         <Parallax bColor="#27afda">
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className={classes.title}>
+              <h1 className="titleResponsive">
                 WANT IN? HERE ARE THE JOBS OPEN NOW
               </h1>
               <div className={classes.space20}></div>

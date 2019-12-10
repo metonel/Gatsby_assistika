@@ -42,7 +42,7 @@ class TechnicalWriting extends React.Component {
         <Parallax bColor="#2b7fbe">
           <div className={classes.container}>
             {/* <div className={classes.brand}> */}
-            <h1 className={classes.title}>Technical Writing</h1>
+            <h1 className="titleResponsive">Technical Writing</h1>
             <div className={classes.space20}></div>
             <h3 className={classes.subtitle}>
               Outsource the development and maintenance of your technical

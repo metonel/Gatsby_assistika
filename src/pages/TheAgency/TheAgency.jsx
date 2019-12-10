@@ -26,12 +26,17 @@ class TheAgency extends React.Component {
           {...rest}
         />
 
-        <Parallax image={require("assets/img/TheAgency.jpg")}>
+        <Parallax
+          style={{ padding: "75px 0 15px 0" }}
+          image={require("assets/img/TheAgency.jpg")}
+        >
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 style={{ textAlign: "center" }}className={classes.title}>The Agency</h1>              
-          <div className={classes.space20}></div>
-          <div className={classes.space20}></div>
+              <h1 style={{ textAlign: "center" }} className="titleResponsive">
+                The Agency
+              </h1>
+              <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
               <h2 className={classes.subtitle}>The Agency</h2>
               <h3 className={classes.description}>
                 Assistika provides a range of documentation services for a fixed
@@ -39,14 +44,14 @@ class TheAgency extends React.Component {
                 skills for your business. We take responsibility for delivering
                 the project on deadline and within budget.
               </h3>
-          <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
               <h2 className={classes.subtitle}>Services</h2>
               <h3 className={classes.description}>
                 Assistika helps companies with all their technical writing needs
                 so they can focus on their development instead. We guarantee
                 world class documentation fit for your world-class products.
               </h3>
-          <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
               <h2 className={classes.subtitle}>
                 Who is your geek writers squad?
               </h2>

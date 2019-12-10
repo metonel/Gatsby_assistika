@@ -43,7 +43,7 @@ class Adopt extends React.Component {
         <Parallax image={require("assets/img/TheAgency.jpg")}>
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className={classes.title}>OUTSTAFFING</h1>
+              <h1 className="titleResponsive">OUTSTAFFING</h1>
               <div className={classes.space20}></div>
               <h2 className={classes.subtitle}>
                 Assistika is the perfect solution when hiring an in-house
@@ -76,7 +76,7 @@ class Adopt extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <Link to="/adopt" className={classes.linkWrapper}>
-                <div className={classes.card1}>
+                <div className="cardItem">
                   <img
                     className={classes.iconPlain}
                     src={require("assets/img/Adopt.svg")}
@@ -101,10 +101,11 @@ class Adopt extends React.Component {
                   </h4>
                 </div>
               </Link>
+              <div className={classes.space20}></div>
             </GridItem>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <Link to="/training" className={classes.linkWrapper}>
-                <div className={classes.card1}>
+                <div className="cardItem">
                   <img
                     className={classes.iconPlain}
                     src={require("assets/img/Training.svg")}
@@ -121,6 +122,7 @@ class Adopt extends React.Component {
                   </h4>
                 </div>
               </Link>
+              <div className={classes.space20}></div>
             </GridItem>
           </GridContainer>
           <h2 className={classes.subtitleDark}>OUR OUTSTAFFING PROCESS</h2>

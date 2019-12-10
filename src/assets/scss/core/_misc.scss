@@ -40,6 +40,10 @@ h6 {
 h1 {
   font-size: 3.3125rem;
   line-height: 1.15em;
+
+  @media (max-width: 767px) {
+    font-size: 2.8rem;
+  }
 }
 h2 {
   font-size: 2.25rem;
@@ -144,6 +148,19 @@ form {
   &:hover {
     color: darken(white, 15%);
   }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.cardItem {
+  min-height: 480px;
+  padding: 2.9em 55px 4.5em;
+  color: black;
+  border: solid 1px #ededed;
+  border-radius: 5px;
+  @media (max-width: 767px) {
+    padding: 10px;
+  }
 }
 $animate: all 0.2s ease-in-out;
 #examples {
@@ -197,6 +214,17 @@ $animate: all 0.2s ease-in-out;
 .hireUsButton {
   border-radius: 24px;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.titleResponsive {
+  padding-left: 20px;
+  color: white;
+  font-size: 3.8rem;
+  font-weight: 450;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 767px) {
+    font-size: 3.1rem;
+  }
 }
 
 .loading-dots {

@@ -40,7 +40,7 @@ class Training extends React.Component {
         <Parallax bColor="#ffb852">
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className={classes.title}>TRAINING AND CONSULTING</h1>
+              <h1 className="titleResponsive">TRAINING AND CONSULTING</h1>
               <div className={classes.space20}></div>
               <h3 className={classes.subtitle}>
                 We offer training to give you the know-how and skills to write
@@ -52,12 +52,12 @@ class Training extends React.Component {
               </h3>
             </div>
             <div className={classes.imag}>
-                <img
-                  style={{width:"700px", float: "right"}}
-                  src={require("assets/img/training.png")}
-                  alt=""
-                />
-              </div>
+              <img
+                style={{ width: "700px", float: "right" }}
+                src={require("assets/img/training.png")}
+                alt=""
+              />
+            </div>
 
             <div className={classes.scrollDown}>
               <a class="linkScroll" href="#goTo">

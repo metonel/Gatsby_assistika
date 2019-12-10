@@ -39,10 +39,13 @@ class Industries extends React.Component {
           {...rest}
         />
 
-        <Parallax image={require("assets/img/Industries.jpg")}>
+        <Parallax
+          style={{ paddingTop: "70px" }}
+          image={require("assets/img/Industries.jpg")}
+        >
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className={classes.title}>INDUSTRIES WE SERVE</h1>
+              <h1 className="titleResponsive">INDUSTRIES WE SERVE</h1>
               <div className={classes.space20}></div>
               <h3 className={classes.subtitle}>
                 We offer professional writing services for technology, life

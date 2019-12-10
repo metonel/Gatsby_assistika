@@ -39,10 +39,10 @@ class Adopt extends React.Component {
           {...rest}
         />
 
-        <Parallax bColor="#27afda">
+        <Parallax style={{ paddingTop: "40px" }} bColor="#27afda">
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className={classes.title}>
+              <h1 className="titleResponsive">
                 ADOPT A TECHNICAL WRITER FROM US
               </h1>
               <div className={classes.space20}></div>
@@ -54,14 +54,14 @@ class Adopt extends React.Component {
                 You keep them for as long as you need their help with
                 documenting your product or processes.
               </h3>
-            </div>            
+            </div>
             <div className={classes.imag}>
-                <img
-                  style={{width:"700px", float: "right"}}
-                  src={require("assets/img/adopt.png")}
-                  alt=""
-                />
-              </div>
+              <img
+                style={{ width: "700px", float: "right" }}
+                src={require("assets/img/adopt.png")}
+                alt=""
+              />
+            </div>
             <div className={classes.scrollDown}>
               <a class="linkScroll" href="#goTo">
                 <img

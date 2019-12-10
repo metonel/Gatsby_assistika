@@ -52,19 +52,21 @@ class DocumentationDeliverables extends React.Component {
       <div>
         <Header
           color="transparent"
-          brand="Assistika"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
-            height: 200,
+            height: 1,
             color: "white",
           }}
           {...rest}
         />
 
-        <Parallax image={require("assets/img/deliverables.jpg")}>
+        <Parallax
+          style={{ paddingTop: "20px" }}
+          image={require("assets/img/deliverables.jpg")}
+        >
           <div className={classes.container}>
-            <h1 className={classes.title}>Documentation deliverables</h1>
+            <h1 className="titleResponsive">Documentation deliverables</h1>
             <div className={classes.space20}></div>
             <h2 className={classes.subtitle}>
               Assistika helps your company with all your technical writing needs

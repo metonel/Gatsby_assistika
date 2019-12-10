@@ -45,7 +45,7 @@ class HireUs extends React.Component {
         <Parallax bColor="#2b7fbe">
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className={classes.title}>Get started with Assistika</h1>
+              <h1 className="titleResponsive">Get started with Assistika</h1>
               <div className={classes.space20}></div>
               <h3 className={classes.description}>
                 Let's talk! Abour how we can assist you with making your project
@@ -59,77 +59,84 @@ class HireUs extends React.Component {
 
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
+            </div>
 
-              <div style={{ padding: "0 2vw 0 2vw" }}>
-                <GridContainer>
-                  <GridItem xs={12} sm={12} md={7} lg={7}>
-                    <h3 className={classes.subtitle}>Contact us</h3>
-                    <h3 className={classes.description}>
-                      We manage testing, documentation and localization projects
-                      throughout world.
-                    </h3>
-                    <h3 className={classes.subtitle}>By Phone</h3>
-                    <h3 className={classes.description}>+40 747937044</h3>
-                    <h3 className={classes.subtitle}>By Email</h3>
-                    <h3 className={classes.description}>info@assistika.com</h3>
-                    <h3 className={classes.subtitle}>Come visit</h3>
-                    <h3 className={classes.description}>
-                      Cluj-Napoca, Romania
-                    </h3>
-                    <h3 className={classes.description}>
-                      Str. Zefirului, nr. 12A
-                    </h3>
-                    <h3 className={classes.description}>400221</h3>
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={5} lg={4}>
-                    <h3 style={{ padding: "0" }} className={classes.subtitle}>
-                      Or fill in the form
-                    </h3>
-                    <CustomInput
-                      labelText="Your name"
-                      id="success"
-                      white
-                      formControlProps={{
-                        fullWidth: true,
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Email"
-                      id="success"
-                      white
-                      formControlProps={{
-                        fullWidth: true,
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Phone number"
-                      id="success"
-                      white
-                      formControlProps={{
-                        fullWidth: true,
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Tell us about your project"
-                      id="success"
-                      white
-                      formControlProps={{
-                        fullWidth: true,
-                      }}
-                    />
-
-                    <div className={classes.space20}></div>
-                    <Button style={{ textTransform: "none" }} color="twitter">
-                      <i className={"fab fa-twitter"} /> Contact us!
-                    </Button>
-                  </GridItem>
-                </GridContainer>
-              </div>
+            <div className={classes.scrollDown}>
+              <a class="linkScroll" href="#goTo">
+                <img
+                  class="iConDown"
+                  src={require("assets/img/down.svg")}
+                  alt=""
+                />
+                Scroll down for the contact details
+              </a>
             </div>
           </div>
         </Parallax>
 
-        <div id="goTo" className={classes.main}></div>
+        <div id="goTo" className={classes.main}>
+          <div style={{ padding: "0 2vw 0 2vw" }}>
+            <GridContainer>
+              <GridItem xs={12} sm={12} md={7} lg={7}>
+                <h3 className={classes.subtitleDark}>Contact us</h3>
+                <h3 className={classes.descriptionDark}>
+                  We manage testing, documentation and localization projects
+                  throughout world.
+                </h3>
+                <h3 className={classes.subtitleDark}>By Phone</h3>
+                <h3 className={classes.descriptionDark}>+40 747937044</h3>
+                <h3 className={classes.subtitleDark}>By Email</h3>
+                <h3 className={classes.descriptionDark}>info@assistika.com</h3>
+                <h3 className={classes.subtitleDark}>Come visit</h3>
+                <h3 className={classes.descriptionDark}>
+                  Cluj-Napoca, Romania
+                </h3>
+                <h3 className={classes.descriptionDark}>
+                  Str. Zefirului, nr. 12A
+                </h3>
+                <h3 className={classes.descriptionDark}>400221</h3>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={5} lg={4}>
+                <h3 style={{ padding: "0" }} className={classes.subtitleDark}>
+                  Or fill in the form
+                </h3>
+                <CustomInput
+                  labelText="Your name"
+                  id="success"
+                  formControlProps={{
+                    fullWidth: true,
+                  }}
+                />
+                <CustomInput
+                  labelText="Email"
+                  id="success"
+                  formControlProps={{
+                    fullWidth: true,
+                  }}
+                />
+                <CustomInput
+                  labelText="Phone number"
+                  id="success"
+                  formControlProps={{
+                    fullWidth: true,
+                  }}
+                />
+                <CustomInput
+                  labelText="Tell us about your project"
+                  id="success"
+                  formControlProps={{
+                    fullWidth: true,
+                  }}
+                />
+
+                <div className={classes.space20}></div>
+                <Button style={{ textTransform: "none" }} color="twitter">
+                  <i className={"fab fa-twitter"} /> Contact us!
+                </Button>
+              </GridItem>
+            </GridContainer>
+          </div>
+        </div>
 
         <Footer />
       </div>

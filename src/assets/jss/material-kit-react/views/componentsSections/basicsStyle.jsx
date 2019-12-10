@@ -29,19 +29,6 @@ const basicsStyle = {
     height: "17px",
     color: "#FFFFFF",
   },
-  card1: {
-    minHeight: "480px",
-    padding: "2.9em 55px 4.5em",
-    color: "black",
-    border: "solid 1px #ededed",
-    borderRadius: "5px",
-  },
-  card2: {},
-  // linkWrapper: {
-  //   // float: "left",
-  //   // width: "50%",
-  //   padding: "1.1em 15px",
-  // },
   iconPlain: {
     width: "58.5px",
     height: "58.5px",

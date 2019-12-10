@@ -41,7 +41,7 @@ const editingReview = {
     // textAlign: "center",
     paddingLeft: "20px",
     color: "white",
-    fontSize: "3.8rem",
+    fontSize: "inherit",
     fontWeight: "450",
     position: "relative",
     zIndex: "1",

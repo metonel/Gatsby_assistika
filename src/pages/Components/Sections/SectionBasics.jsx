@@ -120,32 +120,31 @@ class SectionBasics extends React.Component {
           <div className="cards">
             <GridContainer>
               <GridItem xs={12} sm={12} md={6} lg={6}>
-                <div class="cardx">
-                  <Link to="/technical-writing" className={classes.linkWrapper}>
-                    <div className={classes.card1}>
-                      <img
-                        className={classes.iconPlain}
-                        src={require("assets/img/Edit.svg")}
-                        alt=""
-                      />
-                      <h2>Technical writing</h2>
-                      <h4>We document stuff like this</h4>
-                      <h4>
-                        IT, Marketing, Medical, Financial, Legal, Government,
-                        Scientific, Engineering.
-                      </h4>
-                      <h4>...and deliver it like this</h4>
-                      <h4>
-                        Online Help, User Guides and PDFs for printing,
-                        Tutorials, Walkthroughs, API Help.
-                      </h4>
-                    </div>
-                  </Link>
-                </div>
+                <Link to="/technical-writing" className={classes.linkWrapper}>
+                  <div className="cardItem">
+                    <img
+                      className={classes.iconPlain}
+                      src={require("assets/img/Edit.svg")}
+                      alt=""
+                    />
+                    <h2>Technical writing</h2>
+                    <h4>We document stuff like this</h4>
+                    <h4>
+                      IT, Marketing, Medical, Financial, Legal, Government,
+                      Scientific, Engineering.
+                    </h4>
+                    <h4>...and deliver it like this</h4>
+                    <h4>
+                      Online Help, User Guides and PDFs for printing, Tutorials,
+                      Walkthroughs, API Help.
+                    </h4>
+                  </div>
+                </Link>
+                <div className={classes.space20}></div>
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <Link to="/adopt" className={classes.linkWrapper}>
-                  <div className={classes.card1}>
+                  <div className="cardItem">
                     <img
                       className={classes.iconPlain}
                       src={require("assets/img/Adopt.svg")}
@@ -170,6 +169,7 @@ class SectionBasics extends React.Component {
                     </h4>
                   </div>
                 </Link>
+                <div className={classes.space20}></div>
               </GridItem>
             </GridContainer>
 
@@ -178,7 +178,7 @@ class SectionBasics extends React.Component {
             <GridContainer>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <Link to="/editing-review" className={classes.linkWrapper}>
-                  <div className={classes.card1}>
+                  <div className="cardItem">
                     <img
                       className={classes.iconPlain}
                       src={require("assets/img/EditRev.svg")}
@@ -204,10 +204,12 @@ class SectionBasics extends React.Component {
                     </ul>
                   </div>
                 </Link>
+
+                <div className={classes.space20}></div>
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <Link to="/training" className={classes.linkWrapper}>
-                  <div className={classes.card1}>
+                  <div className="cardItem">
                     <img
                       className={classes.iconPlain}
                       src={require("assets/img/Training.svg")}
@@ -225,6 +227,7 @@ class SectionBasics extends React.Component {
                   </div>
                 </Link>
               </GridItem>
+              <div className={classes.space20}></div>
             </GridContainer>
           </div>
         </div>

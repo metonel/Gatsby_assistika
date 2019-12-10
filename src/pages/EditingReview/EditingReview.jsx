@@ -38,7 +38,7 @@ class EditingReview extends React.Component {
         />
 
         <Parallax bColor="#46aa54">
-          <div className={classes.container}>
+          <div style={{ paddingTop: "20px" }} className={classes.container}>
             <div className={classes.brand}>
               <h1 className={classes.title}>Editing and reviewing</h1>
               <div className={classes.space20}></div>
@@ -51,13 +51,13 @@ class EditingReview extends React.Component {
                 messages.
               </h3>
             </div>
-              <div className={classes.imag}>
-                <img
-                  style={{width:"700px", float: "right"}}
-                  src={require("assets/img/editing.png")}
-                  alt=""
-                />
-              </div>
+            <div className={classes.imag}>
+              <img
+                style={{ width: "700px", float: "right" }}
+                src={require("assets/img/editing.png")}
+                alt=""
+              />
+            </div>
             <div className={classes.scrollDown}>
               <a class="linkScroll" href="#goTo">
                 <img
