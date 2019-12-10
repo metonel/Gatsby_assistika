@@ -37,8 +37,11 @@ class EditingReview extends React.Component {
           {...rest}
         />
 
-        <Parallax bColor="#46aa54">
-          <div style={{ paddingTop: "20px" }} className={classes.container}>
+        <Parallax
+          style={{ paddingTop: "70px", paddingBottom: "30px" }}
+          bColor="#46aa54"
+        >
+          <div className={classes.container}>
             <div className={classes.brand}>
               <h1 className="titleResponsive">Editing and reviewing</h1>
               <div className={classes.space20}></div>

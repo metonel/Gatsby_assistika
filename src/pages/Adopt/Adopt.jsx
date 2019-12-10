@@ -40,7 +40,7 @@ class Adopt extends React.Component {
         />
 
         <Parallax
-          style={{ paddingTop: "70px", paddingBottom: "30px" }}
+          style={{ paddingTop: "70px", paddingBottom: "80px" }}
           bColor="#27afda"
         >
           <div className={classes.container}>

@@ -40,7 +40,10 @@ class Adopt extends React.Component {
           {...rest}
         />
 
-        <Parallax style={{ paddingTop: "40px" }} bColor="#46aa54">
+        <Parallax
+          style={{ paddingTop: "70px", paddingBottom: "30px" }}
+          bColor="#46aa54"
+        >
           <div className={classes.container}>
             <div className={classes.brand}>
               <h1 className="titleResponsive">OUTSOURCING</h1>

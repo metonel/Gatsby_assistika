@@ -226,8 +226,8 @@ class SectionBasics extends React.Component {
                     </h4>
                   </div>
                 </Link>
+                <div className={classes.space20}></div>
               </GridItem>
-              <div className={classes.space20}></div>
             </GridContainer>
           </div>
         </div>

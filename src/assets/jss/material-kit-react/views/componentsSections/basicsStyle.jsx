@@ -16,7 +16,7 @@ const basicsStyle = {
     height: "50px",
     display: "block",
   },
-  space30: {
+  space20: {
     height: "20px",
     display: "block",
   },

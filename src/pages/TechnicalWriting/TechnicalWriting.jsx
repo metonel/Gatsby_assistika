@@ -39,7 +39,10 @@ class TechnicalWriting extends React.Component {
           {...rest}
         />
 
-        <Parallax bColor="#2b7fbe">
+        <Parallax
+          style={{ paddingTop: "70px", paddingBottom: "30px" }}
+          bColor="#2b7fbe"
+        >
           <div className={classes.container}>
             {/* <div className={classes.brand}> */}
             <h1 className="titleResponsive">Technical Writing</h1>

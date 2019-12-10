@@ -38,7 +38,7 @@ class Training extends React.Component {
         />
 
         <Parallax
-          style={{ paddingTop: "70px", paddingBottom: "30px" }}
+          style={{ paddingTop: "70px", paddingBottom: "80px" }}
           bColor="#ffb852"
         >
           <div className={classes.container}>

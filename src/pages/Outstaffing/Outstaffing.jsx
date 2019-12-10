@@ -40,7 +40,10 @@ class Adopt extends React.Component {
           {...rest}
         />
 
-        <Parallax image={require("assets/img/TheAgency.jpg")}>
+        <Parallax
+          style={{ paddingTop: "70px", paddingBottom: "30px" }}
+          image={require("assets/img/TheAgency.jpg")}
+        >
           <div className={classes.container}>
             <div className={classes.brand}>
               <h1 className="titleResponsive">OUTSTAFFING</h1>
