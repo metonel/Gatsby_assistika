@@ -11,6 +11,7 @@ import GridItem from "components/Grid/GridItem.jsx"
 
 import CustomInput from "components/CustomInput/CustomInput.jsx"
 import Button from "components/CustomButtons/Button.jsx"
+import { Spring, config } from "react-spring/renderprops"
 
 import editingReviewStyle from "assets/jss/material-kit-react/views/editingReview"
 
@@ -45,32 +46,69 @@ class HireUs extends React.Component {
         <Parallax bColor="#2b7fbe">
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className="titleResponsive">Get started with Assistika</h1>
+              <Spring
+                from={{ opacity: 0, transform: "translate3d(0,-60px,0)" }}
+                to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+                // delay={100}
+                config={{ duration: 800 }}
+              >
+                {props => (
+                  <h1 style={props} className="titleResponsive">
+                    Get started with Assistika
+                  </h1>
+                )}
+              </Spring>
               <div className={classes.space20}></div>
-              <h3 className={classes.description}>
-                Let's talk! Abour how we can assist you with making your project
-                as excellent it can be.
-              </h3>
-
-              <h3 className={classes.description}>
-                You keep them for as long as you need their help with
-                documenting your product or processes.
-              </h3>
+              <Spring
+                from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
+                to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+                delay={300}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.description}>
+                    Let's talk! Abour how we can assist you with making your
+                    project as excellent it can be.
+                  </h3>
+                )}
+              </Spring>
+              <Spring
+                from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
+                to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+                delay={600}
+                config={{ duration: 500 }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.description}>
+                    You keep them for as long as you need their help with
+                    documenting your product or processes.
+                  </h3>
+                )}
+              </Spring>
 
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
             </div>
 
-            <div className={classes.scrollDown}>
-              <a class="linkScroll" href="#goTo">
-                <img
-                  class="iConDown"
-                  src={require("assets/img/down.svg")}
-                  alt=""
-                />
-                Scroll down for the contact details
-              </a>
-            </div>
+            <Spring
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+              delay={2000}
+              config={{ duration: 500 }}
+            >
+              {props => (
+                <div style={props} className={classes.scrollDown}>
+                  <a class="linkScroll" href="#goTo">
+                    <img
+                      class="iConDown"
+                      src={require("assets/img/down.svg")}
+                      alt=""
+                    />
+                    Scroll to find out more
+                  </a>
+                </div>
+              )}
+            </Spring>
           </div>
         </Parallax>
 

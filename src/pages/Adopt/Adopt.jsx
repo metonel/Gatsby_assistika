@@ -75,16 +75,25 @@ class Adopt extends React.Component {
               )}
             </Spring>
 
-            <div className={classes.scrollDown}>
-              <a class="linkScroll" href="#goTo">
-                <img
-                  class="iConDown"
-                  src={require("assets/img/down.svg")}
-                  alt=""
-                />
-                Scroll to find out more
-              </a>
-            </div>
+            <Spring
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+              delay={2000}
+              config={{ duration: 500 }}
+            >
+              {props => (
+                <div style={props} className={classes.scrollDown}>
+                  <a class="linkScroll" href="#goTo">
+                    <img
+                      class="iConDown"
+                      src={require("assets/img/down.svg")}
+                      alt=""
+                    />
+                    Scroll to find out more
+                  </a>
+                </div>
+              )}
+            </Spring>
           </div>
         </Parallax>
 

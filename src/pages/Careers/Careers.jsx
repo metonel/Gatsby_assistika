@@ -6,8 +6,7 @@ import Header from "components/Header/Header.jsx"
 import Footer from "components/Footer/Footer.jsx"
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
 import Parallax from "components/Parallax/Parallax.jsx"
-import GridContainer from "components/Grid/GridContainer.jsx"
-import GridItem from "components/Grid/GridItem.jsx"
+import { Spring, config } from "react-spring/renderprops"
 
 import editingReviewStyle from "assets/jss/material-kit-react/views/editingReview"
 
@@ -42,21 +41,39 @@ class Careers extends React.Component {
         <Parallax bColor="#27afda">
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className="titleResponsive">
-                WANT IN? HERE ARE THE JOBS OPEN NOW
-              </h1>
+              <Spring
+                from={{ opacity: 0, transform: "translate3d(0,-60px,0)" }}
+                to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+                // delay={100}
+                config={{ duration: 800 }}
+              >
+                {props => (
+                  <h1 style={props} className="titleResponsive">
+                    WANT IN? HERE ARE THE JOBS OPEN NOW
+                  </h1>
+                )}
+              </Spring>
               <div className={classes.space20}></div>
             </div>
-            <div className={classes.scrollDown}>
-              <a class="linkScroll" href="#goTo">
-                <img
-                  class="iConDown"
-                  src={require("assets/img/down.svg")}
-                  alt=""
-                />
-                Scroll to find out more
-              </a>
-            </div>
+            <Spring
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+              delay={2000}
+              config={{ duration: 500 }}
+            >
+              {props => (
+                <div style={props} className={classes.scrollDown}>
+                  <a class="linkScroll" href="#goTo">
+                    <img
+                      class="iConDown"
+                      src={require("assets/img/down.svg")}
+                      alt=""
+                    />
+                    Scroll to find out more
+                  </a>
+                </div>
+              )}
+            </Spring>
           </div>
         </Parallax>
 
