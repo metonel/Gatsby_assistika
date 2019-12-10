@@ -24,6 +24,24 @@ class Adopt extends React.Component {
       })
     })
   }
+  mouseEnter(add, remove) {
+    document.body.getElementsByClassName(remove)[0].classList.add(add)
+    document.body
+      .getElementsByClassName(add)[0]
+      .getElementsByTagName("img")[0].src = require("assets/img/" +
+      add +
+      ".svg")
+    document.body.getElementsByClassName(remove)[0].classList.remove(remove)
+  }
+  mouseLeave(add, remove) {
+    document.body.getElementsByClassName(remove)[0].classList.add(add)
+    document.body
+      .getElementsByClassName(add)[0]
+      .getElementsByTagName("img")[0].src = require("assets/img/" +
+      add +
+      ".svg")
+    document.body.getElementsByClassName(remove)[0].classList.remove(remove)
+  }
   render() {
     const { classes, ...rest } = this.props
     return (
@@ -42,7 +60,7 @@ class Adopt extends React.Component {
 
         <Parallax
           style={{ paddingTop: "70px", paddingBottom: "30px" }}
-          bColor="#46aa54"
+          bColor="#ffb852"
         >
           <div className={classes.container}>
             <div className={classes.brand}>
@@ -74,10 +92,18 @@ class Adopt extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <Link to="/technical-writing" className={classes.linkWrapper}>
-                <div className="cardItem">
+                <div
+                  className="cardItem1"
+                  onMouseEnter={() =>
+                    this.mouseEnter("cardItem1hover", "cardItem1")
+                  }
+                  onMouseLeave={() =>
+                    this.mouseLeave("cardItem1", "cardItem1hover")
+                  }
+                >
                   <img
                     className={classes.iconPlain}
-                    src={require("assets/img/Edit.svg")}
+                    src={require("assets/img/cardItem1.svg")}
                     alt=""
                   />
                   <h2>Technical writing</h2>
@@ -97,10 +123,18 @@ class Adopt extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <Link to="/editing-review" className={classes.linkWrapper}>
-                <div className="cardItem">
+                <div
+                  className="cardItem3"
+                  onMouseEnter={() =>
+                    this.mouseEnter("cardItem3hover", "cardItem3")
+                  }
+                  onMouseLeave={() =>
+                    this.mouseLeave("cardItem3", "cardItem3hover")
+                  }
+                >
                   <img
                     className={classes.iconPlain}
-                    src={require("assets/img/EditRev.svg")}
+                    src={require("assets/img/cardItem3.svg")}
                     alt=""
                   />
                   <h2>Editing and reviewing</h2>

@@ -24,6 +24,24 @@ class Adopt extends React.Component {
       })
     })
   }
+  mouseEnter(add, remove) {
+    document.body.getElementsByClassName(remove)[0].classList.add(add)
+    document.body
+      .getElementsByClassName(add)[0]
+      .getElementsByTagName("img")[0].src = require("assets/img/" +
+      add +
+      ".svg")
+    document.body.getElementsByClassName(remove)[0].classList.remove(remove)
+  }
+  mouseLeave(add, remove) {
+    document.body.getElementsByClassName(remove)[0].classList.add(add)
+    document.body
+      .getElementsByClassName(add)[0]
+      .getElementsByTagName("img")[0].src = require("assets/img/" +
+      add +
+      ".svg")
+    document.body.getElementsByClassName(remove)[0].classList.remove(remove)
+  }
   render() {
     const { classes, ...rest } = this.props
     return (
@@ -42,7 +60,8 @@ class Adopt extends React.Component {
 
         <Parallax
           style={{ paddingTop: "70px", paddingBottom: "30px" }}
-          image={require("assets/img/TheAgency.jpg")}
+          // image={require("assets/img/TheAgency.jpg")}
+          bColor="#46aa54"
         >
           <div className={classes.container}>
             <div className={classes.brand}>
@@ -79,10 +98,18 @@ class Adopt extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <Link to="/adopt" className={classes.linkWrapper}>
-                <div className="cardItem">
+                <div
+                  className="cardItem2"
+                  onMouseEnter={() =>
+                    this.mouseEnter("cardItem2hover", "cardItem2")
+                  }
+                  onMouseLeave={() =>
+                    this.mouseLeave("cardItem2", "cardItem2hover")
+                  }
+                >
                   <img
                     className={classes.iconPlain}
-                    src={require("assets/img/Adopt.svg")}
+                    src={require("assets/img/cardItem2.svg")}
                     alt=""
                   />
                   <h2>Adopt a technical writer from us</h2>
@@ -108,10 +135,18 @@ class Adopt extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <Link to="/training" className={classes.linkWrapper}>
-                <div className="cardItem">
+                <div
+                  className="cardItem4"
+                  onMouseEnter={() =>
+                    this.mouseEnter("cardItem4hover", "cardItem4")
+                  }
+                  onMouseLeave={() =>
+                    this.mouseLeave("cardItem4", "cardItem4hover")
+                  }
+                >
                   <img
                     className={classes.iconPlain}
-                    src={require("assets/img/Training.svg")}
+                    src={require("assets/img/cardItem4.svg")}
                     alt=""
                   />
                   <h2>Training and consulting</h2>
