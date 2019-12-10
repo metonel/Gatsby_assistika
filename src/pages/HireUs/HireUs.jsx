@@ -95,6 +95,8 @@ class HireUs extends React.Component {
                   Str. Zefirului, nr. 12A
                 </h3>
                 <h3 className={classes.descriptionDark}>400221</h3>
+                <div className={classes.space20}></div>
+                <div className={classes.space20}></div>
               </GridItem>
               <GridItem xs={12} sm={12} md={5} lg={4}>
                 <h3 style={{ padding: "0" }} className={classes.subtitleDark}>
@@ -133,6 +135,8 @@ class HireUs extends React.Component {
                 <Button style={{ textTransform: "none" }} color="twitter">
                   <i className={"fab fa-twitter"} /> Contact us!
                 </Button>
+                <div className={classes.space20}></div>
+                <div className={classes.space20}></div>
               </GridItem>
             </GridContainer>
           </div>
