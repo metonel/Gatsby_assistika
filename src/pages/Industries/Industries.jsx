@@ -114,24 +114,42 @@ class Industries extends React.Component {
           <div className={classes.space20}></div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
-              <h2 className={classes.subtitleDark}>
-                We document stuff like this
+              <h2
+                style={{ fontWeight: "500" }}
+                className={classes.subtitleDark}
+              >
+                We document stuff like this:
               </h2>
-              <h2 className={classes.subtitleDark}>
+              <h2
+                style={{ paddingLeft: "20vw" }}
+                className={classes.subtitleDark}
+              >
                 IT, Marketing, Medical, Financial, Legal,
               </h2>
-              <h2 className={classes.subtitleDark}>
+              <h2
+                style={{ paddingLeft: "20vw" }}
+                className={classes.subtitleDark}
+              >
                 Government, Scientific, Engineering.
               </h2>
             </GridItem>
             <GridItem xs={12} sm={12} md={6} lg={6}>
-              <h2 className={classes.subtitleDark}>
-                ...and deliver it like this
+              <h2
+                style={{ fontWeight: "500" }}
+                className={classes.subtitleDark}
+              >
+                ...and deliver it like this:
               </h2>
-              <h3 className={classes.subtitleDark}>
+              <h3
+                style={{ paddingLeft: "20vw" }}
+                className={classes.subtitleDark}
+              >
                 Online Help, User Guides and PDFs for
               </h3>
-              <h3 className={classes.subtitleDark}>
+              <h3
+                style={{ paddingLeft: "20vw" }}
+                className={classes.subtitleDark}
+              >
                 printing, Tutorials, Walkthroughs, API Help.
               </h3>
             </GridItem>

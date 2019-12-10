@@ -149,7 +149,7 @@ class Adopt extends React.Component {
           </ul>
           <div className={classes.space20}></div>
 
-          <h2 className={classes.subtitleDark}>OUR OUTSTAFFING PROCESS</h2>
+          {/* <h2 className={classes.subtitleDark}>OUR OUTSTAFFING PROCESS</h2> */}
 
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>

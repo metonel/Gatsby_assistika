@@ -47,13 +47,13 @@ class EditingReview extends React.Component {
               <h1 className="titleResponsive">Editing and reviewing</h1>
               <div className={classes.space20}></div>
               <h3 className={classes.subtitle}>
-                We rewrite content and improve the layout of documents and
-                websites.
+                We rewrite and reorganize content to make information easier to
+                read and understand.
               </h3>
-              <h3 className={classes.subtitle}>
+              {/* <h3 className={classes.subtitle}>
                 Our magic turns complex information into ingeniously simple
                 messages.
-              </h3>
+              </h3> */}
             </div>
             <Spring
               from={{ opacity: 0 }}
@@ -209,7 +209,7 @@ class EditingReview extends React.Component {
           </ul>
           <div className={classes.space20}></div>
 
-          <h2 className={classes.subtitleDark}>OUR EDITING PROCESS</h2>
+          {/* <h2 className={classes.subtitleDark}>OUR EDITING PROCESS</h2> */}
         </div>
 
         <div className={classes.space20}></div>

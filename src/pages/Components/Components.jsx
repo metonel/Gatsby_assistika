@@ -142,12 +142,13 @@ class Components extends React.Component {
                 {props => (
                   <h3 style={props} className={classes.subtitle}>
                     We give you the right technical writers, with the right
-                    skills for your business. Technical writers who grasp your
-                    technology quickly and explain it more clearly than your
-                    engineers can.
+                    skills for your business.
                   </h3>
                 )}
               </Spring>
+              <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
@@ -158,12 +159,12 @@ class Components extends React.Component {
                   <div style={props} id="examples2">
                     <div class="example2">
                       <Link to="/outstaffing">
-                        <span class="hover2 hover-12">Outstaffing</span>
+                        <span class="hover2 hover-12">OUTSTAFFING</span>
                       </Link>
                     </div>
                     <div class="example2">
                       <Link to="/outsourcing">
-                        <span class="hover2 hover-12">Outsourcing</span>
+                        <span class="hover2 hover-12">OUTSOURCING</span>
                       </Link>
                     </div>
                   </div>

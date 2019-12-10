@@ -71,24 +71,13 @@ class Training extends React.Component {
                 </div>
               )}
             </Spring>
-
-            <div className={classes.scrollDown}>
-              <a class="linkScroll" href="#goTo">
-                <img
-                  class="iConDown"
-                  src={require("assets/img/down.svg")}
-                  alt=""
-                />
-                Scroll to find out more
-              </a>
-            </div>
           </div>
         </Parallax>
 
         <div id="goTo" className={classes.main}>
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
-          <h1 className={classes.subtitleDark}>OUR CONSULTING PROCESS</h1>
+          {/* <h1 className={classes.subtitleDark}>OUR CONSULTING PROCESS</h1> */}
 
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>

@@ -92,7 +92,9 @@ class Header extends React.Component {
           </Link>
         </div>
         <div className="subtext">
-          <Link to="/">Outsourced technical writing</Link>
+          {/* <Link to="/"> */}
+          Technical writing solutions
+          {/* </Link> */}
         </div>
       </div>
     )

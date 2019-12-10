@@ -148,9 +148,9 @@ class TechnicalWriting extends React.Component {
           </ul>
           <div className={classes.space20}></div>
 
-          <h2 className={classes.subtitleDark}>
+          {/* <h2 className={classes.subtitleDark}>
             OUR TECHNICAL WRITING PROCESS
-          </h2>
+          </h2> */}
           <div className={classes.space20}></div>
         </div>
         <Footer />
