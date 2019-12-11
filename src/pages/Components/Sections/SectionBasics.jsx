@@ -313,7 +313,7 @@ class SectionBasics extends React.Component {
             )}
           </VisibilitySensor>
         </div>
-        <div className={classes.space70} />
+        <div className={classes.space20} />
         <div style={{ padding: "1.1em 15px", height: "100vh" }}>
           <h2>How we work</h2>
           <h4>
@@ -321,6 +321,9 @@ class SectionBasics extends React.Component {
             price. We take responsibility for delivering the project on deadline
             and within budget.
           </h4>
+
+          <div className={classes.space20} />
+          <div className={classes.space20} />
           <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
