@@ -142,8 +142,8 @@ class SectionBasics extends React.Component {
                     <h2>Technical writing</h2>
                     <GridContainer>
                       <GridItem xs={5} sm={5} md={5} lg={5}>
-                        <h4 style={{ textWeight: "400" }}>
-                          We document stuff like this
+                        <h4 style={{ fontWeight: "500" }}>
+                          We document stuff like this:
                         </h4>
                       </GridItem>
                       <GridItem xs={7} sm={7} md={7} lg={7}>
@@ -155,7 +155,9 @@ class SectionBasics extends React.Component {
                     </GridContainer>
                     <GridContainer>
                       <GridItem xs={5} sm={5} md={5} lg={5}>
-                        <h4>...and deliver it like this</h4>
+                        <h4 style={{ fontWeight: "500" }}>
+                          ...and deliver it like this:
+                        </h4>
                       </GridItem>
                       <GridItem xs={7} sm={7} md={7} lg={7}>
                         <h4>
