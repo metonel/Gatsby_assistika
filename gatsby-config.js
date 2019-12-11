@@ -4,6 +4,12 @@ module.exports = {
     title: "Assistika Outsourced technical writing",
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
     "gatsby-plugin-resolve-src",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-offline",

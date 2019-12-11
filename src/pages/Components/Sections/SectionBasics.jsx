@@ -7,6 +7,8 @@ import GridItem from "components/Grid/GridItem.jsx"
 import { Link } from "gatsby"
 import { Spring, config } from "react-spring/renderprops"
 import VisibilitySensor from "react-visibility-sensor"
+import { Helmet } from "react-helmet"
+import iframe from "gatsby-remark-responsive-iframe"
 
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx"
 
@@ -321,7 +323,12 @@ class SectionBasics extends React.Component {
             price. We take responsibility for delivering the project on deadline
             and within budget.
           </h4>
-          <h4>CLICK TO FIND OUT MORE ABOUT OUR PROCESS</h4>
+          <iframe
+            src="http://doyoumind.ro/orizzontale.html"
+            width="1450"
+            height="800"
+          ></iframe>
+          {/* <h4>CLICK TO FIND OUT MORE ABOUT OUR PROCESS</h4> */}
         </div>
       </div>
     )
