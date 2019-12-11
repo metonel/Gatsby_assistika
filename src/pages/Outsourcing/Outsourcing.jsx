@@ -146,16 +146,30 @@ class Adopt extends React.Component {
                     alt=""
                   />
                   <h2>Technical writing</h2>
-                  <h4>We document stuff like this</h4>
-                  <h4>
-                    IT, Marketing, Medical, Financial, Legal, Government,
-                    Scientific, Engineering.
-                  </h4>
-                  <h4>...and deliver it like this</h4>
-                  <h4>
-                    Online Help, User Guides and PDFs for printing, Tutorials,
-                    Walkthroughs, API Help.
-                  </h4>
+                  <GridContainer>
+                    <GridItem xs={5} sm={5} md={5} lg={5}>
+                      <h4 style={{ textWeight: "400" }}>
+                        We document stuff like this
+                      </h4>
+                    </GridItem>
+                    <GridItem xs={7} sm={7} md={7} lg={7}>
+                      <h4>
+                        IT, Marketing, Medical, Financial, Legal, Government,
+                        Scientific, Engineering.
+                      </h4>
+                    </GridItem>
+                  </GridContainer>
+                  <GridContainer>
+                    <GridItem xs={5} sm={5} md={5} lg={5}>
+                      <h4>...and deliver it like this</h4>
+                    </GridItem>
+                    <GridItem xs={7} sm={7} md={7} lg={7}>
+                      <h4>
+                        Online Help, User Guides and PDFs for printing,
+                        Tutorials, Walkthroughs, API Help.
+                      </h4>
+                    </GridItem>
+                  </GridContainer>
                 </div>
               </Link>
               <div className={classes.space20}></div>
@@ -178,22 +192,22 @@ class Adopt extends React.Component {
                   />
                   <h2>Editing and reviewing</h2>
                   <h4 className={classes.cardText}>
-                    Basically, we write and reorganize your content to make sure
-                    your audience can:
+                    We rewrite and reorganize content to make information easier
+                    to read and understand.
                   </h4>
-                  <ul className={classes.cardText}>
-                    <li>
-                      <h4>Find the information they need</h4>
-                    </li>
-                    <li>
-                      <h4>Understand the information they find</h4>
-                    </li>
-                    <li>
-                      <h4>
-                        Use the information they find to act on what they need
-                      </h4>
-                    </li>
-                  </ul>
+                  {/* <ul className={classes.cardText}>
+                      <li>
+                        <h4>Find the information they need</h4>
+                      </li>
+                      <li>
+                        <h4>Understand the information they find</h4>
+                      </li>
+                      <li>
+                        <h4>
+                          Use the information they find to act on what they need
+                        </h4>
+                      </li>
+                    </ul> */}
                 </div>
               </Link>
               <div className={classes.space20}></div>

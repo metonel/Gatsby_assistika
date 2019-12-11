@@ -167,7 +167,7 @@ class Adopt extends React.Component {
                     Full-time or part-time technical writers, on your premises
                     or online.
                   </h4>
-                  <h4 className={classes.cardText}>
+                  {/* <h4 className={classes.cardText}>
                     All projects are supervised by senior Assistika staff.
                   </h4>
                   <h4></h4>
@@ -178,7 +178,7 @@ class Adopt extends React.Component {
                   <h4 className={classes.cardText}>
                     You keep them for as long as you need their help with
                     documenting your product or processes.
-                  </h4>
+                  </h4> */}
                 </div>
               </Link>
               <div className={classes.space20}></div>
@@ -204,10 +204,10 @@ class Adopt extends React.Component {
                     Training to give you the know-how to write and edit your own
                     documentation.
                   </h4>
-                  <h4 className={classes.cardText}>
+                  {/* <h4 className={classes.cardText}>
                     We look at your existing documentation and architecure
                     together better User Assistance solutions.
-                  </h4>
+                  </h4> */}
                 </div>
               </Link>
               <div className={classes.space20}></div>

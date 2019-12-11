@@ -140,16 +140,30 @@ class SectionBasics extends React.Component {
                       alt=""
                     />
                     <h2>Technical writing</h2>
-                    <h4>We document stuff like this</h4>
-                    <h4>
-                      IT, Marketing, Medical, Financial, Legal, Government,
-                      Scientific, Engineering.
-                    </h4>
-                    <h4>...and deliver it like this</h4>
-                    <h4>
-                      Online Help, User Guides and PDFs for printing, Tutorials,
-                      Walkthroughs, API Help.
-                    </h4>
+                    <GridContainer>
+                      <GridItem xs={5} sm={5} md={5} lg={5}>
+                        <h4 style={{ textWeight: "400" }}>
+                          We document stuff like this
+                        </h4>
+                      </GridItem>
+                      <GridItem xs={7} sm={7} md={7} lg={7}>
+                        <h4>
+                          IT, Marketing, Medical, Financial, Legal, Government,
+                          Scientific, Engineering.
+                        </h4>
+                      </GridItem>
+                    </GridContainer>
+                    <GridContainer>
+                      <GridItem xs={5} sm={5} md={5} lg={5}>
+                        <h4>...and deliver it like this</h4>
+                      </GridItem>
+                      <GridItem xs={7} sm={7} md={7} lg={7}>
+                        <h4>
+                          Online Help, User Guides and PDFs for printing,
+                          Tutorials, Walkthroughs, API Help.
+                        </h4>
+                      </GridItem>
+                    </GridContainer>
                   </div>
                 </Link>
                 <div className={classes.space20}></div>
@@ -175,7 +189,7 @@ class SectionBasics extends React.Component {
                       Full-time or part-time technical writers, on your premises
                       or online.
                     </h4>
-                    <h4 className={classes.cardText}>
+                    {/* <h4 className={classes.cardText}>
                       All projects are supervised by senior Assistika staff.
                     </h4>
                     <h4></h4>
@@ -186,7 +200,7 @@ class SectionBasics extends React.Component {
                     <h4 className={classes.cardText}>
                       You keep them for as long as you need their help with
                       documenting your product or processes.
-                    </h4>
+                    </h4> */}
                   </div>
                 </Link>
                 <div className={classes.space20}></div>
@@ -214,10 +228,10 @@ class SectionBasics extends React.Component {
                     />
                     <h2>Editing and reviewing</h2>
                     <h4 className={classes.cardText}>
-                      Basically, we write and reorganize your content to make
-                      sure your audience can:
+                      We rewrite and reorganize content to make information
+                      easier to read and understand.
                     </h4>
-                    <ul className={classes.cardText}>
+                    {/* <ul className={classes.cardText}>
                       <li>
                         <h4>Find the information they need</h4>
                       </li>
@@ -229,7 +243,7 @@ class SectionBasics extends React.Component {
                           Use the information they find to act on what they need
                         </h4>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </Link>
 
@@ -256,10 +270,10 @@ class SectionBasics extends React.Component {
                       Training to give you the know-how to write and edit your
                       own documentation.
                     </h4>
-                    <h4 className={classes.cardText}>
+                    {/* <h4 className={classes.cardText}>
                       We look at your existing documentation and architecure
                       together better User Assistance solutions.
-                    </h4>
+                    </h4> */}
                   </div>
                 </Link>
                 <div className={classes.space20}></div>
@@ -273,45 +287,51 @@ class SectionBasics extends React.Component {
             // padding: "1.1em 15px",
             position: "relative",
             backgroundColor: "#F2F2F2",
-            height: "100vh",
           }}
         >
           <h2>Who is your squad of geek writers?</h2>
-          <h4>
-            We are a bunch of linguists with a passion for technology and a
-            talent for writing about how it works.
-          </h4>
-          <h4>
-            But we're not into Shakespeare. We love the poetry of turning
-            complex concepts into ingeniously simple information.
-          </h4>
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={6} lg={6}>
+              <h4>
+                We are a bunch of linguists with a passion for technology and a
+                talent for writing about how it works.
+              </h4>
+              <h4>
+                But we're not into Shakespeare. We love the poetry of turning
+                complex concepts into ingeniously simple information.
+              </h4>
+            </GridItem>
 
-          <div className={classes.space20} />
-          <div className={classes.space20} />
-          <div className={classes.space20} />
-          <div className={classes.space20} />
+            <GridItem xs={12} sm={12} md={6} lg={6}>
+              <div className={classes.space20} />
+              <div className={classes.space20} />
+              <div className={classes.space20} />
 
-          <VisibilitySensor partialVisibility offset={{ left: -100 }}>
-            {({ isVisible }) => (
-              <Spring
-                delay={1000}
-                to={{
-                  opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(100px)",
-                }}
-              >
-                {props => (
-                  <div style={props}>
-                    <img
-                      className="geekImage"
-                      src={require("assets/img/team.png")}
-                      alt=""
-                    />
-                  </div>
+              <VisibilitySensor partialVisibility offset={{ left: -150 }}>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={1000}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                      transform: isVisible
+                        ? "translateX(0)"
+                        : "translateX(100px)",
+                    }}
+                  >
+                    {props => (
+                      <div style={props}>
+                        <img
+                          className="geekImage"
+                          src={require("assets/img/team.png")}
+                          alt=""
+                        />
+                      </div>
+                    )}
+                  </Spring>
                 )}
-              </Spring>
-            )}
-          </VisibilitySensor>
+              </VisibilitySensor>
+            </GridItem>
+          </GridContainer>
         </div>
         <div className={classes.space20} />
         <div style={{ padding: "1.1em 15px", height: "100vh" }}>
