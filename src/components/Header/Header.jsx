@@ -16,6 +16,8 @@ import Menu from "@material-ui/icons/Menu"
 // core components
 import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx"
 
+import { Spring } from "react-spring/renderprops"
+
 import { Link } from "gatsby"
 
 class Header extends React.Component {
@@ -86,21 +88,40 @@ class Header extends React.Component {
     })
     const brandComponent = (
       <div>
-        <div className="logo">
-          <Link to="/">
-            <img
-              id="logo"
-              style={{ height: "45px" }}
-              src={require("assets/img/aLogoA.svg")}
-              alt=""
-            />
-          </Link>
-        </div>
-        <div className="subtext">
-          {/* <Link to="/"> */}
-          Technical writing solutions
-          {/* </Link> */}
-        </div>
+        <Spring
+          from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
+          to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+          // delay={}
+          config={{ duration: 500 }}
+        >
+          {props => (
+            <div style={props} className="logo">
+              <Link to="/">
+                <img
+                  id="logo"
+                  style={{ height: "45px" }}
+                  src={require("assets/img/aLogoA.svg")}
+                  alt=""
+                />
+              </Link>
+            </div>
+          )}
+        </Spring>
+
+        <Spring
+          from={{ opacity: 0 }}
+          to={{ opacity: 1 }}
+          delay={500}
+          config={{ duration: 500 }}
+        >
+          {props => (
+            <div style={props} className="subtext">
+              {/* <Link to="/"> */}
+              Technical writing solutions
+              {/* </Link> */}
+            </div>
+          )}
+        </Spring>
       </div>
     )
     return (
