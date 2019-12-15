@@ -47,7 +47,6 @@ class DocumentationDeliverables extends React.Component {
             <Spring
               from={{ opacity: 0 }}
               to={{ opacity: 1 }}
-              // delay={2300}
               config={{ duration: 500 }}
             >
               {props => (
@@ -67,19 +66,6 @@ class DocumentationDeliverables extends React.Component {
                 <h2 style={props} className={classes.subtitle}>
                   Assistika helps your company with all your technical writing
                   needs so you can focus on your development instead.
-                </h2>
-              )}
-            </Spring>
-            <Spring
-              from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
-              to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-              delay={500}
-              config={{ duration: 500 }}
-            >
-              {props => (
-                <h2 style={props} className={classes.subtitle}>
-                  We guarantee world class documentation fit for your
-                  world-class products.
                 </h2>
               )}
             </Spring>
@@ -106,6 +92,23 @@ class DocumentationDeliverables extends React.Component {
         </Parallax>
 
         <div id="goTo" className={classes.main}>
+          <div className={classes.space20}></div>
+          <div className={classes.space20}></div>
+          <Spring
+            from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
+            to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+            delay={500}
+            config={{ duration: 500 }}
+          >
+            {props => (
+              <h2 style={props} className={classes.subtitleDark}>
+                We guarantee world class documentation fit for your world-class
+                products.
+              </h2>
+            )}
+          </Spring>
+
+          <div className={classes.space20}></div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={4} lg={4}>
               <h2 className={classes.subtitleDark}>PRINT-BASED USER GUIDES</h2>

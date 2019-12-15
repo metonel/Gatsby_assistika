@@ -73,19 +73,6 @@ class Industries extends React.Component {
                   </h3>
                 )}
               </Spring>
-              <Spring
-                from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
-                to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-                delay={500}
-                config={{ duration: 500 }}
-              >
-                {props => (
-                  <h3 style={props} className={classes.subtitle}>
-                    We work with government agencies, private industries, and
-                    non-profit and charitable organizations.
-                  </h3>
-                )}
-              </Spring>
             </div>
             <Spring
               from={{ opacity: 0 }}
@@ -111,6 +98,21 @@ class Industries extends React.Component {
 
         <div id="goTo" className={classes.main}>
           <div className={classes.space20}></div>
+          <div className={classes.space20}></div>
+          <Spring
+            from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
+            to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+            delay={500}
+            config={{ duration: 500 }}
+          >
+            {props => (
+              <h3 style={props} className={classes.subtitleDark}>
+                We work with government agencies, private industries, and
+                non-profit and charitable organizations.
+              </h3>
+            )}
+          </Spring>
+
           <div className={classes.space20}></div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
