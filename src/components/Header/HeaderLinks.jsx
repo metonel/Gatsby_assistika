@@ -93,10 +93,10 @@ function HeaderLinks({ ...props }) {
         >
           {/* <CloudDownload className={classes.icons} /> Download */}
           <Link to="/hire-us">Hire us</Link>
-          <span class="loading-dots">
-            <span class="dot one">.</span>
-            <span class="dot two">.</span>
-            <span class="dot three">.</span>
+          <span className="loading-dots">
+            <span className="dot one">.</span>
+            <span className="dot two">.</span>
+            <span className="dot three">.</span>
           </span>
         </Button>
       </ListItem>

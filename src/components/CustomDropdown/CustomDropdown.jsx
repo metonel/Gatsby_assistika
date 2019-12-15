@@ -85,7 +85,7 @@ class CustomDropdown extends React.Component {
     }
     return (
       <div>
-        <div class="hover hover-1">
+        <div className="hover hover-1">
           <Button
             style={{ textTransform: "none" }}
             aria-label="Notifications"

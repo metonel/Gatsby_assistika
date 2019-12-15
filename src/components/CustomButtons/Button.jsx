@@ -1,16 +1,16 @@
-import React from "react";
+import React from "react"
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from "classnames"
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import Button from "@material-ui/core/Button";
+import withStyles from "@material-ui/core/styles/withStyles"
+import Button from "@material-ui/core/Button"
 
 // core components
 
-import buttonStyle from "assets/jss/material-kit-react/components/buttonStyle.jsx";
+import buttonStyle from "assets/jss/material-kit-react/components/buttonStyle.jsx"
 
 function RegularButton({ ...props }) {
   const {
@@ -27,7 +27,7 @@ function RegularButton({ ...props }) {
     justIcon,
     className,
     ...rest
-  } = props;
+  } = props
   const btnClasses = classNames({
     [classes.button]: true,
     [classes[size]]: size,
@@ -39,19 +39,20 @@ function RegularButton({ ...props }) {
     [classes.block]: block,
     [classes.link]: link,
     [classes.justIcon]: justIcon,
-    [className]: className
-  });
+    [className]: className,
+  })
   return (
     <Button {...rest} className={btnClasses}>
       {children}
     </Button>
-  );
+  )
 }
 
 RegularButton.propTypes = {
   classes: PropTypes.object.isRequired,
   color: PropTypes.oneOf([
     "primary",
+    "hireUs",
     "info",
     "success",
     "warning",
@@ -62,7 +63,7 @@ RegularButton.propTypes = {
     "twitter",
     "google",
     "github",
-    "transparent"
+    "transparent",
   ]),
   size: PropTypes.oneOf(["sm", "lg"]),
   simple: PropTypes.bool,
@@ -71,7 +72,7 @@ RegularButton.propTypes = {
   disabled: PropTypes.bool,
   block: PropTypes.bool,
   link: PropTypes.bool,
-  justIcon: PropTypes.bool
-};
+  justIcon: PropTypes.bool,
+}
 
-export default withStyles(buttonStyle)(RegularButton);
+export default withStyles(buttonStyle)(RegularButton)

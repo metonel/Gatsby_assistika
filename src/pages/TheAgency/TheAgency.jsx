@@ -28,7 +28,7 @@ class TheAgency extends React.Component {
         />
 
         <Parallax
-          style={{ padding: "75px 0 15px 0" }}
+          style={{ paddingTop: "75px", paddingBottom: "15px" }}
           image={require("assets/img/TheAgency.jpg")}
         >
           <div className={classes.container}>
