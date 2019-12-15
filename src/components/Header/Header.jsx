@@ -37,6 +37,8 @@ class Header extends React.Component {
     }
   }
   headerColorChange() {
+    const logoA = require("assets/img/aLogoA.svg")
+    const logoB = require("assets/img/aLogo.svg")
     const { classes, color, changeColorOnScroll } = this.props
     const windowsScrollTop = typeof window !== "undefined" && window.pageYOffset
     if (windowsScrollTop > changeColorOnScroll.height) {
@@ -48,6 +50,7 @@ class Header extends React.Component {
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color])
       document.body.getElementsByTagName("header")[0].classList.add("white")
+      document.getElementById("logo").src = logoB
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -57,6 +60,7 @@ class Header extends React.Component {
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color])
       document.body.getElementsByTagName("header")[0].classList.remove("white")
+      document.getElementById("logo").src = logoA
     }
   }
   componentWillUnmount() {
@@ -85,8 +89,9 @@ class Header extends React.Component {
         <div className="logo">
           <Link to="/">
             <img
+              id="logo"
               style={{ height: "45px" }}
-              src={require("assets/img/aLogo.svg")}
+              src={require("assets/img/aLogoA.svg")}
               alt=""
             />
           </Link>
