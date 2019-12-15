@@ -340,8 +340,12 @@ class SectionBasics extends React.Component {
           <h2>How we work</h2>
           <h4>
             Assistika provides a range of documentation services for a fixed
-            price. We take responsibility for delivering the project on deadline
-            and within budget.
+            price.
+          </h4>
+
+          <h4>
+            We take responsibility for delivering the project on deadline and
+            within budget.
           </h4>
 
           <div className={classes.space20} />
