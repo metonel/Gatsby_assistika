@@ -149,27 +149,36 @@ class Components extends React.Component {
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
-              <Spring
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
-                delay={1800}
-                config={{ duration: 500 }}
-              >
-                {props => (
-                  <div style={props} id="examples2">
-                    <div class="example2">
+              <div id="examples2">
+                <Spring
+                  from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
+                  to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+                  delay={1800}
+                  config={{ duration: 500 }}
+                >
+                  {props => (
+                    <div style={props} class="example2">
                       <Link to="/outstaffing">
                         <span class="hover2 hover-12">OUTSTAFFING</span>
                       </Link>
                     </div>
-                    <div class="example2">
+                  )}
+                </Spring>
+                <Spring
+                  from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
+                  to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+                  delay={2000}
+                  config={{ duration: 500 }}
+                >
+                  {props => (
+                    <div style={props} class="example2">
                       <Link to="/outsourcing">
                         <span class="hover2 hover-12">OUTSOURCING</span>
                       </Link>
                     </div>
-                  </div>
-                )}
-              </Spring>
+                  )}
+                </Spring>
+              </div>
             </div>
             <Spring
               from={{ opacity: 0 }}
