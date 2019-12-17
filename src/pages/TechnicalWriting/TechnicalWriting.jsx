@@ -49,11 +49,11 @@ class TechnicalWriting extends React.Component {
             {/* <div className={classes.brand}> */}
             <h1 className="titleResponsive">Technical Writing</h1>
             <div className={classes.space20}></div>
-            <h3 style={{ maxWidth: "55vw" }} className={classes.subtitle}>
+            <h3 style={{ maxWidth: "55vw" }} className="subtitleResponsive">
               Outsource the development and maintenance of your technical
               documentation to us.
             </h3>
-            <h3 className={classes.subtitle}>
+            <h3 className="subtitleResponsive">
               We deliver great documentation on time, and within budget.
             </h3>
 

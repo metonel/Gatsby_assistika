@@ -58,7 +58,7 @@ class TheAgency extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h2 style={props} className={classes.subtitle}>
+                  <h2 style={props} className="subtitleResponsive">
                     The Agency
                   </h2>
                 )}
@@ -86,7 +86,7 @@ class TheAgency extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h2 style={props} className={classes.subtitle}>
+                  <h2 style={props} className="subtitleResponsive">
                     Services
                   </h2>
                 )}
@@ -114,7 +114,7 @@ class TheAgency extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h2 style={props} className={classes.subtitle}>
+                  <h2 style={props} className="subtitleResponsive">
                     Who is your geek writers squad?
                   </h2>
                 )}

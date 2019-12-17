@@ -50,11 +50,11 @@ class Adopt extends React.Component {
               <h1 className="titleResponsive">
                 ADOPT A TECHNICAL WRITER FROM US
               </h1>
-              <h3 className={classes.subtitle}>
+              <h3 className="subtitleResponsive">
                 Assistika assigns one writer or an entire team to work with you
                 on your project.
               </h3>
-              <h3 className={classes.subtitle}>
+              <h3 className="subtitleResponsive">
                 You keep them for as long as you need their help with
                 documenting your product or processes.
               </h3>

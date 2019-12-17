@@ -67,7 +67,7 @@ class Industries extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.subtitle}>
+                  <h3 style={props} className="subtitleResponsive">
                     We offer professional writing services for technology, life
                     sciences, and financial services customers worldwide.
                   </h3>

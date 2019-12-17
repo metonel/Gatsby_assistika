@@ -46,11 +46,11 @@ class Training extends React.Component {
             <div className={classes.brand}>
               <h1 className="titleResponsive">TRAINING AND CONSULTING</h1>
               <div className={classes.space20}></div>
-              <h3 className={classes.subtitle}>
+              <h3 className="subtitleResponsive">
                 We offer training to give you the know-how and skills to write
                 and edit your own printed or online information.
               </h3>
-              <h3 className={classes.subtitle}>
+              <h3 className="subtitleResponsive">
                 We look at your existing content to architecture together better
                 documentation solutions.
               </h3>

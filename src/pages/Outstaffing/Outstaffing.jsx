@@ -87,7 +87,7 @@ class Adopt extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h2 style={props} className={classes.subtitle}>
+                  <h2 style={props} className="subtitleResponsive">
                     Assistika is the perfect solution when hiring an in-house
                     technical writer is not right option for your company.
                   </h2>

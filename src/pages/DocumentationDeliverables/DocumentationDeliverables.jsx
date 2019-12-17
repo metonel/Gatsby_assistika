@@ -63,7 +63,7 @@ class DocumentationDeliverables extends React.Component {
               config={{ duration: 500 }}
             >
               {props => (
-                <h2 style={props} className={classes.subtitle}>
+                <h2 style={props} className="subtitleResponsive">
                   Assistika helps your company with all your technical writing
                   needs so you can focus on your development instead.
                 </h2>
