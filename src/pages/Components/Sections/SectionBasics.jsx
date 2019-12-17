@@ -336,7 +336,7 @@ class SectionBasics extends React.Component {
           </GridContainer>
         </div>
         <div className={classes.space20} />
-        <div style={{ padding: "1.1em 15px", height: "100vh" }}>
+        <div style={{ padding: "1.1em 15px" }}>
           <h2>How we work</h2>
           <h4>
             Assistika provides a range of documentation services for a fixed
@@ -361,7 +361,7 @@ class SectionBasics extends React.Component {
                 {props => (
                   <div style={props}>
                     <img
-                      className="workImage"
+                      className="workImage, noDisplay"
                       src={require("assets/img/howWe.gif")}
                       alt=""
                     />
