@@ -496,8 +496,12 @@ $animate: all 0.2s ease-in-out;
     margin: 0 0 45px;
     display: inline-block;
     .hover2 {
+      @media (max-width: 767px) {
+        font-size: 1.3rem;
+      }
       display: inline-block;
-      font-size: 1.28rem;
+      font-size: 1.8em;
+      font-weight: 400;
       margin: 0 auto;
       padding: 0;
       transition: $animate;

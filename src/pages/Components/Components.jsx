@@ -64,6 +64,7 @@ class Components extends React.Component {
   }
   render() {
     const { classes, ...rest } = this.props
+    const noDisplay = "noDisplay"
     return (
       <div>
         <Header
@@ -120,7 +121,7 @@ class Components extends React.Component {
                   </h1>
                 )}
               </Spring>
-              <div className={(classes.space20, "noDisplay")}></div>
+              <div className={classes.space20}></div>
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
@@ -134,7 +135,6 @@ class Components extends React.Component {
                   </h2>
                 )}
               </Spring>
-              <div className={classes.space20}></div>
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
