@@ -44,17 +44,27 @@ class Careers extends React.Component {
               <Spring
                 from={{ opacity: 0, transform: "translate3d(0,-60px,0)" }}
                 to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-                // delay={100}
                 config={{ duration: 800 }}
               >
                 {props => (
                   <h1 style={props} className="titleResponsive">
-                    WANT IN? HERE ARE THE JOBS OPEN NOW
+                    WANT IN?
                   </h1>
                 )}
               </Spring>
               <div className={classes.space20}></div>
             </div>
+            <Spring
+              from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
+              to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
+              config={{ duration: 800 }}
+            >
+              {props => (
+                <h2 style={props} className="subtitleResponsive">
+                  HERE ARE THE JOBS OPEN NOW
+                </h2>
+              )}
+            </Spring>
             <Spring
               from={{ opacity: 0 }}
               to={{ opacity: 1 }}
@@ -118,7 +128,7 @@ class Careers extends React.Component {
             <li>Create and maintain Assistika’s information architecture</li>
           </ul>
 
-          <h3 className={classes.subtitleDark}>Requirements:</h3>
+          <h3 className={classes.subtitleDark}>Requirements</h3>
 
           <ul className={classes.descriptionDark}>
             <li>
@@ -144,6 +154,10 @@ class Careers extends React.Component {
             ingeniously simple, we want to hear from you! There’s no lengthy
             application form, all we’ll need is your CV and a cover letter –
             simple as that.
+          </h3>
+          <h3 className={classes.descriptionDark}>
+            Email your CV at{" "}
+            <span style={{ color: "#27afda" }}>careers@assitika.com</span>
           </h3>
           <div className={classes.space20}></div>
         </div>
