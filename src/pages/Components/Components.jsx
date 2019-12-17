@@ -77,7 +77,7 @@ class Components extends React.Component {
           {...rest}
         />
         <Parallax
-          style={{ paddingTop: "70px" }}
+          style={{ paddingTop: "85px" }}
           image={require("assets/img/bg4.jpg")}
         >
           <div className={classes.container}>
@@ -89,7 +89,7 @@ class Components extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h1 style={props} className={classes.title}>
+                  <h1 style={props} className="titleResponsive">
                     Expert technical writers? Ready
                     {/* <span> */}
                     <FormControlLabel
@@ -120,6 +120,7 @@ class Components extends React.Component {
                   </h1>
                 )}
               </Spring>
+              <div className={(classes.space20, "noDisplay")}></div>
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
@@ -127,12 +128,13 @@ class Components extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h2 style={props} className={classes.subtitle}>
+                  <h2 style={props} className="subtitleResponsive noDisplay">
                     Outsource the development and maintenance of your technical
                     content to us.
                   </h2>
                 )}
               </Spring>
+              <div className={classes.space20}></div>
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
@@ -140,13 +142,12 @@ class Components extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.subtitle}>
+                  <h3 style={props} className="subtitleResponsive">
                     We give you the right technical writers, with the right
                     skills for your business.
                   </h3>
                 )}
               </Spring>
-              <div className={classes.space20}></div>
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
               <div id="examples2">

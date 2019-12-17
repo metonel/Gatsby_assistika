@@ -324,6 +324,26 @@ $animate: all 0.2s ease-in-out;
   }
 }
 
+.subtitleResponsive {
+  padding-left: 20px;
+  font-weight: 400;
+  color: white;
+  font-size: 1.8rem;
+  margin: 10px 0 0;
+  position: relative;
+  z-index: 1;
+  max-width: 65vw;
+  @media (max-width: 767px) {
+    font-size: 1.3rem;
+    max-width: 100vw;
+  }
+}
+.noDisplay {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
 .loading-dots {
   padding-left: 2px;
   // display: inline;
