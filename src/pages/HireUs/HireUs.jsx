@@ -72,19 +72,6 @@ class HireUs extends React.Component {
                   </h3>
                 )}
               </Spring>
-              <Spring
-                from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
-                to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-                delay={600}
-                config={{ duration: 500 }}
-              >
-                {props => (
-                  <h3 style={props} className={classes.description}>
-                    You keep them for as long as you need their help with
-                    documenting your product or processes.
-                  </h3>
-                )}
-              </Spring>
 
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
@@ -124,7 +111,9 @@ class HireUs extends React.Component {
                 <h3 className={classes.subtitleDark}>By Phone</h3>
                 <h3 className={classes.descriptionDark}>+40 747 937 044</h3>
                 <h3 className={classes.subtitleDark}>By Email</h3>
-                <h3 className={classes.descriptionDark}>info@assistika.com</h3>
+                <h3 className={classes.descriptionDark}>
+                  client@assistika.com
+                </h3>
                 <h3 className={classes.subtitleDark}>Come visit</h3>
                 <h3 className={classes.descriptionDark}>
                   Cluj-Napoca, Romania
@@ -171,7 +160,7 @@ class HireUs extends React.Component {
 
                 <div className={classes.space20}></div>
                 <Button style={{ textTransform: "none" }} color="twitter">
-                  <i className={"fab fa-twitter"} /> Contact us!
+                  <i className={"fab fa-twitter"} /> Contact us
                 </Button>
                 <div className={classes.space20}></div>
                 <div className={classes.space20}></div>
