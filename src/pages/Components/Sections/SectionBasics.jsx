@@ -22,7 +22,6 @@ class SectionBasics extends React.Component {
     this.handleChangeEnabled = this.handleChangeEnabled.bind(this)
   }
   componentDidMount() {
-    console.log("did mount")
     // new WOW.WOW().sync()
     // $(wrapper).on("mousemove", function(e) {
     //   var ax = -($(wrapper).innerWidth() / 2 - e.pageX) / 20
@@ -45,7 +44,6 @@ class SectionBasics extends React.Component {
     //     "background-color: black"
     //   )
     // })
-
     // nouislider.create(this.refs.slider1, {
     //   start: [40],
     //   connect: [true, false],
@@ -106,106 +104,156 @@ class SectionBasics extends React.Component {
           id="services"
           style={{ minHeight: "103vh", padding: "1.1em 15px" }}
         >
-          <div className={classes.title}>
-            <h2 className="wow fadeInUp" data-wow-duration="1.5s">
-              Services
-            </h2>
-          </div>
-          <div className={classes.title}>
-            <h4>
-              Assistika helps your company with all your technical writing needs
-              so you can focus on your development instead.
-            </h4>
-            <h4>
-              We guarantee world class documentation fit for your world-class
-              products.
-            </h4>
-          </div>
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+                // delay={1800}
+                config={{ duration: 800 }}
+              >
+                {props => (
+                  <div style={props} className={classes.title}>
+                    <h2>Services</h2>
+                  </div>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
+
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                }}
+                delay={500}
+                config={{ duration: 800 }}
+              >
+                {props => (
+                  <div style={props} className={classes.title}>
+                    <h4>
+                      Assistika helps your company with all your technical
+                      writing needs so you can focus on your development
+                      instead.
+                    </h4>
+                    <h4>
+                      We guarantee world class documentation fit for your
+                      world-class products.
+                    </h4>
+                  </div>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
+
           <div className="cards">
             <GridContainer>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <Link to="/technical-writing" className={classes.linkWrapper}>
-                  <div
-                    className="cardItem1"
-                    onMouseEnter={() =>
-                      this.mouseEnter("cardItem1hover", "cardItem1")
-                    }
-                    onMouseLeave={() =>
-                      this.mouseLeave("cardItem1", "cardItem1hover")
-                    }
-                  >
-                    <img
-                      className={classes.iconPlain}
-                      src={require("assets/img/cardItem1.svg")}
-                      alt=""
-                    />
-                    <h2>Technical writing</h2>
-                    <GridContainer>
-                      <GridItem xs={5} sm={5} md={5} lg={5}>
-                        <h4 style={{ fontWeight: "500" }}>
-                          We document stuff like this:
-                        </h4>
-                      </GridItem>
-                      <GridItem xs={7} sm={7} md={7} lg={7}>
-                        <h4>
-                          IT, Marketing, Medical, Financial, Legal, Government,
-                          Scientific, Engineering.
-                        </h4>
-                      </GridItem>
-                    </GridContainer>
-                    <GridContainer>
-                      <GridItem xs={5} sm={5} md={5} lg={5}>
-                        <h4 style={{ fontWeight: "500" }}>
-                          ...and deliver it like this:
-                        </h4>
-                      </GridItem>
-                      <GridItem xs={7} sm={7} md={7} lg={7}>
-                        <h4>
-                          Online Help, User Guides and PDFs for printing,
-                          Tutorials, Walkthroughs, API Help.
-                        </h4>
-                      </GridItem>
-                    </GridContainer>
-                  </div>
+                  <VisibilitySensor>
+                    {({ isVisible }) => (
+                      <Spring
+                        to={{
+                          opacity: isVisible ? 1 : 0,
+                        }}
+                      >
+                        {props => (
+                          <div
+                            style={props}
+                            className="cardItem1"
+                            onMouseEnter={() =>
+                              this.mouseEnter("cardItem1hover", "cardItem1")
+                            }
+                            onMouseLeave={() =>
+                              this.mouseLeave("cardItem1", "cardItem1hover")
+                            }
+                          >
+                            <img
+                              className={classes.iconPlain}
+                              src={require("assets/img/cardItem1.svg")}
+                              alt=""
+                            />
+                            <h2>Technical writing</h2>
+                            <GridContainer>
+                              <GridItem xs={5} sm={5} md={5} lg={5}>
+                                <h4 style={{ fontWeight: "500" }}>
+                                  We document stuff like this:
+                                </h4>
+                              </GridItem>
+                              <GridItem xs={7} sm={7} md={7} lg={7}>
+                                <h4>
+                                  IT, Marketing, Medical, Financial, Legal,
+                                  Government, Scientific, Engineering.
+                                </h4>
+                              </GridItem>
+                            </GridContainer>
+                            <GridContainer>
+                              <GridItem xs={5} sm={5} md={5} lg={5}>
+                                <h4 style={{ fontWeight: "500" }}>
+                                  ...and deliver it like this:
+                                </h4>
+                              </GridItem>
+                              <GridItem xs={7} sm={7} md={7} lg={7}>
+                                <h4>
+                                  Online Help, User Guides and PDFs for
+                                  printing, Tutorials, Walkthroughs, API Help.
+                                </h4>
+                              </GridItem>
+                            </GridContainer>
+                          </div>
+                        )}
+                      </Spring>
+                    )}
+                  </VisibilitySensor>
                 </Link>
                 <div className={classes.space20}></div>
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <Link to="/adopt" className={classes.linkWrapper}>
-                  <div
-                    className="cardItem2"
-                    onMouseEnter={() =>
-                      this.mouseEnter("cardItem2hover", "cardItem2")
-                    }
-                    onMouseLeave={() =>
-                      this.mouseLeave("cardItem2", "cardItem2hover")
-                    }
-                  >
-                    <img
-                      className={classes.iconPlain}
-                      src={require("assets/img/cardItem2.svg")}
-                      alt=""
-                    />
-                    <h2>Adopt a technical writer from us</h2>
+                  <VisibilitySensor>
+                    {({ isVisible }) => (
+                      <Spring
+                        to={{
+                          opacity: isVisible ? 1 : 0,
+                        }}
+                      >
+                        {props => (
+                          <div
+                            style={props}
+                            className="cardItem2"
+                            onMouseEnter={() =>
+                              this.mouseEnter("cardItem2hover", "cardItem2")
+                            }
+                            onMouseLeave={() =>
+                              this.mouseLeave("cardItem2", "cardItem2hover")
+                            }
+                          >
+                            <img
+                              className={classes.iconPlain}
+                              src={require("assets/img/cardItem2.svg")}
+                              alt=""
+                            />
+                            <h2>Adopt a technical writer from us</h2>
 
-                    <div className={classes.space20} />
-                    <h4 className={classes.cardText}>
-                      Full-time or part-time technical writers, on your premises
-                      or online.
-                    </h4>
-                    {/* <h4 className={classes.cardText}>
-                      All projects are supervised by senior Assistika staff.
-                    </h4>
-                    <h4></h4>
-                    <h4 className={classes.cardText}>
-                      Assistika assigns one writer or an entire team to work
-                      with you on your project.
-                    </h4>
-                    <h4 className={classes.cardText}>
-                      You keep them for as long as you need their help with
-                      documenting your product or processes.
-                    </h4> */}
-                  </div>
+                            <div className={classes.space20} />
+                            <h4 className={classes.cardText}>
+                              Full-time or part-time technical writers, on your
+                              premises or online.
+                            </h4>
+                            <h4 className={classes.cardText}>
+                              All projects are supervised by senior Assistika
+                              staff.
+                            </h4>
+                          </div>
+                        )}
+                      </Spring>
+                    )}
+                  </VisibilitySensor>
                 </Link>
                 <div className={classes.space20}></div>
               </GridItem>
@@ -216,73 +264,82 @@ class SectionBasics extends React.Component {
             <GridContainer>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <Link to="/editing-review" className={classes.linkWrapper}>
-                  <div
-                    className="cardItem3"
-                    onMouseEnter={() =>
-                      this.mouseEnter("cardItem3hover", "cardItem3")
-                    }
-                    onMouseLeave={() =>
-                      this.mouseLeave("cardItem3", "cardItem3hover")
-                    }
-                  >
-                    <img
-                      className={classes.iconPlain}
-                      src={require("assets/img/cardItem3.svg")}
-                      alt=""
-                    />
-                    <h2>Editing and reviewing</h2>
+                  <VisibilitySensor>
+                    {({ isVisible }) => (
+                      <Spring
+                        to={{
+                          opacity: isVisible ? 1 : 0,
+                        }}
+                      >
+                        {props => (
+                          <div
+                            style={props}
+                            className="cardItem3"
+                            onMouseEnter={() =>
+                              this.mouseEnter("cardItem3hover", "cardItem3")
+                            }
+                            onMouseLeave={() =>
+                              this.mouseLeave("cardItem3", "cardItem3hover")
+                            }
+                          >
+                            <img
+                              className={classes.iconPlain}
+                              src={require("assets/img/cardItem3.svg")}
+                              alt=""
+                            />
+                            <h2>Editing and reviewing</h2>
 
-                    <div className={classes.space20} />
-                    <h4 className={classes.cardText}>
-                      We rewrite and reorganize content to make information
-                      easier to read and understand.
-                    </h4>
-                    {/* <ul className={classes.cardText}>
-                      <li>
-                        <h4>Find the information they need</h4>
-                      </li>
-                      <li>
-                        <h4>Understand the information they find</h4>
-                      </li>
-                      <li>
-                        <h4>
-                          Use the information they find to act on what they need
-                        </h4>
-                      </li>
-                    </ul> */}
-                  </div>
+                            <div className={classes.space20} />
+                            <h4 className={classes.cardText}>
+                              We rewrite and reorganize content to make
+                              information easier to read and understand.
+                            </h4>
+                          </div>
+                        )}
+                      </Spring>
+                    )}
+                  </VisibilitySensor>
                 </Link>
 
                 <div className={classes.space20}></div>
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <Link to="/training" className={classes.linkWrapper}>
-                  <div
-                    className="cardItem4"
-                    onMouseEnter={() =>
-                      this.mouseEnter("cardItem4hover", "cardItem4")
-                    }
-                    onMouseLeave={() =>
-                      this.mouseLeave("cardItem4", "cardItem4hover")
-                    }
-                  >
-                    <img
-                      className={classes.iconPlain}
-                      src={require("assets/img/cardItem4.svg")}
-                      alt=""
-                    />
-                    <h2>Training and consulting</h2>
+                  <VisibilitySensor>
+                    {({ isVisible }) => (
+                      <Spring
+                        to={{
+                          opacity: isVisible ? 1 : 0,
+                        }}
+                      >
+                        {props => (
+                          <div
+                            style={props}
+                            className="cardItem4"
+                            onMouseEnter={() =>
+                              this.mouseEnter("cardItem4hover", "cardItem4")
+                            }
+                            onMouseLeave={() =>
+                              this.mouseLeave("cardItem4", "cardItem4hover")
+                            }
+                          >
+                            <img
+                              className={classes.iconPlain}
+                              src={require("assets/img/cardItem4.svg")}
+                              alt=""
+                            />
+                            <h2>Training and consulting</h2>
 
-                    <div className={classes.space20} />
-                    <h4 className={classes.cardText}>
-                      Training to give you the know-how to write and edit your
-                      own documentation.
-                    </h4>
-                    {/* <h4 className={classes.cardText}>
-                      We look at your existing documentation and architecure
-                      together better User Assistance solutions.
-                    </h4> */}
-                  </div>
+                            <div className={classes.space20} />
+                            <h4 className={classes.cardText}>
+                              Training to give you the know-how to write and
+                              edit your own documentation.
+                            </h4>
+                          </div>
+                        )}
+                      </Spring>
+                    )}
+                  </VisibilitySensor>
                 </Link>
                 <div className={classes.space20}></div>
               </GridItem>
@@ -292,7 +349,6 @@ class SectionBasics extends React.Component {
         <div className={classes.space70} />
         <div
           style={{
-            // padding: "1.1em 15px",
             position: "relative",
             backgroundColor: "#F2F2F2",
           }}
@@ -359,7 +415,6 @@ class SectionBasics extends React.Component {
           <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
-                delay={1000}
                 to={{
                   opacity: isVisible ? 1 : 0,
                 }}
