@@ -178,7 +178,9 @@ class SectionBasics extends React.Component {
                               src={require("assets/img/cardItem1.svg")}
                               alt=""
                             />
-                            <h2>Technical writing</h2>
+                            <h2 className={classes.cardTitle}>
+                              Technical writing
+                            </h2>
                             <GridContainer>
                               <GridItem xs={5} sm={5} md={5} lg={5}>
                                 <h4 style={{ fontWeight: "500" }}>
@@ -186,7 +188,7 @@ class SectionBasics extends React.Component {
                                 </h4>
                               </GridItem>
                               <GridItem xs={7} sm={7} md={7} lg={7}>
-                                <h4>
+                                <h4 className={classes.cardText}>
                                   IT, Marketing, Medical, Financial, Legal,
                                   Government, Scientific, Engineering.
                                 </h4>
@@ -199,7 +201,7 @@ class SectionBasics extends React.Component {
                                 </h4>
                               </GridItem>
                               <GridItem xs={7} sm={7} md={7} lg={7}>
-                                <h4>
+                                <h4 className={classes.cardText}>
                                   Online Help, User Guides and PDFs for
                                   printing, Tutorials, Walkthroughs, API Help.
                                 </h4>
@@ -238,7 +240,9 @@ class SectionBasics extends React.Component {
                               src={require("assets/img/cardItem2.svg")}
                               alt=""
                             />
-                            <h2>Adopt a technical writer from us</h2>
+                            <h2 className={classes.cardTitle}>
+                              Adopt a technical writer from us
+                            </h2>
 
                             <div className={classes.space20} />
                             <h4 className={classes.cardText}>
@@ -287,7 +291,9 @@ class SectionBasics extends React.Component {
                               src={require("assets/img/cardItem3.svg")}
                               alt=""
                             />
-                            <h2>Editing and reviewing</h2>
+                            <h2 className={classes.cardTitle}>
+                              Editing and reviewing
+                            </h2>
 
                             <div className={classes.space20} />
                             <h4 className={classes.cardText}>
@@ -328,7 +334,9 @@ class SectionBasics extends React.Component {
                               src={require("assets/img/cardItem4.svg")}
                               alt=""
                             />
-                            <h2>Training and consulting</h2>
+                            <h2 className={classes.cardTitle}>
+                              Training and consulting
+                            </h2>
 
                             <div className={classes.space20} />
                             <h4 className={classes.cardText}>
