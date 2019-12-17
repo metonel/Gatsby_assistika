@@ -187,6 +187,8 @@ class SectionBasics extends React.Component {
                       alt=""
                     />
                     <h2>Adopt a technical writer from us</h2>
+
+                    <div className={classes.space20} />
                     <h4 className={classes.cardText}>
                       Full-time or part-time technical writers, on your premises
                       or online.
@@ -229,6 +231,8 @@ class SectionBasics extends React.Component {
                       alt=""
                     />
                     <h2>Editing and reviewing</h2>
+
+                    <div className={classes.space20} />
                     <h4 className={classes.cardText}>
                       We rewrite and reorganize content to make information
                       easier to read and understand.
@@ -268,6 +272,8 @@ class SectionBasics extends React.Component {
                       alt=""
                     />
                     <h2>Training and consulting</h2>
+
+                    <div className={classes.space20} />
                     <h4 className={classes.cardText}>
                       Training to give you the know-how to write and edit your
                       own documentation.
