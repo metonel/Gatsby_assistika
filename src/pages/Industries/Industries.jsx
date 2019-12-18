@@ -114,6 +114,7 @@ class Industries extends React.Component {
           </Spring>
 
           <div className={classes.space20}></div>
+          <div className={classes.space20}></div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <h2
@@ -123,13 +124,13 @@ class Industries extends React.Component {
                 We document stuff like this:
               </h2>
               <h2
-                style={{ paddingLeft: "20vw" }}
+                style={{ paddingLeft: "13vw" }}
                 className={classes.subtitleDark}
               >
                 IT, Marketing, Medical, Financial, Legal,
               </h2>
               <h2
-                style={{ paddingLeft: "20vw" }}
+                style={{ paddingLeft: "13vw" }}
                 className={classes.subtitleDark}
               >
                 Government, Scientific, Engineering.
@@ -143,13 +144,13 @@ class Industries extends React.Component {
                 ...and deliver it like this:
               </h2>
               <h3
-                style={{ paddingLeft: "20vw" }}
+                style={{ paddingLeft: "13vw" }}
                 className={classes.subtitleDark}
               >
                 Online Help, User Guides and PDFs for
               </h3>
               <h3
-                style={{ paddingLeft: "20vw" }}
+                style={{ paddingLeft: "13vw" }}
                 className={classes.subtitleDark}
               >
                 printing, Tutorials, Walkthroughs, API Help.
