@@ -47,7 +47,7 @@ class Adopt extends React.Component {
         >
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className="titleResponsive">
+              <h1 className="titleResponsiveAdopt">
                 ADOPT A TECHNICAL WRITER FROM US
               </h1>
               <h3 className="subtitleResponsive">
