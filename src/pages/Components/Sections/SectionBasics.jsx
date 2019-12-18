@@ -104,6 +104,7 @@ class SectionBasics extends React.Component {
           id="services"
           style={{ minHeight: "103vh", padding: "1.1em 15px" }}
         >
+          <div className={classes.space20}></div>
           <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
@@ -150,6 +151,10 @@ class SectionBasics extends React.Component {
               </Spring>
             )}
           </VisibilitySensor>
+
+          <div className={classes.space20}></div>
+          <div className={classes.space20}></div>
+          <div className={classes.space20}></div>
 
           <div className="cards">
             <GridContainer>
@@ -361,14 +366,14 @@ class SectionBasics extends React.Component {
             backgroundColor: "#F2F2F2",
           }}
         >
-          <h2>Who is your squad of geek writers?</h2>
+          <h2>Who are your geek writers?</h2>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
-              <h4>
+              <h4 className={classes.descriptionDark}>
                 We are a bunch of linguists with a passion for technology and a
                 talent for writing about how it works.
               </h4>
-              <h4>
+              <h4 className={classes.descriptionDark}>
                 But we're not into Shakespeare. We love the poetry of turning
                 complex concepts into ingeniously simple information.
               </h4>

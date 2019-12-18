@@ -100,6 +100,7 @@ class Adopt extends React.Component {
 
         <div id="goTo" className={classes.main}>
           <div className={classes.space20}></div>
+          <div className={classes.space20}></div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <VisibilitySensor partialVisibility offset={{ left: -50 }}>
@@ -149,16 +150,32 @@ class Adopt extends React.Component {
                     {props => (
                       <h3 style={props} className={classes.descriptionDark}>
                         For project-based technical writers staffing, partner
-                        with Assistika. We can help you meet changing project
+                        with Assistika.
+                      </h3>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={500}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                    }}
+                  >
+                    {props => (
+                      <h3 style={props} className={classes.descriptionDark}>
+                         We can help you meet changing project
                         demands without the cost and liabilities of additional
-                        full time employees.
+                        full-time employees.
                       </h3>
                     )}
                   </Spring>
                 )}
               </VisibilitySensor>
             </GridItem>
-            <GridItem xs={12} sm={12} md={6} lg={6}>
+            <GridItem style={{paddingLeft: "12vw"}} xs={12} sm={12} md={6} lg={6}>
               <VisibilitySensor partialVisibility offset={{ left: -50 }}>
                 {({ isVisible }) => (
                   <Spring
@@ -217,6 +234,8 @@ class Adopt extends React.Component {
           </GridContainer>
 
           <div className={classes.space30}></div>
+          <div className={classes.space30}></div>
+          <div className={classes.space30}></div>
 
           <VisibilitySensor partialVisibility offset={{ left: -50 }}>
             {({ isVisible }) => (
@@ -229,7 +248,7 @@ class Adopt extends React.Component {
               >
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
-                    CONTRACT vs. HIRED TECHNICAL WRITERS
+                    Contract vs. hired technical writers
                   </h2>
                 )}
               </Spring>
@@ -279,12 +298,12 @@ class Adopt extends React.Component {
                 }}
               >
                 {props => (
-                  <ul style={props} className={classes.descriptionDark}>
-                    <li>Handle rapid project growth or expansion</li>
-                    <li>Reduce training costs</li>
-                    <li>Keeps the focus on your core business</li>
-                    <li>Expert competencies and specialized skills</li>
-                    <li>Project-based or seasonal needs</li>
+                  <ul style={props}>
+                    <li className={classes.descriptionDark}>Handle rapid project growth or expansion</li>
+                    <li className={classes.descriptionDark}>Reduce training costs</li>
+                    <li className={classes.descriptionDark}>Keeps the focus on your core business</li>
+                    <li className={classes.descriptionDark}>Expert competencies and specialized skills</li>
+                    <li className={classes.descriptionDark}>Project-based or seasonal needs</li>
                   </ul>
                 )}
               </Spring>

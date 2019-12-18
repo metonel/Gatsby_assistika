@@ -101,7 +101,7 @@ class EditingReview extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    IS YOUR MESSAGE CLEAR ENOUGH FOR YOUR CUSTOMERS?
+                    Is your message clear enough for your customers?
                   </h2>
                 )}
               </Spring>
@@ -148,6 +148,7 @@ class EditingReview extends React.Component {
             )}
           </VisibilitySensor>
           <div className={classes.space20}></div>
+          <div className={classes.space20}></div>
 
           <VisibilitySensor partialVisibility offset={{ left: -50 }}>
             {({ isVisible }) => (
@@ -161,7 +162,7 @@ class EditingReview extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    CLEAR LANGUAGE STANDARD
+                    Clear Language standard
                   </h2>
                 )}
               </Spring>
@@ -206,6 +207,7 @@ class EditingReview extends React.Component {
             )}
           </VisibilitySensor>
           <div className={classes.space20}></div>
+          <div className={classes.space20}></div>
 
           <VisibilitySensor partialVisibility offset={{ left: -50 }}>
             {({ isVisible }) => (
@@ -219,7 +221,7 @@ class EditingReview extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    SHOW YOUR COMMITMENT TO CLEAR COMMUNICATION
+                    Show your commitment to clear communication 
                   </h2>
                 )}
               </Spring>
@@ -293,7 +295,7 @@ class EditingReview extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    HOW TO GET THE CLEAR LANGUAGE STANDARD MARK
+                    How to get the Clear Language mark
                   </h2>
                 )}
               </Spring>
@@ -390,7 +392,7 @@ class EditingReview extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    WHAT CHANGES DO WE MAKE?
+                    What changes do we make?
                   </h2>
                 )}
               </Spring>
@@ -422,12 +424,12 @@ class EditingReview extends React.Component {
                 }}
               >
                 {props => (
-                  <ul style={props} className={classes.descriptionDark}>
-                    <li>Make information easy to read, find and understand</li>
-                    <li>Ensure consistent style and tonality</li>
-                    <li>Increase usability and navigation</li>
-                    <li>Improve design and layout</li>
-                    <li>Apply Clear Language Mark of approval</li>
+                  <ul style={props} >
+                    <li className={classes.descriptionDark}>Make information easy to read, find and understand</li>
+                    <li className={classes.descriptionDark}>Ensure consistent style and tonality</li>
+                    <li className={classes.descriptionDark}>Increase usability and navigation</li>
+                    <li className={classes.descriptionDark}>Improve design and layout</li>
+                    <li className={classes.descriptionDark}>Apply Clear Language Mark of approval</li>
                   </ul>
                 )}
               </Spring>
@@ -459,10 +461,10 @@ class EditingReview extends React.Component {
                 }}
               >
                 {props => (
-                  <ul style={props} className={classes.descriptionDark}>
-                    <li>Find the information they need</li>
-                    <li>Understand the information they find</li>
-                    <li>
+                  <ul style={props} >
+                    <li className={classes.descriptionDark}>Find the information they need</li>
+                    <li className={classes.descriptionDark}>Understand the information they find</li>
+                    <li className={classes.descriptionDark}>
                       Use the information they find to act on what they need
                     </li>
                   </ul>
@@ -484,7 +486,7 @@ class EditingReview extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    ASSSISTIKA WRITING TECHNIQUES
+                    Assistika writing techniques
                   </h2>
                 )}
               </Spring>

@@ -106,19 +106,6 @@ class Adopt extends React.Component {
                   </h3>
                 )}
               </Spring> */}
-              <Spring
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
-                delay={1500}
-                config={{ duration: 500 }}
-              >
-                {props => (
-                  <h3 style={props} className={classes.description}>
-                    Technical writers who grasp your technology quickly and
-                    explain it more clearly than your engineers can.
-                  </h3>
-                )}
-              </Spring>
               <div style={{ padding: "0 40px 0 40px" }}></div>
             </div>
 

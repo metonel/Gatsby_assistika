@@ -64,7 +64,8 @@ const editingReview = {
     maxWidth: "65vw",
   },
   subtitleDark: {
-    // paddingLeft: "20px",
+    maxWidth: "80vw",
+    paddingTop: "7px",
     fontWeight: "400",
     color: "#4a4a4a",
     fontSize: "1.8rem",
@@ -80,6 +81,7 @@ const editingReview = {
   },
   descriptionDark: {
     color: "#4a4a4a",
+    paddingTop: "7px",
     fontWeight: "400",
     fontSize: "1.1rem",
     margin: "10px 0 0",

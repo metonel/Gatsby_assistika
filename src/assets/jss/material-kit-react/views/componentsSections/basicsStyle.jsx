@@ -43,6 +43,21 @@ const basicsStyle = {
     fontSize: "1.5rem",
     fontWeight: "500",
   },
+  subtitleDark: {
+    maxWidth: "80vw",
+    paddingTop: "7px",
+    fontWeight: "400",
+    color: "#4a4a4a",
+    fontSize: "1.8rem",
+    fontWeight: "400",
+    margin: "10px 0 0",
+  },
+  descriptionDark: {
+    color: "#4a4a4a",
+    fontWeight: "400",
+    fontSize: "1.1rem",
+    margin: "10px 0 0",
+  },
   ...customCheckboxRadioSwitch,
 }
 
