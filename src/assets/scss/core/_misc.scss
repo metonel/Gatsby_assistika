@@ -142,6 +142,7 @@ form {
 }
 .subtext {
   padding-left: 8px;
+  font-weight: 500;
   font-size: 12px;
 }
 .linkScroll {
@@ -527,6 +528,7 @@ $animate: all 0.2s ease-in-out;
         background-color: darken(white, 5%);
       }
       &.hover-12 {
+        padding-right: 35px;
         color: white;
         &:before,
         &:after {

@@ -150,6 +150,9 @@ class Components extends React.Component {
               </Spring>
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
               <div id="examples2">
                 <Spring
                   from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
