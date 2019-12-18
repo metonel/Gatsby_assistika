@@ -5,7 +5,7 @@ import tooltip from "assets/jss/material-kit-react/tooltipsStyle.jsx"
 const headerLinksStyle = theme => ({
   list: {
     ...defaultFont,
-    fontSize: "14px",
+    fontSize: "16px",
     margin: 0,
     paddingLeft: "0",
     listStyle: "none",
@@ -42,7 +42,7 @@ const headerLinksStyle = theme => ({
     position: "relative",
     padding: "0.9375rem",
     fontWeight: "450",
-    fontSize: "15px",
+    fontSize: "20px",
     // textTransform: "none",
     borderRadius: "3px",
     lineHeight: "20px",
