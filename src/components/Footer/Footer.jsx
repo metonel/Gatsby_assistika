@@ -5,9 +5,8 @@ import PropTypes from "prop-types"
 // nodejs library that concatenates classes
 import classNames from "classnames"
 import { List, ListItem, withStyles } from "@material-ui/core"
-
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite"
+import { Spring, config } from "react-spring/renderprops"
+import VisibilitySensor from "react-visibility-sensor"
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx"
 
@@ -17,58 +16,34 @@ function Footer({ ...props }) {
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont,
   })
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont,
-  })
   return (
-    <footer className={footerClasses}>
+    <footer style={{ backgroundColor: "#1e1e1e" }} className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
-          {/* <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Creative Tim
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
-          </List> */}
-        </div>
+        {/* <div className={classes.left}></div>
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} Asistika Technical Writing
           solutions
-          {/* <div>Technical Writing solutions</div> */}
-        </div>
+        </div> */}
+        <h2 className={classes.text}>Let’s write something amazing together</h2>
+        <VisibilitySensor>
+          {({ isVisible }) => (
+            <Spring
+              delay={200}
+              to={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible
+                  ? "translate3d(0,0px,0)"
+                  : "translate3d(0,40px,0)",
+              }}
+            >
+              {props => (
+                <h2 style={props} className={classes.mail}>
+                  client@assistika.com
+                </h2>
+              )}
+            </Spring>
+          )}
+        </VisibilitySensor>
       </div>
     </footer>
   )

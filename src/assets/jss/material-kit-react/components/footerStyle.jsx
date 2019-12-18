@@ -1,4 +1,4 @@
-import { container, primaryColor } from "assets/jss/material-kit-react.jsx";
+import { container, primaryColor } from "assets/jss/material-kit-react.jsx"
 
 const footerStyle = {
   block: {
@@ -10,50 +10,68 @@ const footerStyle = {
     borderRadius: "3px",
     textDecoration: "none",
     position: "relative",
-    display: "block"
+    display: "block",
   },
   left: {
     float: "left!important",
-    display: "block"
+    display: "block",
   },
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right!important"
+    float: "right!important",
   },
   footer: {
     padding: "0.9375rem 0",
     textAlign: "center",
     display: "flex",
     zIndex: "2",
-    position: "relative"
+    position: "relative",
   },
   a: {
     color: primaryColor,
     textDecoration: "none",
-    backgroundColor: "transparent"
+    backgroundColor: "transparent",
   },
   footerWhiteFont: {
     "&,&:hover,&:focus": {
-      color: "#FFFFFF"
-    }
+      color: "#FFFFFF",
+    },
   },
-  container,
+  container: {
+    ...container,
+    paddingBottom: "100px",
+  },
   list: {
     marginBottom: "0",
     padding: "0",
-    marginTop: "0"
+    marginTop: "0",
   },
   inlineBlock: {
     display: "inline-block",
     padding: "0px",
-    width: "auto"
+    width: "auto",
   },
   icon: {
     width: "18px",
     height: "18px",
     position: "relative",
-    top: "3px"
-  }
-};
-export default footerStyle;
+    top: "3px",
+  },
+  text: {
+    color: "white",
+    paddingTop: "70px",
+    fontSize: "1.6rem",
+    fontWeight: "500",
+  },
+  mail: {
+    color: "white",
+    fontSize: "2.7rem",
+    fontWeight: "450",
+  },
+  containerMod: {
+    paddingBottom: "90px",
+    textAlign: "center",
+  },
+}
+export default footerStyle
