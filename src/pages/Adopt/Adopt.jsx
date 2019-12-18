@@ -48,7 +48,7 @@ class Adopt extends React.Component {
           <div className={classes.container}>
             <div className={classes.brand}>
               <h1 className="titleResponsiveAdopt">
-                ADOPT A TECHNICAL WRITER FROM US
+                Adopt a Technical Writer From Us
               </h1>
               <h3 className="subtitleResponsive">
                 Assistika assigns one writer or an entire team to work with you

@@ -45,7 +45,7 @@ class EditingReview extends React.Component {
         >
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className="titleResponsive">Editing and reviewing</h1>
+              <h1 className="titleResponsive">Editing And Reviewing</h1>
               <div className={classes.space20}></div>
               <h3 className="subtitleResponsive">
                 We rewrite and reorganize content to make information easier to
