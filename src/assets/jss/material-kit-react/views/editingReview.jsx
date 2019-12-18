@@ -121,7 +121,7 @@ const editingReview = {
     width: "100%",
     bottom: "65px",
     left: "0",
-    padding: "0 1px 0 5vw",
+    padding: "0 1px 0 35px",
   },
   imag: {
     width: "200px",
