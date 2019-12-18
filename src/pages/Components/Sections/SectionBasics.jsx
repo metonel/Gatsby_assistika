@@ -119,7 +119,7 @@ class SectionBasics extends React.Component {
               >
                 {props => (
                   <div style={props} className={classes.title}>
-                    <h2>Services</h2>
+                    <h2 className={classes.subtitleDark}>Services</h2>
                   </div>
                 )}
               </Spring>
@@ -131,18 +131,21 @@ class SectionBasics extends React.Component {
               <Spring
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
                 delay={500}
                 config={{ duration: 800 }}
               >
                 {props => (
                   <div style={props} className={classes.title}>
-                    <h4>
+                    <h4 className={classes.descriptionDark}>
                       Assistika helps your company with all your technical
                       writing needs so you can focus on your development
                       instead.
                     </h4>
-                    <h4>
+                    <h4 className={classes.descriptionDark}>
                       We guarantee world class documentation fit for your
                       world-class products.
                     </h4>
@@ -359,47 +362,118 @@ class SectionBasics extends React.Component {
             </GridContainer>
           </div>
         </div>
+
         <div className={classes.space70} />
         <div
           style={{
+            padding: "1.1em 1.1em",
             position: "relative",
             backgroundColor: "#F2F2F2",
           }}
         >
-          <h2>Who are your geek writers?</h2>
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={200}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h2 style={props} className={classes.subtitleDark}>
+                    Who are your geek writers?
+                  </h2>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6} lg={6}>
-              <h4 className={classes.descriptionDark}>
-                We are a bunch of linguists with a passion for technology and a
-                talent for writing about how it works.
-              </h4>
-              <h4 className={classes.descriptionDark}>
-                But we're not into Shakespeare. We love the poetry of turning
-                complex concepts into ingeniously simple information.
-              </h4>
+              <div className={classes.space20} />
+              <div className={classes.space20} />
+              <div className={classes.space20} />
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={200}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                      transform: isVisible
+                        ? "translate3d(0,0px,0)"
+                        : "translate3d(0,40px,0)",
+                    }}
+                  >
+                    {props => (
+                      <div style={props}>
+                        <h4 className={classes.descriptionDark}>
+                          We are a bunch of linguists with a passion for
+                          technology and a
+                        </h4>
+                        <h4 className={classes.descriptionDark}>
+                          talent for writing about how it works.
+                        </h4>
+                      </div>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+
+              <div className={classes.space20} />
+              <div className={classes.space20} />
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={200}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                      transform: isVisible
+                        ? "translate3d(0,0px,0)"
+                        : "translate3d(0,40px,0)",
+                    }}
+                  >
+                    {props => (
+                      <div style={props}>
+                        <h4 className={classes.descriptionDark}>
+                          But we're not into Shakespeare. We love the poetry of
+                          turning
+                        </h4>
+                        <h4 className={classes.descriptionDark}>
+                          complex concepts into ingeniously simple information.
+                        </h4>
+                      </div>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
             </GridItem>
 
             <GridItem xs={12} sm={12} md={6} lg={6}>
               <div className={classes.space20} />
-              <div className={classes.space20} />
-              <div className={classes.space20} />
 
-              <VisibilitySensor partialVisibility offset={{ left: -150 }}>
+              {/* <VisibilitySensor partialVisibility offset={{ left: -150 }}> */}
+              <VisibilitySensor>
                 {({ isVisible }) => (
                   <Spring
-                    delay={1000}
+                    delay={300}
                     to={{
+                      // opacity: isVisible ? 1 : 0,
+                      // transform: isVisible
+                      //   ? "translateX(0)"
+                      //   : "translateX(100px)",
                       opacity: isVisible ? 1 : 0,
                       transform: isVisible
-                        ? "translateX(0)"
-                        : "translateX(100px)",
+                        ? "translate3d(0,0px,0)"
+                        : "translate3d(0,40px,0)",
                     }}
                   >
                     {props => (
                       <div style={props}>
                         <img
                           className="geekImage"
-                          src={require("assets/img/team.png")}
+                          src={require("assets/img/team.jpg")}
                           alt=""
                         />
                       </div>
@@ -412,16 +486,54 @@ class SectionBasics extends React.Component {
         </div>
         <div className={classes.space20} />
         <div style={{ padding: "1.1em 15px" }}>
-          <h2>How we work</h2>
-          <h4>
-            Assistika provides a range of documentation services for a fixed
-            price.
-          </h4>
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={200}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h2 style={props} className={classes.subtitleDark}>
+                    How we work
+                  </h2>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
 
-          <h4>
-            We take responsibility for delivering the project on deadline and
-            within budget.
-          </h4>
+          <div className={classes.space20} />
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={200}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <div style={props}>
+                    <h4 className={classes.descriptionDark}>
+                      Assistika provides a range of documentation services for a
+                      fixed price.
+                    </h4>
+
+                    <h4 className={classes.descriptionDark}>
+                      We take responsibility for delivering the project on
+                      deadline and within budget.
+                    </h4>
+                  </div>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
 
           <div className={classes.space20} />
           <div className={classes.space20} />
@@ -431,12 +543,13 @@ class SectionBasics extends React.Component {
                 to={{
                   opacity: isVisible ? 1 : 0,
                 }}
+                config={{ duration: 800 }}
               >
                 {props => (
                   <div style={props}>
                     <img
                       className="workImage, noDisplay"
-                      src={require("assets/img/howWe.gif")}
+                      src={require("assets/img/howWeWork.jpeg")}
                       alt=""
                     />
                   </div>

@@ -64,7 +64,6 @@ class Components extends React.Component {
   }
   render() {
     const { classes, ...rest } = this.props
-    const noDisplay = "noDisplay"
     return (
       <div>
         <Header
@@ -208,24 +207,6 @@ class Components extends React.Component {
 
         <div id="goTo" className={classNames(classes.main)}>
           <SectionBasics />
-          {/* <SectionNavbars />
-          <SectionTabs />
-          <SectionPills />
-          <SectionNotifications />
-          <SectionTypography />
-          <SectionJavascript />
-          <SectionCarousel />
-          <SectionCompletedExamples />
-          <SectionLogin />
-          <GridItem md={12} className={classes.textCenter}>
-            <Link to={"/login-page"} className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                View Login Page
-              </Button>
-            </Link>
-          </GridItem>
-          <SectionExamples />
-          <SectionDownload /> */}
         </div>
         <Footer />
       </div>
