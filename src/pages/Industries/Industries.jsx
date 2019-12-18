@@ -121,16 +121,16 @@ class Industries extends React.Component {
                 style={{ fontWeight: "500" }}
                 className={classes.subtitleDark}
               >
-                We document stuff like this:
+                We document stuff like this
               </h2>
               <h2
-                style={{ paddingLeft: "13vw" }}
+                // style={{ paddingLeft: "5vw" }}
                 className={classes.subtitleDark}
               >
                 IT, Marketing, Medical, Financial, Legal,
               </h2>
               <h2
-                style={{ paddingLeft: "13vw" }}
+                // style={{ paddingLeft: "5vw" }}
                 className={classes.subtitleDark}
               >
                 Government, Scientific, Engineering.
@@ -141,19 +141,19 @@ class Industries extends React.Component {
                 style={{ fontWeight: "500" }}
                 className={classes.subtitleDark}
               >
-                ...and deliver it like this:
+                ...and deliver it like this
               </h2>
               <h3
-                style={{ paddingLeft: "13vw" }}
+                // style={{ paddingLeft: "5vw" }}
                 className={classes.subtitleDark}
               >
-                Online Help, User Guides and PDFs for
+                Online Help, user guides and PDFs for printing, 
               </h3>
               <h3
-                style={{ paddingLeft: "13vw" }}
+                // style={{ paddingLeft: "5vw" }}
                 className={classes.subtitleDark}
               >
-                printing, Tutorials, Walkthroughs, API Help.
+                tutorials, walkthroughs, API documentation.
               </h3>
             </GridItem>
           </GridContainer>
