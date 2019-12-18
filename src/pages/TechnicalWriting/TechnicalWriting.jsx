@@ -242,7 +242,7 @@ class TechnicalWriting extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    REDUCE YOUR TRANSLATION COSTS
+                    Reduce your translation costs
                   </h2>
                 )}
               </Spring>
