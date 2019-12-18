@@ -96,7 +96,7 @@ function HeaderLinks({ ...props }) {
                 target="_blank"
               >
                 <Link
-                  style={{ fontWeight: "450", fontSize: "15px" }}
+                  style={{ fontWeight: "450", fontSize: "20px" }}
                   to="/hire-us"
                 >
                   Hire us
