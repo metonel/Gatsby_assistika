@@ -118,13 +118,15 @@ class TheAgency extends React.Component {
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
 
-          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+          <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(50px)",
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -145,6 +147,9 @@ class TheAgency extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -171,13 +176,15 @@ class TheAgency extends React.Component {
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
 
-          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+          <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(50px)",
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -197,6 +204,9 @@ class TheAgency extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (

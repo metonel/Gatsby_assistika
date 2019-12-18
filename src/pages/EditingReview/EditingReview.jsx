@@ -89,13 +89,15 @@ class EditingReview extends React.Component {
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
 
-          <VisibilitySensor partialVisibility offset={{ left: -80 }}>
+          <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(80px)",
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -114,15 +116,23 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    Assistika's editing service upgrades your existing content
-                    to a very high standard of clairty. Basically, we make sure
-                    your audience finds your content easy to read and understand
-                    and can act upon it on first reading.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      Assistika's editing service upgrades your existing content
+                      to a very high standard of clairty.
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      Basically, we make sure your audience finds your content
+                      easy to read and understand and can act upon it on first
+                      reading.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
@@ -133,16 +143,27 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    Our technical writers check your documents or website for
-                    language accessibility, navigation, design and layout. If
-                    the content is not clear enough, we send you a cost estimate
-                    of any necessary editing. If you need, we can first send you
-                    a free sample edit to help you start the process.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      Our technical writers check your documents or website for
+                      language accessibility, navigation, design and layout.
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      {" "}
+                      If the content is not clear enough, we send you a cost
+                      estimate of any necessary editing.
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      If you need, we can first send you a free sample edit to
+                      help you start the process.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
@@ -150,13 +171,15 @@ class EditingReview extends React.Component {
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
 
-          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+          <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(50px)",
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -175,15 +198,22 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    After editing, we send you your upgraded content with an
-                    individually numbered CLEAR LANGUAGE approval mark. The
-                    CLEAR LANGUAGE MARK is Assistika's seal of approval for the
-                    clarity of a document or website.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      The CLEAR LANGUAGE MARK is Assistika's seal of approval
+                      for the clarity of a document or website.
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      After editing, we send you your upgraded content with an
+                      individually numbered CLEAR LANGUAGE approval mark.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
@@ -194,14 +224,22 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    You can add this Clear Language mark on your website or
-                    documents. This will show the world that you are commited to
-                    get your message across to your audience.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      This will show the world that you are commited to get your
+                      message across to your audience.
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      You can add this Clear Language mark on your website or
+                      documents.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
@@ -209,19 +247,21 @@ class EditingReview extends React.Component {
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
 
-          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+          <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(50px)",
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    Show your commitment to clear communication 
+                    Show your commitment to clear communication
                   </h2>
                 )}
               </Spring>
@@ -233,6 +273,9 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -250,14 +293,22 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    After reviewing your documents, Assistika can add the Clear
-                    Language Mark on each website and printed document that
-                    meets internationally accepted plain language standards.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      After reviewing your documents, Assistika can add the
+                      Clear Language Mark on each website and printed document
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      that meets internationally accepted plain language
+                      standards.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
@@ -268,28 +319,37 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    The Clear Language mark gives independent proof that your
-                    content meets a high standard of clarity. This means that
-                    your public can understand and act on your message after
-                    just one reading.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      This means that your public can understand and act on your
+                      message after just one reading.
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      The Clear Language mark gives independent proof that your
+                      content meets a high standard of clarity.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
           </VisibilitySensor>
           <div className={classes.space20}></div>
 
-          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+          <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(50px)",
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -308,15 +368,22 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    The CLEAR LANGUAGE MARK is Assistika's seal of approval for
-                    the clarity of a document or website. The mark ensures that
-                    your audience will find your content easy to read and
-                    understand.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      The mark ensures that your audience will find your content
+                      easy to read and understand.
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      The CLEAR LANGUAGE MARK is Assistika's seal of approval
+                      for the clarity of a document or website.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
@@ -327,16 +394,26 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    If your document or website is up to our standards, we will
-                    send you our CLEAR LANGUAGE approval. You can use the Clear
-                    LANGUAGE logo on your website or documents to show the world
-                    that you are committed to get your message across to your
-                    audience.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      If your document or website is up to our standards, we
+                      will send you our CLEAR LANGUAGE approval.
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      You can use the Clear LANGUAGE logo on your website or
+                      documents to show the world
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      that you are committed to get your message across to your
+                      audience.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
@@ -347,14 +424,22 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    If your document is not clear enough, we will send you an
-                    estimate of the cost of any necessary editing. We can also
-                    send you a free sample edit to help you start the process.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      If your document is not clear enough, we will send you an
+                      estimate of the cost of any necessary editing.
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      We can also send you a free sample edit to help you start
+                      the process.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
@@ -365,28 +450,37 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.descriptionDark}>
-                    Once you have accepted our editing estimate, we will edit
-                    your document so that it meets CLEAR LANGUAGE standard and
-                    send you your individually numbered CLEAR LANGUAGE mark to
-                    use on the document or website.
-                  </h3>
+                  <div style={props}>
+                    <h3 className={classes.descriptionDark}>
+                      Once you have accepted our editing estimate, we will edit
+                      your document so that it meets CLEAR LANGUAGE
+                    </h3>
+                    <h3 className={classes.descriptionDark}>
+                      standard and send you your individually numbered CLEAR
+                      LANGUAGE mark to use on the document or website.
+                    </h3>
+                  </div>
                 )}
               </Spring>
             )}
           </VisibilitySensor>
           <div className={classes.space20}></div>
 
-          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+          <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(50px)",
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -404,6 +498,9 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -421,15 +518,28 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <ul style={props} >
-                    <li className={classes.descriptionDark}>Make information easy to read, find and understand</li>
-                    <li className={classes.descriptionDark}>Ensure consistent style and tonality</li>
-                    <li className={classes.descriptionDark}>Increase usability and navigation</li>
-                    <li className={classes.descriptionDark}>Improve design and layout</li>
-                    <li className={classes.descriptionDark}>Apply Clear Language Mark of approval</li>
+                  <ul style={props}>
+                    <li className={classes.descriptionDark}>
+                      Make information easy to read, find and understand
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      Ensure consistent style and tonality
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      Increase usability and navigation
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      Improve design and layout
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      Apply Clear Language Mark of approval
+                    </li>
                   </ul>
                 )}
               </Spring>
@@ -441,6 +551,9 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -458,12 +571,19 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
-                  <ul style={props} >
-                    <li className={classes.descriptionDark}>Find the information they need</li>
-                    <li className={classes.descriptionDark}>Understand the information they find</li>
+                  <ul style={props}>
+                    <li className={classes.descriptionDark}>
+                      Find the information they need
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      Understand the information they find
+                    </li>
                     <li className={classes.descriptionDark}>
                       Use the information they find to act on what they need
                     </li>
@@ -474,13 +594,15 @@ class EditingReview extends React.Component {
           </VisibilitySensor>
           <div className={classes.space20}></div>
 
-          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+          <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(50px)",
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -499,6 +621,9 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -516,6 +641,9 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -532,6 +660,9 @@ class EditingReview extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (

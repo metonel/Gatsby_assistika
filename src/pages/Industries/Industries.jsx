@@ -9,6 +9,7 @@ import Parallax from "components/Parallax/Parallax.jsx"
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import { Spring, config } from "react-spring/renderprops"
+import VisibilitySensor from "react-visibility-sensor"
 
 import editingReviewStyle from "assets/jss/material-kit-react/views/editingReview"
 
@@ -99,64 +100,89 @@ class Industries extends React.Component {
         <div id="goTo" className={classes.main}>
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
-          <Spring
-            from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
-            to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-            delay={500}
-            config={{ duration: 500 }}
-          >
-            {props => (
-              <h3 style={props} className={classes.subtitleDark}>
-                We work with government agencies, private industries, and
-                non-profit and charitable organizations.
-              </h3>
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={200}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.subtitleDark}>
+                    We work with government agencies, private industries, and
+                    non-profit and charitable organizations.
+                  </h3>
+                )}
+              </Spring>
             )}
-          </Spring>
+          </VisibilitySensor>
 
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6} lg={6}>
-              <h2
-                style={{ fontWeight: "500" }}
-                className={classes.subtitleDark}
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={200}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
               >
-                We document stuff like this
-              </h2>
-              <h2
-                // style={{ paddingLeft: "5vw" }}
-                className={classes.subtitleDark}
-              >
-                IT, Marketing, Medical, Financial, Legal,
-              </h2>
-              <h2
-                // style={{ paddingLeft: "5vw" }}
-                className={classes.subtitleDark}
-              >
-                Government, Scientific, Engineering.
-              </h2>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={6} lg={6}>
-              <h2
-                style={{ fontWeight: "500" }}
-                className={classes.subtitleDark}
-              >
-                ...and deliver it like this
-              </h2>
-              <h3
-                // style={{ paddingLeft: "5vw" }}
-                className={classes.subtitleDark}
-              >
-                Online Help, user guides and PDFs for printing, 
-              </h3>
-              <h3
-                // style={{ paddingLeft: "5vw" }}
-                className={classes.subtitleDark}
-              >
-                tutorials, walkthroughs, API documentation.
-              </h3>
-            </GridItem>
-          </GridContainer>
+                {props => (
+                  <div style={props}>
+                    <GridContainer>
+                      <GridItem xs={12} sm={12} md={6} lg={6}>
+                        <h2
+                          style={{ fontWeight: "500" }}
+                          className={classes.subtitleDark}
+                        >
+                          We document stuff like this
+                        </h2>
+                        <h2
+                          // style={{ paddingLeft: "5vw" }}
+                          className={classes.subtitleDark}
+                        >
+                          IT, Marketing, Medical, Financial, Legal,
+                        </h2>
+                        <h2
+                          // style={{ paddingLeft: "5vw" }}
+                          className={classes.subtitleDark}
+                        >
+                          Government, Scientific, Engineering.
+                        </h2>
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={6} lg={6}>
+                        <h2
+                          style={{ fontWeight: "500" }}
+                          className={classes.subtitleDark}
+                        >
+                          ...and deliver it like this
+                        </h2>
+                        <h3
+                          // style={{ paddingLeft: "5vw" }}
+                          className={classes.subtitleDark}
+                        >
+                          Online Help, user guides and PDFs for printing,
+                        </h3>
+                        <h3
+                          // style={{ paddingLeft: "5vw" }}
+                          className={classes.subtitleDark}
+                        >
+                          tutorials, walkthroughs, API documentation.
+                        </h3>
+                      </GridItem>
+                    </GridContainer>
+                  </div>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
 
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
