@@ -101,137 +101,86 @@ class Adopt extends React.Component {
         <div id="goTo" className={classes.main}>
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6} lg={6}>
-              <VisibilitySensor partialVisibility offset={{ left: -50 }}>
-                {({ isVisible }) => (
-                  <Spring
-                    delay={500}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                      transform: isVisible
-                        ? "translateX(0)"
-                        : "translateX(50px)",
-                    }}
-                  >
-                    {props => (
-                      <h2 style={props} className={classes.subtitleDark}>
-                        Your extended tech writing team
-                      </h2>
-                    )}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <Spring
-                    delay={500}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                    }}
-                  >
-                    {props => (
-                      <h3 style={props} className={classes.descriptionDark}>
-                        Sometimes you don't want to be stuck with a technical
-                        writer forever.
-                      </h3>
-                    )}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <Spring
-                    delay={500}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                    }}
-                  >
-                    {props => (
-                      <h3 style={props} className={classes.descriptionDark}>
-                        For project-based technical writers staffing, partner
-                        with Assistika.
-                      </h3>
-                    )}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <Spring
-                    delay={500}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                    }}
-                  >
-                    {props => (
-                      <h3 style={props} className={classes.descriptionDark}>
-                         We can help you meet changing project
-                        demands without the cost and liabilities of additional
-                        full-time employees.
-                      </h3>
-                    )}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-            </GridItem>
-            <GridItem style={{paddingLeft: "12vw"}} xs={12} sm={12} md={6} lg={6}>
-              <VisibilitySensor partialVisibility offset={{ left: -50 }}>
-                {({ isVisible }) => (
-                  <Spring
-                    delay={500}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                      transform: isVisible
-                        ? "translateX(0)"
-                        : "translateX(50px)",
-                    }}
-                  >
-                    {props => (
-                      <h2 style={props} className={classes.subtitleDark}>
-                        On-site or online
-                      </h2>
-                    )}
-                  </Spring>
-                )}
-              </VisibilitySensor>
 
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <Spring
-                    delay={500}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                    }}
-                  >
-                    {props => (
-                      <h3 style={props} className={classes.descriptionDark}>
-                        Full-time or part-time technical writers, on your
-                        premises or online.
-                      </h3>
-                    )}
-                  </Spring>
+          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h2 style={props} className={classes.subtitleDark}>
+                    Your extended tech writing team
+                  </h2>
                 )}
-              </VisibilitySensor>
-
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <Spring
-                    delay={500}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                    }}
-                  >
-                    {props => (
-                      <h3 style={props} className={classes.descriptionDark}>
-                        All projects are supervised by senior Assistika staff.
-                      </h3>
-                    )}
-                  </Spring>
+              </Spring>
+            )}
+          </VisibilitySensor>
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.descriptionDark}>
+                    Sometimes you don't want to be stuck with a technical writer
+                    forever.
+                  </h3>
                 )}
-              </VisibilitySensor>
-            </GridItem>
-          </GridContainer>
+              </Spring>
+            )}
+          </VisibilitySensor>
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.descriptionDark}>
+                    For project-based technical writers staffing, partner with
+                    Assistika.
+                  </h3>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.descriptionDark}>
+                    We can help you meet changing project demands without the
+                    cost and liabilities of additional full-time employees.
+                  </h3>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
 
           <div className={classes.space30}></div>
           <div className={classes.space30}></div>
@@ -243,7 +192,74 @@ class Adopt extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
-                  transform: isVisible ? "translateX(0)" : "translateX(50px)",
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h2 style={props} className={classes.subtitleDark}>
+                    On-site or online
+                  </h2>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
+
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.descriptionDark}>
+                    Full-time or part-time technical writers, on your premises
+                    or online.
+                  </h3>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
+
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
+                }}
+              >
+                {props => (
+                  <h3 style={props} className={classes.descriptionDark}>
+                    All projects are supervised by senior Assistika staff.
+                  </h3>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
+
+          <div className={classes.space30}></div>
+          <div className={classes.space30}></div>
+          <div className={classes.space30}></div>
+
+          <VisibilitySensor partialVisibility offset={{ left: -50 }}>
+            {({ isVisible }) => (
+              <Spring
+                delay={500}
+                to={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -260,6 +276,9 @@ class Adopt extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -277,6 +296,9 @@ class Adopt extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
@@ -295,15 +317,28 @@ class Adopt extends React.Component {
                 delay={500}
                 to={{
                   opacity: isVisible ? 1 : 0,
+                  transform: isVisible
+                    ? "translate3d(0,0px,0)"
+                    : "translate3d(0,40px,0)",
                 }}
               >
                 {props => (
                   <ul style={props}>
-                    <li className={classes.descriptionDark}>Handle rapid project growth or expansion</li>
-                    <li className={classes.descriptionDark}>Reduce training costs</li>
-                    <li className={classes.descriptionDark}>Keeps the focus on your core business</li>
-                    <li className={classes.descriptionDark}>Expert competencies and specialized skills</li>
-                    <li className={classes.descriptionDark}>Project-based or seasonal needs</li>
+                    <li className={classes.descriptionDark}>
+                      Handle rapid project growth or expansion
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      Reduce training costs
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      Keeps the focus on your core business
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      Expert competencies and specialized skills
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      Project-based or seasonal needs
+                    </li>
                   </ul>
                 )}
               </Spring>
