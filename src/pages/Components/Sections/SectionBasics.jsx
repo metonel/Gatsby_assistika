@@ -420,6 +420,33 @@ class SectionBasics extends React.Component {
                   </Spring>
                 )}
               </VisibilitySensor>
+              <div className={classes.space20} />
+              <div className={classes.space20} />
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    delay={200}
+                    to={{
+                      opacity: isVisible ? 1 : 0,
+                      transform: isVisible
+                        ? "translate3d(0,0px,0)"
+                        : "translate3d(0,40px,0)",
+                    }}
+                  >
+                    {props => (
+                      <div style={props}>
+                        <h4 className={classes.descriptionDark}>
+                          Our perfect combination of technical and writing
+                          skills turns complex concepts
+                        </h4>
+                        <h4 className={classes.descriptionDark}>
+                          into ingeniously simple information.
+                        </h4>
+                      </div>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
 
               <div className={classes.space20} />
               <div className={classes.space20} />
@@ -437,11 +464,12 @@ class SectionBasics extends React.Component {
                     {props => (
                       <div style={props}>
                         <h4 className={classes.descriptionDark}>
-                          But we're not into Shakespeare. We love the poetry of
-                          turning
+                          Voracious readers of Shakespeare and installation
+                          guides.
                         </h4>
                         <h4 className={classes.descriptionDark}>
-                          complex concepts into ingeniously simple information.
+                          Half poets, half engineers. More hybrid than our Azure
+                          cloud storage.
                         </h4>
                       </div>
                     )}
