@@ -47,14 +47,11 @@ class TechnicalWriting extends React.Component {
         >
           <div className={classes.container}>
             {/* <div className={classes.brand}> */}
-            <h1 className="titleResponsive">Technical Writing</h1>
+            <h1 className="titleResponsive">Technical writing</h1>
             <div className={classes.space20}></div>
             <h3 style={{ maxWidth: "55vw" }} className="subtitleResponsive">
               Outsource the development and maintenance of your technical
               documentation to us.
-            </h3>
-            <h3 className="subtitleResponsive">
-              We deliver great documentation on time, and within budget.
             </h3>
 
             <Spring
@@ -103,8 +100,7 @@ class TechnicalWriting extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    Our expert technical authors develop information that is
-                    easy to find, read and understand.
+                    We deliver great documentation on time, and within budget.
                   </h2>
                 )}
               </Spring>
@@ -313,9 +309,6 @@ class TechnicalWriting extends React.Component {
           </VisibilitySensor>
           <div className={classes.space20}></div>
 
-          {/* <h2 className={classes.subtitleDark}>
-            OUR TECHNICAL WRITING PROCESS
-          </h2> */}
           <div className={classes.space20}></div>
         </div>
         <Footer />

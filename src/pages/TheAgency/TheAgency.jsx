@@ -64,6 +64,8 @@ class TheAgency extends React.Component {
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
 
               <Spring
                 from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
@@ -73,10 +75,13 @@ class TheAgency extends React.Component {
               >
                 {props => (
                   <h2 style={props} className="subtitleResponsive">
-                    The Agency
+                    Assistika provides a range of documentation services for a
+                    fixed price.
                   </h2>
                 )}
               </Spring>
+
+              <div className={classes.space20}></div>
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
@@ -85,8 +90,8 @@ class TheAgency extends React.Component {
               >
                 {props => (
                   <h3 style={props} className="subtitleResponsive">
-                    Assistika provides a range of documentation services for a
-                    fixed price.
+                    We guarantee world class documentation fit for your
+                    world-class products.
                   </h3>
                 )}
               </Spring>
@@ -160,7 +165,7 @@ class TheAgency extends React.Component {
                       instead.
                     </h3>
                     <h3 className={classes.descriptionDark}>
-                      We guarantee world class documentation fit for your
+                      We guarantee world-class documentation fit for your
                       world-class products.
                     </h3>
                     <h3 className={classes.descriptionDark}>
@@ -218,7 +223,7 @@ class TheAgency extends React.Component {
                     <h3 className={classes.descriptionDark}>
                       But we're just not into Shakespeare. We're more into
                       magic. We take complex concepts and turn them into
-                      ingeniously simple information
+                      ingeniously simple information.
                     </h3>
                   </div>
                 )}

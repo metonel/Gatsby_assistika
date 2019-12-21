@@ -67,8 +67,8 @@ class HireUs extends React.Component {
               >
                 {props => (
                   <h3 style={props} className={classes.description}>
-                    Let's talk! Abour how we can assist you with making your
-                    project as excellent it can be.
+                    Let's talk! About how we can assist you with making your
+                    project as excellent as it can be.
                   </h3>
                 )}
               </Spring>
@@ -105,8 +105,7 @@ class HireUs extends React.Component {
               <GridItem xs={12} sm={12} md={7} lg={7}>
                 <h3 className={classes.subtitleDark}>Contact us</h3>
                 <h3 className={classes.descriptionDark}>
-                  We manage testing, documentation and localization projects
-                  throughout world.
+                  We manage documentation projects throughout world.
                 </h3>
                 <h3 className={classes.subtitleDark}>By Phone</h3>
                 <h3 className={classes.descriptionDark}>+40 747 937 044</h3>

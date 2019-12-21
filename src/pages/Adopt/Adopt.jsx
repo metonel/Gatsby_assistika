@@ -48,7 +48,7 @@ class Adopt extends React.Component {
           <div className={classes.container}>
             <div className={classes.brand}>
               <h1 className="titleResponsiveAdopt">
-                Adopt a Technical Writer From Us
+                Adopt a technical writer from us
               </h1>
               <h3 className="subtitleResponsive">
                 Assistika assigns one writer or an entire team to work with you
@@ -283,8 +283,8 @@ class Adopt extends React.Component {
               >
                 {props => (
                   <h3 style={props} className={classes.descriptionDark}>
-                    The flexibility and scalability that contract staffing
-                    provides can help drive your business growth strategy.
+                    Contract staffing provides flexibility and scalability to
+                    grow your business.
                   </h3>
                 )}
               </Spring>
@@ -325,19 +325,19 @@ class Adopt extends React.Component {
                 {props => (
                   <ul style={props}>
                     <li className={classes.descriptionDark}>
-                      Handle rapid project growth or expansion
+                      handle rapid project growth or expansion
                     </li>
                     <li className={classes.descriptionDark}>
-                      Reduce training costs
+                      reduce training costs
                     </li>
                     <li className={classes.descriptionDark}>
-                      Keeps the focus on your core business
+                      keeps the focus on your core business
                     </li>
                     <li className={classes.descriptionDark}>
-                      Expert competencies and specialized skills
+                      expert competencies and specialized skills
                     </li>
                     <li className={classes.descriptionDark}>
-                      Project-based or seasonal needs
+                      project-based or seasonal needs
                     </li>
                   </ul>
                 )}

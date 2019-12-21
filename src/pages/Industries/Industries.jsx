@@ -55,7 +55,7 @@ class Industries extends React.Component {
               >
                 {props => (
                   <h1 style={props} className="titleResponsive">
-                    INDUSTRIES WE SERVE
+                    Industries we serve
                   </h1>
                 )}
               </Spring>

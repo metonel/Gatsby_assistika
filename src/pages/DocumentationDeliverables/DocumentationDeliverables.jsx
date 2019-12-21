@@ -94,46 +94,43 @@ class DocumentationDeliverables extends React.Component {
         <div id="goTo" className={classes.main}>
           <div className={classes.space20}></div>
           <div className={classes.space20}></div>
-          <Spring
-            from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
-            to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-            delay={500}
-            config={{ duration: 500 }}
-          >
-            {props => (
-              <h2 style={props} className={classes.subtitleDark}>
-                We guarantee world class documentation fit for your world-class
-                products.
-              </h2>
-            )}
-          </Spring>
 
           <div className={classes.space20}></div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={4} lg={4}>
-              <h2 className={classes.subtitleDark}>PRINT-BASED USER GUIDES</h2>
+              <h2 className={classes.subtitleDark}>
+                PRINT-BASED DOCUMENTATION
+              </h2>
               <h2 className={classes.descriptionDark}>
                 Epubs, PDF or Word files for:
               </h2>
-              <ul className={classes.descriptionDark}>
-                <li>Product Manuals</li>
-                <li>Process documents</li>
-                <li>Release Notes</li>
-                <li>Installation manuals</li>
-                <li>Upgrade Guides</li>
-                <li>Administrator guides</li>
-                <li>Troubleshooting guides</li>
+              <ul>
+                <li className={classes.descriptionDark}>Product manuals</li>
+                <li className={classes.descriptionDark}>Process documents</li>
+                <li className={classes.descriptionDark}>Release notes</li>
+                <li className={classes.descriptionDark}>
+                  Installation manuals
+                </li>
+                <li className={classes.descriptionDark}>Upgrade guides</li>
+                <li className={classes.descriptionDark}>
+                  Administrator guides
+                </li>
+                <li className={classes.descriptionDark}>
+                  Troubleshooting guides
+                </li>
               </ul>
             </GridItem>
             <GridItem xs={12} sm={12} md={4} lg={4}>
-              <h2 className={classes.subtitleDark}>EDITING & REVIEWING</h2>
-              <h2 className={classes.descriptionDark}>
-                We review documents and websites to:
-              </h2>
-              <ul className={classes.descriptionDark}>
-                <li>make information easy to read, find and understand</li>
-                <li>ensure consistent style, tonality</li>
-                <li>apply Clear Language mark of approval</li>
+              <h2 className={classes.subtitleDark}>WEB-BASED DOCUMENTATION</h2>
+
+              <ul>
+                <li className={classes.descriptionDark}>Online Help systems</li>
+                <li className={classes.descriptionDark}>
+                  Tutorials and walkthroughs
+                </li>
+                <li className={classes.descriptionDark}>
+                  Documentation portals
+                </li>
               </ul>
             </GridItem>
             <GridItem xs={12} sm={12} md={4} lg={4}>
@@ -141,10 +138,16 @@ class DocumentationDeliverables extends React.Component {
               <h2 className={classes.descriptionDark}>
                 We review documents and websites to:
               </h2>
-              <ul className={classes.descriptionDark}>
-                <li>API reference guides</li>
-                <li>getting started tutorials</li>
-                <li>status, authorization, rate limiting topics</li>
+              <ul>
+                <li className={classes.descriptionDark}>
+                  API reference guides
+                </li>
+                <li className={classes.descriptionDark}>
+                  getting started tutorials
+                </li>
+                <li className={classes.descriptionDark}>
+                  status, authorization, rate limiting topics
+                </li>
               </ul>
             </GridItem>
           </GridContainer>
@@ -152,31 +155,46 @@ class DocumentationDeliverables extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={4} lg={4}>
               <h2 className={classes.subtitleDark}>MARKETING MATERIALS</h2>
-              <ul className={classes.descriptionDark}>
-                <li>Whitepapers</li>
-                <li>Case studies</li>
-                <li>Business proposals</li>
-                <li>Reports</li>
-                <li>Presentations</li>
+              <ul>
+                <li className={classes.descriptionDark}>Whitepapers</li>
+                <li className={classes.descriptionDark}>Case studies</li>
+                <li className={classes.descriptionDark}>Business proposals</li>
+                <li className={classes.descriptionDark}>Reports</li>
+                <li className={classes.descriptionDark}>Presentations</li>
               </ul>
             </GridItem>
             <GridItem xs={12} sm={12} md={4} lg={4}>
               <h2 className={classes.subtitleDark}>UX UI REVIEW</h2>
               <h2 className={classes.descriptionDark}>
-                We can check your product to help you determine:
+                We can test your product to help you determine possible:
               </h2>
-              <ul className={classes.descriptionDark}>
-                <li>enhancements in user interface design</li>
-                <li>enhancement in product usability and accessibility</li>
-                <li>improvements in UI strings wording</li>
-                <li>enhancements in users' experience</li>
+              <ul>
+                <li className={classes.descriptionDark}>
+                  enhancements in user interface design
+                </li>
+                <li className={classes.descriptionDark}>
+                  enhancement in product usability and accessibility
+                </li>
+                <li className={classes.descriptionDark}>
+                  improvements in UI strings wording
+                </li>
+                <li className={classes.descriptionDark}>
+                  enhancements in users' experience
+                </li>
               </ul>
             </GridItem>
             <GridItem xs={12} sm={12} md={4} lg={4}>
               <h2 className={classes.subtitleDark}>RESUME WRITING</h2>
-              <ul className={classes.descriptionDark}>
-                <li>Professionally written CVs that pass the 30-second test</li>
-                <li>Highlights your skills, expertise, and achievements</li>
+              <h2 className={classes.descriptionDark}>
+                Professionally written CVs that:
+              </h2>
+              <ul>
+                <li className={classes.descriptionDark}>
+                  - pass the 30-second speed test
+                </li>
+                <li className={classes.descriptionDark}>
+                  - highlights your skills, expertise, and achievements
+                </li>
               </ul>
             </GridItem>
           </GridContainer>

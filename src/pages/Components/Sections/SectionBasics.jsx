@@ -146,7 +146,7 @@ class SectionBasics extends React.Component {
                       instead.
                     </h4>
                     <h4 className={classes.descriptionDark}>
-                      We guarantee world class documentation fit for your
+                      We guarantee world-class documentation fit for your
                       world-class products.
                     </h4>
                   </div>

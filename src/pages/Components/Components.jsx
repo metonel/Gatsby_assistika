@@ -162,7 +162,8 @@ class Components extends React.Component {
                   {props => (
                     <div style={props} class="example2">
                       <Link to="/outstaffing">
-                        <span class="hover2 hover-12">OUTSTAFFING</span>
+                        <span class="hover2 hover-12">OUTSTAFFING</span>{" "}
+                        <span style={{ paddingRight: "35px" }}></span>
                       </Link>
                     </div>
                   )}

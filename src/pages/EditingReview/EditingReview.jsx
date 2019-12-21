@@ -45,16 +45,16 @@ class EditingReview extends React.Component {
         >
           <div className={classes.container}>
             <div className={classes.brand}>
-              <h1 className="titleResponsive">Editing And Reviewing</h1>
+              <h1 className="titleResponsive">Editing and reviewing</h1>
               <div className={classes.space20}></div>
+              <h3 className="subtitleResponsive">
+                Is your message clear enough for your customers?
+              </h3>
+              {/* <div className={classes.space20}></div> */}
               <h3 className="subtitleResponsive">
                 We rewrite and reorganize content to make information easier to
                 read and understand.
               </h3>
-              {/* <h3 className="subtitleResponsive">
-                Our magic turns complex information into ingeniously simple
-                messages.
-              </h3> */}
             </div>
             <Spring
               from={{ opacity: 0 }}
@@ -103,88 +103,6 @@ class EditingReview extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    Is your message clear enough for your customers?
-                  </h2>
-                )}
-              </Spring>
-            )}
-          </VisibilitySensor>
-
-          <VisibilitySensor>
-            {({ isVisible }) => (
-              <Spring
-                delay={500}
-                to={{
-                  opacity: isVisible ? 1 : 0,
-                  transform: isVisible
-                    ? "translate3d(0,0px,0)"
-                    : "translate3d(0,40px,0)",
-                }}
-              >
-                {props => (
-                  <div style={props}>
-                    <h3 className={classes.descriptionDark}>
-                      Assistika's editing service upgrades your existing content
-                      to a very high standard of clairty.
-                    </h3>
-                    <h3 className={classes.descriptionDark}>
-                      Basically, we make sure your audience finds your content
-                      easy to read and understand and can act upon it on first
-                      reading.
-                    </h3>
-                  </div>
-                )}
-              </Spring>
-            )}
-          </VisibilitySensor>
-          <VisibilitySensor>
-            {({ isVisible }) => (
-              <Spring
-                delay={500}
-                to={{
-                  opacity: isVisible ? 1 : 0,
-                  transform: isVisible
-                    ? "translate3d(0,0px,0)"
-                    : "translate3d(0,40px,0)",
-                }}
-              >
-                {props => (
-                  <div style={props}>
-                    <h3 className={classes.descriptionDark}>
-                      Our technical writers check your documents or website for
-                      language accessibility, navigation, design and layout.
-                    </h3>
-                    <h3 className={classes.descriptionDark}>
-                      {" "}
-                      If the content is not clear enough, we send you a cost
-                      estimate of any necessary editing.
-                    </h3>
-                    <h3 className={classes.descriptionDark}>
-                      If you need, we can first send you a free sample edit to
-                      help you start the process.
-                    </h3>
-                  </div>
-                )}
-              </Spring>
-            )}
-          </VisibilitySensor>
-          <div className={classes.space20}></div>
-          <div className={classes.space20}></div>
-
-          <VisibilitySensor>
-            {({ isVisible }) => (
-              <Spring
-                delay={500}
-                to={{
-                  opacity: isVisible ? 1 : 0,
-                  transform: isVisible
-                    ? "translate3d(0,0px,0)"
-                    : "translate3d(0,40px,0)",
-                }}
-              >
-                {props => (
-                  <h2 style={props} className={classes.subtitleDark}>
-                    {" "}
                     Clear Language standard
                   </h2>
                 )}
@@ -206,12 +124,12 @@ class EditingReview extends React.Component {
                 {props => (
                   <div style={props}>
                     <h3 className={classes.descriptionDark}>
-                      The CLEAR LANGUAGE MARK is Assistika's seal of approval
+                      The Clear Language Mark is Assistika's seal of approval
                       for the clarity of a document or website.
                     </h3>
                     <h3 className={classes.descriptionDark}>
                       After editing, we send you your upgraded content with an
-                      individually numbered CLEAR LANGUAGE approval mark.
+                      individually numbered Clear Language approval mark.
                     </h3>
                   </div>
                 )}
@@ -376,37 +294,11 @@ class EditingReview extends React.Component {
                 {props => (
                   <div style={props}>
                     <h3 className={classes.descriptionDark}>
-                      The mark ensures that your audience will find your content
-                      easy to read and understand.
-                    </h3>
-                    <h3 className={classes.descriptionDark}>
-                      The CLEAR LANGUAGE MARK is Assistika's seal of approval
-                      for the clarity of a document or website.
-                    </h3>
-                  </div>
-                )}
-              </Spring>
-            )}
-          </VisibilitySensor>
-          <VisibilitySensor>
-            {({ isVisible }) => (
-              <Spring
-                delay={500}
-                to={{
-                  opacity: isVisible ? 1 : 0,
-                  transform: isVisible
-                    ? "translate3d(0,0px,0)"
-                    : "translate3d(0,40px,0)",
-                }}
-              >
-                {props => (
-                  <div style={props}>
-                    <h3 className={classes.descriptionDark}>
                       If your document or website is up to our standards, we
-                      will send you our CLEAR LANGUAGE approval.
+                      will send you our Clear Language approval.
                     </h3>
                     <h3 className={classes.descriptionDark}>
-                      You can use the Clear LANGUAGE logo on your website or
+                      You can use the Clear Language logo on your website or
                       documents to show the world
                     </h3>
                     <h3 className={classes.descriptionDark}>
@@ -459,7 +351,7 @@ class EditingReview extends React.Component {
                   <div style={props}>
                     <h3 className={classes.descriptionDark}>
                       Once you have accepted our editing estimate, we will edit
-                      your document so that it meets CLEAR LANGUAGE
+                      your document so that it meets Clear Language
                     </h3>
                     <h3 className={classes.descriptionDark}>
                       standard and send you your individually numbered CLEAR
@@ -526,19 +418,19 @@ class EditingReview extends React.Component {
                 {props => (
                   <ul style={props}>
                     <li className={classes.descriptionDark}>
-                      Make information easy to read, find and understand
+                      make information easy to read, find and understand
                     </li>
                     <li className={classes.descriptionDark}>
-                      Ensure consistent style and tonality
+                      ensure consistent style and tonality
                     </li>
                     <li className={classes.descriptionDark}>
-                      Increase usability and navigation
+                      increase usability and navigation
                     </li>
                     <li className={classes.descriptionDark}>
-                      Improve design and layout
+                      improve design and layout
                     </li>
                     <li className={classes.descriptionDark}>
-                      Apply Clear Language Mark of approval
+                      apply Clear Language Mark of approval
                     </li>
                   </ul>
                 )}
@@ -579,13 +471,13 @@ class EditingReview extends React.Component {
                 {props => (
                   <ul style={props}>
                     <li className={classes.descriptionDark}>
-                      Find the information they need
+                      find the information they need
                     </li>
                     <li className={classes.descriptionDark}>
-                      Understand the information they find
+                      understand the information they find
                     </li>
                     <li className={classes.descriptionDark}>
-                      Use the information they find to act on what they need
+                      use the information they find to act on what they need
                     </li>
                   </ul>
                 )}
@@ -666,15 +558,21 @@ class EditingReview extends React.Component {
                 }}
               >
                 {props => (
-                  <ul style={props} className={classes.descriptionDark}>
-                    <li>
-                      Logical organization of content with your audience in mind
+                  <ul style={props}>
+                    <li className={classes.descriptionDark}>
+                      logical organization of content with your audience in mind
                     </li>
-                    <li>Easy-to-navigate design features</li>
-                    <li>Signposting and whitespace</li>
-                    <li>Active voice</li>
-                    <li>Short sentences</li>
-                    <li>Plain language and common words</li>
+                    <li className={classes.descriptionDark}>
+                      easy-to-navigate design features
+                    </li>
+                    <li className={classes.descriptionDark}>
+                      signposting and whitespace
+                    </li>
+                    <li className={classes.descriptionDark}>active voice</li>
+                    <li className={classes.descriptionDark}>short sentences</li>
+                    <li className={classes.descriptionDark}>
+                      plain language and common words
+                    </li>
                   </ul>
                 )}
               </Spring>

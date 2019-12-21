@@ -61,7 +61,7 @@ class Careers extends React.Component {
             >
               {props => (
                 <h2 style={props} className="subtitleResponsive">
-                  HERE ARE THE JOBS OPEN NOW
+                  Here are the jobs open now
                 </h2>
               )}
             </Spring>
@@ -96,9 +96,9 @@ class Careers extends React.Component {
           </h3>
           <h3 className={classes.descriptionDark}>
             Assistika is looking for a great communicator with a passion for
-            technology to help us deliver truly outstanding documentation.You’ll
-            be surrounded by a great team, helping to develop software and other
-            technical products that are simple and enjoyable to use.
+            technology to help us deliver truly outstanding documentation.
+            You’ll be surrounded by a great team, helping to develop software
+            and other technical products that are simple and enjoyable to use.
           </h3>
           <div className={classes.space20}></div>
 
@@ -113,8 +113,8 @@ class Careers extends React.Component {
               understand
             </li>
             <li>
-              Design and develop guides, tutorials and Help systems for end
-              users, system administrators, support engineers and product
+              Design and develop guides, tutorials and Help systems for
+              end-users, system administrators, support engineers, and product
               developers
             </li>
             <li>
