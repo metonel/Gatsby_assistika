@@ -473,7 +473,7 @@ class SectionBasics extends React.Component {
                       <div style={props}>
                         <img
                           className="geekImage"
-                          src={require("assets/img/07.png")}
+                          src={require("assets/img/team.png")}
                           alt=""
                         />
                       </div>
