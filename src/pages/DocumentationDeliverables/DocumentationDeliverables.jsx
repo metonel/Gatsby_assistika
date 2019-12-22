@@ -190,10 +190,10 @@ class DocumentationDeliverables extends React.Component {
               </h2>
               <ul>
                 <li className={classes.descriptionDark}>
-                  - pass the 30-second speed test
+                  pass the 30-second speed test
                 </li>
                 <li className={classes.descriptionDark}>
-                  - highlights your skills, expertise, and achievements
+                  highlights your skills, expertise, and achievements
                 </li>
               </ul>
             </GridItem>

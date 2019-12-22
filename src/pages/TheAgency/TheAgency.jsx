@@ -52,17 +52,11 @@ class TheAgency extends React.Component {
                 config={{ duration: 1000 }}
               >
                 {props => (
-                  <h1
-                    style={{ ...props, textAlign: "center" }}
-                    className="titleResponsive"
-                  >
+                  <h1 style={props} className="titleResponsive">
                     The Agency
                   </h1>
                 )}
               </Spring>
-              <div className={classes.space20}></div>
-              <div className={classes.space20}></div>
-              <div className={classes.space20}></div>
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
