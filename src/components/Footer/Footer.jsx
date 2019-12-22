@@ -24,7 +24,7 @@ function Footer({ ...props }) {
           &copy; {1900 + new Date().getYear()} Asistika Technical Writing
           solutions
         </div> */}
-        <h2 className={classes.text}>Let’s write something amazing together</h2>
+        <h2 className="footerText">Let’s write something amazing together</h2>
         <VisibilitySensor>
           {({ isVisible }) => (
             <Spring
@@ -37,7 +37,7 @@ function Footer({ ...props }) {
               }}
             >
               {props => (
-                <h2 style={props} className={classes.mail}>
+                <h2 style={props} className="footerMail">
                   client@assistika.com
                 </h2>
               )}

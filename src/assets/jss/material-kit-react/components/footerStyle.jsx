@@ -64,14 +64,5 @@ const footerStyle = {
     fontSize: "1.6rem",
     fontWeight: "500",
   },
-  mail: {
-    color: "white",
-    fontSize: "2.7rem",
-    fontWeight: "450",
-  },
-  containerMod: {
-    paddingBottom: "90px",
-    textAlign: "center",
-  },
 }
 export default footerStyle

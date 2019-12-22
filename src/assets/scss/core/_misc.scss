@@ -160,6 +160,9 @@ form {
   color: black;
   border: solid 1px #ededed;
   border-radius: 5px;
+  @media (max-width: 1500px) {
+    min-height: 437px;
+  }
   @media (max-width: 767px) {
     padding: 10px;
   }
@@ -170,6 +173,9 @@ form {
   color: black;
   border: solid 1px #ededed;
   border-radius: 5px;
+  @media (max-width: 1500px) {
+    min-height: 437px;
+  }
   @media (max-width: 767px) {
     padding: 10px;
   }
@@ -180,6 +186,9 @@ form {
   color: black;
   border: solid 1px #ededed;
   border-radius: 5px;
+  @media (max-width: 1500px) {
+    min-height: 437px;
+  }
   @media (max-width: 767px) {
     padding: 10px;
   }
@@ -190,6 +199,9 @@ form {
   color: black;
   border: solid 1px #ededed;
   border-radius: 5px;
+  @media (max-width: 1500px) {
+    min-height: 437px;
+  }
   @media (max-width: 767px) {
     padding: 10px;
   }
@@ -212,6 +224,9 @@ form {
   color: white;
   border: solid 1px #ededed;
   border-radius: 5px;
+  @media (max-width: 1500px) {
+    min-height: 437px;
+  }
   @media (max-width: 767px) {
     padding: 10px;
   }
@@ -223,6 +238,9 @@ form {
   color: white;
   border: solid 1px #ededed;
   border-radius: 5px;
+  @media (max-width: 1500px) {
+    min-height: 437px;
+  }
   @media (max-width: 767px) {
     padding: 10px;
   }
@@ -234,10 +252,33 @@ form {
   color: white;
   border: solid 1px #ededed;
   border-radius: 5px;
+  @media (max-width: 1500px) {
+    min-height: 437px;
+  }
   @media (max-width: 767px) {
     padding: 10px;
   }
 }
+
+.footerText {
+  color: white;
+  padding-top: 70px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  @media (max-width: 767px) {
+    font-size: 1.4rem;
+  }
+}
+
+.footerMail {
+  color: white;
+  font-size: 2.7rem;
+  font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 2.1rem;
+  }
+}
+
 $animate: all 0.2s ease-in-out;
 #examples {
   opacity: 0.95;
