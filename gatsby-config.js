@@ -15,8 +15,8 @@ module.exports = {
         name: "Assistika Outsourced technical writing",
         short_name: "Assistika",
         start_url: "/",
-        background_color: "#46aa54",
-        theme_color: "#46aa54",
+        background_color: "white",
+        theme_color: "white",
         display: "minimal-ui",
         icon: "src/assets/img/siteIcon.png", // This path is relative to the root of the site.
       },
