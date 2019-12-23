@@ -105,18 +105,18 @@ class DocumentationDeliverables extends React.Component {
                 Epubs, PDF or Word files for:
               </h2>
               <ul>
-                <li className={classes.descriptionDark}>Product manuals</li>
-                <li className={classes.descriptionDark}>Process documents</li>
-                <li className={classes.descriptionDark}>Release notes</li>
+                <li className={classes.descriptionDark}>product manuals</li>
+                <li className={classes.descriptionDark}>process documents</li>
+                <li className={classes.descriptionDark}>release notes</li>
                 <li className={classes.descriptionDark}>
-                  Installation manuals
+                  installation manuals
                 </li>
-                <li className={classes.descriptionDark}>Upgrade guides</li>
+                <li className={classes.descriptionDark}>upgrade guides</li>
                 <li className={classes.descriptionDark}>
-                  Administrator guides
+                  administrator guides
                 </li>
                 <li className={classes.descriptionDark}>
-                  Troubleshooting guides
+                  troubleshooting guides
                 </li>
               </ul>
             </GridItem>
@@ -124,12 +124,12 @@ class DocumentationDeliverables extends React.Component {
               <h2 className={classes.subtitleDark}>WEB-BASED DOCUMENTATION</h2>
 
               <ul>
-                <li className={classes.descriptionDark}>Online Help systems</li>
+                <li className={classes.descriptionDark}>online Help systems</li>
                 <li className={classes.descriptionDark}>
-                  Tutorials and walkthroughs
+                  tutorials and walkthroughs
                 </li>
                 <li className={classes.descriptionDark}>
-                  Documentation portals
+                  documentation portals
                 </li>
               </ul>
             </GridItem>
@@ -156,11 +156,11 @@ class DocumentationDeliverables extends React.Component {
             <GridItem xs={12} sm={12} md={4} lg={4}>
               <h2 className={classes.subtitleDark}>MARKETING MATERIALS</h2>
               <ul>
-                <li className={classes.descriptionDark}>Whitepapers</li>
-                <li className={classes.descriptionDark}>Case studies</li>
-                <li className={classes.descriptionDark}>Business proposals</li>
-                <li className={classes.descriptionDark}>Reports</li>
-                <li className={classes.descriptionDark}>Presentations</li>
+                <li className={classes.descriptionDark}>whitepapers</li>
+                <li className={classes.descriptionDark}>case studies</li>
+                <li className={classes.descriptionDark}>business proposals</li>
+                <li className={classes.descriptionDark}>reports</li>
+                <li className={classes.descriptionDark}>presentations</li>
               </ul>
             </GridItem>
             <GridItem xs={12} sm={12} md={4} lg={4}>

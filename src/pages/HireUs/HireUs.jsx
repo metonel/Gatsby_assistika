@@ -66,7 +66,7 @@ class HireUs extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h3 style={props} className={classes.description}>
+                  <h3 style={props} className="subtitleResponsive">
                     Let's talk! About how we can assist you with making your
                     project as excellent as it can be.
                   </h3>

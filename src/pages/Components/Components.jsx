@@ -128,7 +128,7 @@ class Components extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h2 style={props} className="subtitleResponsive noDisplay">
+                  <h2 style={props} className="subtitleHome noDisplay">
                     Outsource the development and maintenance of your technical
                     content to us.
                   </h2>
@@ -141,7 +141,7 @@ class Components extends React.Component {
                 config={{ duration: 500 }}
               >
                 {props => (
-                  <h3 style={props} className="subtitleResponsive">
+                  <h3 style={props} className="subtitleHome">
                     We give you the right technical writers, with the right
                     skills for your business.
                   </h3>

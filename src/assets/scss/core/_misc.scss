@@ -356,7 +356,7 @@ $animate: all 0.2s ease-in-out;
   position: relative;
   z-index: 1;
   @media (max-width: 767px) {
-    font-size: 3.1rem;
+    font-size: 2.9rem;
   }
 }
 .titleResponsiveAdopt {
@@ -385,6 +385,19 @@ $animate: all 0.2s ease-in-out;
   @media (max-width: 767px) {
     font-size: 1.3rem;
     max-width: 100vw;
+  }
+}
+
+.subtitleHome {
+  padding-left: 20px;
+  font-weight: 400;
+  color: white;
+  font-size: 1.6rem;
+  margin: 10px 0 0;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 767px) {
+    font-size: 1.3rem;
   }
 }
 .noDisplay {

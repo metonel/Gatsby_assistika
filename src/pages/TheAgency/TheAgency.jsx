@@ -59,7 +59,6 @@ class TheAgency extends React.Component {
               </Spring>
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
-              <div className={classes.space20}></div>
 
               <Spring
                 from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
@@ -75,7 +74,6 @@ class TheAgency extends React.Component {
                 )}
               </Spring>
 
-              <div className={classes.space20}></div>
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}

@@ -159,10 +159,10 @@ class TechnicalWriting extends React.Component {
               >
                 {props => (
                   <ul style={props} className={classes.descriptionDark}>
-                    <li>Explains your product functionality</li>
-                    <li>Markets your product</li>
+                    <li>explains your product functionality</li>
+                    <li>markets your product</li>
                     <li>
-                      Reduces helpdesk calls by answering all your customers'
+                      reduces helpdesk calls by answering all your customers'
                       questions
                     </li>
                   </ul>
@@ -227,15 +227,15 @@ class TechnicalWriting extends React.Component {
               >
                 {props => (
                   <ul style={props} className={classes.descriptionDark}>
-                    <li>Web-based online help systems</li>
-                    <li>Print-based user guides</li>
+                    <li>web-based online help systems</li>
+                    <li>print-based user guides</li>
                     <li>API documentation</li>
-                    <li>Editing & reviewing</li>
+                    <li>editing & reviewing</li>
                     <li>UX UI review</li>
-                    <li>Tutorials & walkthroughs</li>
-                    <li>Policy, compliance & audit documents</li>
-                    <li>Resume writing</li>
-                    <li>Marketing materials</li>
+                    <li>tutorials & walkthroughs</li>
+                    <li>policy, compliance & audit documents</li>
+                    <li>resume writing</li>
+                    <li>marketing materials</li>
                   </ul>
                 )}
               </Spring>
@@ -300,8 +300,8 @@ class TechnicalWriting extends React.Component {
               >
                 {props => (
                   <ul style={props} className={classes.descriptionDark}>
-                    <li>Use simplified language that is easy to translate</li>
-                    <li>Edit content translated from other languages</li>
+                    <li>use simplified language that is easy to translate</li>
+                    <li>edit content translated from other languages</li>
                   </ul>
                 )}
               </Spring>
