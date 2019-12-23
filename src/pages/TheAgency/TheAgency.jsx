@@ -53,7 +53,7 @@ class TheAgency extends React.Component {
               >
                 {props => (
                   <h1 style={props} className="titleResponsive">
-                    The Agency
+                    The agency
                   </h1>
                 )}
               </Spring>

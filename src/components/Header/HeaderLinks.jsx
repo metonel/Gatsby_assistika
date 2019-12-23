@@ -78,7 +78,7 @@ function HeaderLinks({ ...props }) {
             </ListItem>
             <ListItem className={classes.listItem}>
               <Link to="/the-agency" className={classes.navLink}>
-                The Agency
+                The agency
               </Link>
             </ListItem>
             <ListItem className={classes.listItem}>
