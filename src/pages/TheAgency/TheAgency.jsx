@@ -82,7 +82,7 @@ class TheAgency extends React.Component {
               >
                 {props => (
                   <h3 style={props} className="subtitleResponsive">
-                    We guarantee world class documentation fit for your
+                    We guarantee world-class documentation fit for your
                     world-class products.
                   </h3>
                 )}

@@ -109,40 +109,40 @@ class Careers extends React.Component {
 
           <ul className={classes.descriptionDark}>
             <li>
-              Write technical documentation in a way that’s easy to read and
+              write technical documentation in a way that’s easy to read and
               understand
             </li>
             <li>
-              Design and develop guides, tutorials and Help systems for
+              design and develop guides, tutorials and Help systems for
               end-users, system administrators, support engineers, and product
               developers
             </li>
             <li>
-              Interact with software engineers to understand the products they
+              interact with software engineers to understand the products they
               are developing
             </li>
             <li>
-              Test software products to create documentation and provide
+              test software products to create documentation and provide
               feedback on product usability and accessibility
             </li>
-            <li>Create and maintain Assistika’s information architecture</li>
+            <li>create and maintain Assistika’s information architecture</li>
           </ul>
 
           <h3 className={classes.subtitleDark}>Requirements</h3>
 
           <ul className={classes.descriptionDark}>
             <li>
-              Bachelors degree or higher qualification in Technical
+              bachelors degree or higher qualification in Technical
               Communication, English, Journalism or similar field
             </li>
-            <li>Excellent written English</li>
-            <li>Medium to advanced knowledge of computers and networking</li>
-            <li>Ability to learn complex IT concepts quickly</li>
+            <li>excellent written English</li>
+            <li>medium to advanced knowledge of computers and networking</li>
+            <li>ability to learn complex IT concepts quickly</li>
             <li>
-              Ability to simplify and organize complex technical information
+              ability to simplify and organize complex technical information
             </li>
             <li>
-              Excellent communication skills to work with cross-functional teams
+              excellent communication skills to work with cross-functional teams
               (Development, Marketing, Support, etc.)
             </li>
           </ul>

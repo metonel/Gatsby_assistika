@@ -173,7 +173,7 @@ class DocumentationDeliverables extends React.Component {
                   enhancements in user interface design
                 </li>
                 <li className={classes.descriptionDark}>
-                  enhancement in product usability and accessibility
+                  enhancements in product usability and accessibility
                 </li>
                 <li className={classes.descriptionDark}>
                   improvements in UI strings wording
@@ -193,7 +193,7 @@ class DocumentationDeliverables extends React.Component {
                   pass the 30-second speed test
                 </li>
                 <li className={classes.descriptionDark}>
-                  highlights your skills, expertise, and achievements
+                  highlight your skills, expertise, and achievements
                 </li>
               </ul>
             </GridItem>
