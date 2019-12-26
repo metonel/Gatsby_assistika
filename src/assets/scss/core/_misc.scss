@@ -279,6 +279,13 @@ form {
   }
 }
 
+header {
+  svg {
+    width: 1.5em !important;
+    height: 1.5em !important;
+  }
+}
+
 $animate: all 0.2s ease-in-out;
 #examples {
   opacity: 0.95;
