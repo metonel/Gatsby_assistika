@@ -40,6 +40,94 @@ class Components extends React.Component {
         })
       })
     })
+
+    function caret() {
+      if (
+        document
+          .getElementsByClassName("subtitleHomeTyped")[0]
+          .classList.contains("border")
+      ) {
+        document
+          .getElementsByClassName("subtitleHomeTyped")[0]
+          .classList.remove("border")
+      } else {
+        document
+          .getElementsByClassName("subtitleHomeTyped")[0]
+          .classList.add("border")
+      }
+
+      setTimeout(() => caret(), 500)
+    }
+    caret()
+
+    // setTimeout(function() {
+    //   document.getElementsByClassName("bodyHider")[0].style.backgroundColor =
+    //     "white"
+    // }, 1500)
+    // setTimeout(function() {
+    //   document.getElementsByClassName("bodyHider")[0].style.display = "none"
+    // }, 3000)
+
+    let txtElement = document.querySelector(".subtitleHomeTyped")
+    // let words = [
+    //   "Outsoutce the development of your technical documentation  to us",
+    //   "Adopt a technical writer from us",
+    //   "Get technical writing training from us",
+    //   "Send us your technical documents for editing",
+    // ]
+    let phrases = [
+      "who can get you out of any documentation black hole",
+      "who can develop documentation from the ground up",
+      "who turn complex concepts into ingeniously simple information",
+      "online or on-site",
+    ]
+    let wait = 3000
+    let txt = ""
+    let wordIndex = 0
+    let isDeleting = false
+
+    function type() {
+      // Current index of word
+      const current = wordIndex % phrases.length
+      // Get full text of current word
+      const fullTxt = phrases[current]
+
+      // Check if deleting
+      if (isDeleting) {
+        // Remove char
+        txt = fullTxt.substring(0, txt.length - 1)
+      } else {
+        // Add char
+        txt = fullTxt.substring(0, txt.length + 1)
+      }
+
+      // Insert txt into element
+      txtElement.innerHTML = `<span class="txt">${txt}</span>`
+
+      // Initial Type Speed
+      let typeSpeed = 60
+
+      if (isDeleting) {
+        typeSpeed /= 2
+      }
+
+      // If word is complete
+      if (!isDeleting && txt === fullTxt) {
+        // Make pause at end
+        typeSpeed = wait
+        // Set delete to true
+        isDeleting = true
+      } else if (isDeleting && txt === "") {
+        isDeleting = false
+        // Move to next word
+        wordIndex++
+        // Pause before start typing
+        typeSpeed = 100
+      }
+      setTimeout(() => type(), typeSpeed)
+    }
+    // type()
+    setTimeout(() => type(), 3000)
   }
   handleChange = name => event => {
     this.setState({ [name]: event.target.checked })
@@ -82,17 +170,19 @@ class Components extends React.Component {
         >
           <div className={classes.container}>
             <div className={classes.brand}>
-              <Spring
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
-                // delay={200}
-                config={{ duration: 500 }}
-              >
-                {props => (
-                  <h1 style={props} className="titleResponsive">
-                    Expert technical writers? Ready
-                    {/* <span> */}
-                    <FormControlLabel
+              <div style={{ height: "100px" }}>
+                <Spring
+                  from={{ opacity: 0 }}
+                  to={{ opacity: 1 }}
+                  // delay={200}
+                  config={{ duration: 500 }}
+                >
+                  {props => (
+                    <h1 style={props} className="titleResponsive">
+                      Technical writers
+                      <span className="subtitleHomeTyped border"></span>
+                      {/* <span> */}
+                      {/* <FormControlLabel
                       style={{
                         padding: "0 0 0 12px",
                         position: "relative",
@@ -116,12 +206,12 @@ class Components extends React.Component {
                       classes={{
                         label: classes.label,
                       }}
-                    />
-                  </h1>
-                )}
-              </Spring>
-              <div className={classes.space20}></div>
-              <Spring
+                    /> */}
+                    </h1>
+                  )}
+                </Spring>
+                <div className={classes.space20}></div>
+                {/* <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
                 delay={700}
@@ -133,20 +223,19 @@ class Components extends React.Component {
                     content to us.
                   </h2>
                 )}
-              </Spring>
+              </Spring> */}
+              </div>
               <Spring
                 from={{ opacity: 0 }}
                 to={{ opacity: 1 }}
                 delay={1300}
                 config={{ duration: 500 }}
               >
-                {props => (
-                  <h3 style={props} className="subtitleHome">
-                    We give you the right technical writers, with the right
-                    skills for your business.
-                  </h3>
-                )}
+                {props => <h3 style={props} className="subtitleHome"></h3>}
               </Spring>
+              <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
+              <div className={classes.space20}></div>
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
               <div className={classes.space20}></div>
@@ -156,13 +245,13 @@ class Components extends React.Component {
                 <Spring
                   from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
                   to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-                  delay={1800}
+                  delay={2000}
                   config={{ duration: 500 }}
                 >
                   {props => (
                     <div style={props} class="example2">
-                      <Link to="/outstaffing">
-                        <span class="hover2 hover-12">OUTSTAFFING</span>{" "}
+                      <Link to="/outsourcing">
+                        <span class="hover2 hover-12">OUTSOURCE</span>
                         <span style={{ paddingRight: "35px" }}></span>
                       </Link>
                     </div>
@@ -171,13 +260,13 @@ class Components extends React.Component {
                 <Spring
                   from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
                   to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-                  delay={2000}
+                  delay={1800}
                   config={{ duration: 500 }}
                 >
                   {props => (
                     <div style={props} class="example2">
-                      <Link to="/outsourcing">
-                        <span class="hover2 hover-12">OUTSOURCING</span>
+                      <Link to="/outstaffing">
+                        <span class="hover2 hover-12">CONTRACT</span>{" "}
                       </Link>
                     </div>
                   )}
@@ -198,7 +287,7 @@ class Components extends React.Component {
                       src={require("assets/img/down.svg")}
                       alt=""
                     />
-                    Scroll to find out more
+                    Scroll down to find out more
                   </a>
                 </div>
               )}

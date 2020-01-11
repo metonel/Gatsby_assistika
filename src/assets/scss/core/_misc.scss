@@ -363,7 +363,8 @@ $animate: all 0.2s ease-in-out;
   position: relative;
   z-index: 1;
   @media (max-width: 767px) {
-    font-size: 2.9rem;
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 }
 .titleResponsiveAdopt {
@@ -407,6 +408,25 @@ $animate: all 0.2s ease-in-out;
     font-size: 1.3rem;
   }
 }
+
+.subtitleHomeTyped {
+  padding-left: 8px;
+  color: white;
+  font-size: 3.8rem;
+  font-weight: 450;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.border {
+  // margin-right: 2px;
+  border-right: 3px solid white;
+}
+
 .noDisplay {
   @media (max-width: 767px) {
     display: none;

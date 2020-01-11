@@ -255,7 +255,7 @@ const buttonStyle = {
   hireUs: {
     "&,&:focus,&:hover,&:visited": {
       color: "inherit",
-      background: "rgba(166,166,166, 0.2)",
+      background: "rgba(90, 195, 179, 0.7)",
       boxShadow: "none",
     },
   },

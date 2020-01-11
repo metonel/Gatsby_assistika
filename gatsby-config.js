@@ -17,7 +17,7 @@ module.exports = {
         start_url: "/",
         background_color: "white",
         theme_color: "white",
-        display: "minimal-ui",
+        display: "Assistika",
         icon: "src/assets/img/siteIcon.png", // This path is relative to the root of the site.
       },
     },
