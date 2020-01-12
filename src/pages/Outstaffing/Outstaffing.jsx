@@ -89,7 +89,7 @@ class Adopt extends React.Component {
                 {props => (
                   <h2 style={props} className="subtitleResponsive">
                     Assistika is the perfect solution when hiring an in-house
-                    technical writer is not right option for your company.
+                    technical writer is not the right option for your company.
                   </h2>
                 )}
               </Spring>

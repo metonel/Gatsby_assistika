@@ -113,11 +113,12 @@ class DocumentationDeliverables extends React.Component {
                 </li>
                 <li className={classes.descriptionDark}>upgrade guides</li>
                 <li className={classes.descriptionDark}>
-                  administrator guides
+                  administration guides
                 </li>
                 <li className={classes.descriptionDark}>
                   troubleshooting guides
                 </li>
+                <li className={classes.descriptionDark}>use guides</li>
               </ul>
             </GridItem>
             <GridItem xs={12} sm={12} md={4} lg={4}>
