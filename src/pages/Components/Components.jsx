@@ -20,16 +20,16 @@ import { Spring, config } from "react-spring/renderprops"
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx"
 
 class Components extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      checked: [24, 22],
-      selectedEnabled: "b",
-      // checkedA: true,
-      checkedB: true,
-    }
-    this.handleChangeEnabled = this.handleChangeEnabled.bind(this)
-  }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     checked: [24, 22],
+  //     selectedEnabled: "b",
+  //     // checkedA: true,
+  //     checkedB: true,
+  //   }
+  //   this.handleChangeEnabled = this.handleChangeEnabled.bind(this)
+  // }
   componentDidMount() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function(e) {
@@ -245,13 +245,13 @@ class Components extends React.Component {
                 <Spring
                   from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
                   to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-                  delay={2000}
+                  delay={1800}
                   config={{ duration: 500 }}
                 >
                   {props => (
                     <div style={props} class="example2">
-                      <Link to="/outsourcing">
-                        <span class="hover2 hover-12">OUTSOURCE</span>
+                      <Link to="/outstaffing">
+                        <span class="hover2 hover-12">CONTRACT US</span>{" "}
                         <span style={{ paddingRight: "35px" }}></span>
                       </Link>
                     </div>
@@ -260,13 +260,13 @@ class Components extends React.Component {
                 <Spring
                   from={{ opacity: 0, transform: "translate3d(0,40px,0)" }}
                   to={{ opacity: 1, transform: "translate3d(0,0px,0)" }}
-                  delay={1800}
+                  delay={2000}
                   config={{ duration: 500 }}
                 >
                   {props => (
                     <div style={props} class="example2">
-                      <Link to="/outstaffing">
-                        <span class="hover2 hover-12">CONTRACT</span>{" "}
+                      <Link to="/outsourcing">
+                        <span class="hover2 hover-12">OUTSOURCE TO US</span>
                       </Link>
                     </div>
                   )}
