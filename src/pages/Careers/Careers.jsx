@@ -157,7 +157,7 @@ class Careers extends React.Component {
           </h3>
           <h3 className={classes.descriptionDark}>
             Email your CV at{" "}
-            <span style={{ color: "#27afda" }}>careers@assitika.com</span>
+            <span style={{ color: "#27afda" }}>careers@assistika.com</span>
           </h3>
           <div className={classes.space20}></div>
         </div>

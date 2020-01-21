@@ -154,7 +154,7 @@ class EditingReview extends React.Component {
                       message across to your audience.
                     </h3>
                     <h3 className={classes.descriptionDark}>
-                      You can add this Clear Language mark on your website or
+                      You can add this Clear Language Mark on your website or
                       documents.
                     </h3>
                   </div>
@@ -249,7 +249,7 @@ class EditingReview extends React.Component {
                       message after just one reading.
                     </h3>
                     <h3 className={classes.descriptionDark}>
-                      The Clear Language mark gives independent proof that your
+                      The Clear Language Mark gives independent proof that your
                       content meets a high standard of clarity.
                     </h3>
                   </div>
@@ -273,7 +273,7 @@ class EditingReview extends React.Component {
                 {props => (
                   <h2 style={props} className={classes.subtitleDark}>
                     {" "}
-                    How to get the Clear Language mark
+                    How to get the Clear Language Mark
                   </h2>
                 )}
               </Spring>
@@ -355,7 +355,7 @@ class EditingReview extends React.Component {
                     </h3>
                     <h3 className={classes.descriptionDark}>
                       standard and send you your individually numbered CLEAR
-                      LANGUAGE mark to use on the document or website.
+                      LANGUAGE MARK to use on the document or website.
                     </h3>
                   </div>
                 )}
