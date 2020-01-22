@@ -105,7 +105,7 @@ class HireUs extends React.Component {
               <GridItem xs={12} sm={12} md={7} lg={7}>
                 <h3 className={classes.subtitleDark}>Contact us</h3>
                 <h3 className={classes.descriptionDark}>
-                  We manage documentation projects throughout world.
+                  We manage documentation projects throughout the world.
                 </h3>
                 <h3 className={classes.subtitleDark}>By Phone</h3>
                 <h3 className={classes.descriptionDark}>+40 747 937 044</h3>
