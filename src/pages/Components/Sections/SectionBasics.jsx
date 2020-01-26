@@ -565,7 +565,15 @@ class SectionBasics extends React.Component {
 
           <div className={classes.space20} />
           <div className={classes.space20} />
-          <VisibilitySensor>
+                  <div >
+                    <img
+                      className="noDisplay"
+                      style={{width:'98%'}}
+                      src={require("assets/img/howWeWork.jpg")}
+                      alt=""
+                    />
+                  </div>
+          {/* <VisibilitySensor>
             {({ isVisible }) => (
               <Spring
                 to={{
@@ -577,14 +585,14 @@ class SectionBasics extends React.Component {
                   <div style={props}>
                     <img
                       className="workImage, noDisplay"
-                      src={require("assets/img/howWeWork.jpeg")}
+                      src={require("assets/img/howWeWork.svg")}
                       alt=""
                     />
                   </div>
                 )}
               </Spring>
             )}
-          </VisibilitySensor>
+          </VisibilitySensor> */}
           {/* <h4>CLICK TO FIND OUT MORE ABOUT OUR PROCESS</h4> */}
         </div>
       </div>

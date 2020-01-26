@@ -1,7 +1,8 @@
 module.exports = {
-  pathPrefix: `/mini-gatsbyv2-material-kit-react`,
+  // pathPrefix: `/mini-gatsbyv2-material-kit-react`,
   siteMetadata: {
-    title: "Assistika Outsourced technical writing",
+    title: "Assistika",
+    description: `Outsourced technical writing`,
   },
   plugins: [
     "gatsby-plugin-resolve-src",
